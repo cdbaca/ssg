@@ -64,6 +64,5 @@ def main():
     make_index(post_content)
     make_posts(post_content)
 
-
 if __name__ == '__main__':
     main()
