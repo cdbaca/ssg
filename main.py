@@ -3,12 +3,10 @@ from markdown2 import markdown
 from slugify import slugify
 from jinja2 import Environment, PackageLoader, FileSystemLoader
 
-# TODO: Get markdown files/data
 def get_files():
     posts = [f for f in os.listdir('posts') if os.path.isfile(os.path.join('posts', f))]
     return(posts)
 
-# TODO: Convert to HTML
 def get_post_content(posts):
     post_content = []
     for post in posts:
@@ -21,19 +19,24 @@ def get_post_content(posts):
                      'slug': slugify(metadata['title']),
                      'author': metadata['author'],
                      'date': metadata['date'],
-                     'tags': list(metadata['tags'].split(", "))},
+                     'tags': list(metadata['tags'].split(", "))
+                     },
                 'content': html_content
             }
             post_content.append(post_data)
 
     return(post_content)
 
-# TODO: Save html to output directory
 def make_posts(post_content):
+    env = Environment(loader=FileSystemLoader("./templates"))
+    template = env.get_template("post.html")
 
-    pass
+    # post_html = []
+    for post in post_content:
+        rendered = template.render(data=post)
+        with open(f'output/{post["metadata"]["slug"]}.html', 'w') as f:
+            f.write(rendered)
 
-# TODO: Generate index
 def make_index(post_content):
     env = Environment(loader=FileSystemLoader("./templates"))
     template = env.get_template("index.html")
@@ -52,11 +55,14 @@ def make_index(post_content):
         f.write(rendered)
 
 # TODO: Save style.css to '../output/static'
+def make_static():
+    pass
 
 def main():
     posts = get_files()
     post_content = get_post_content(posts)
     make_index(post_content)
+    make_posts(post_content)
 
 
 if __name__ == '__main__':
