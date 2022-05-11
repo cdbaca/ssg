@@ -16,17 +16,27 @@ def get_post_content(posts):
             html_content = markdown(file.read(), extras=['metadata'])
             metadata = html_content.metadata
             metadata['slug'] = slugify(metadata['title'])
-            post_content.append({'metadata':metadata, 'content':html_content})
+            post_data = {
+                'title': metadata['title'],
+                'slug': slugify(metadata['title']),
+                'author': metadata['author'],
+                'date': metadata['date'],
+                'tags': list(metadata['tags'].split(", ")),
+                'content': html_content
+            }
+            post_content.append(post_data)
 
     return(post_content)
 
 # TODO: Save html to output directory
 # TODO: Generate index
 # TODO: Save style.css to '../output/static'
+# TODO:
 
 def main():
     posts = get_files()
-    print(get_post_content(posts))
+    contents = get_post_content(posts)
+    print(contents)
 
 
 if __name__ == '__main__':
