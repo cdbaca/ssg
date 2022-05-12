@@ -54,9 +54,18 @@ def make_index(post_content):
     with open('output/index.html', 'w') as f:
         f.write(rendered)
 
+# TODO: make posts page
+def make_post_page(post_content):
+    pass
+
 # TODO: Save style.css to '../output/static'
 def make_static():
     pass
+
+# TODO: deal with tags
+
+# TODO: RSS feed
+
 
 def main():
     posts = get_files()
