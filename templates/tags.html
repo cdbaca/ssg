@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for k,v in data.items() %}
+    <ul>
+        <li><a href="/">{{k}}</a>, {{v}} posts</li>
+    </ul>
+{% endfor %}
+
+{% endblock %}

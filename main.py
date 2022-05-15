@@ -50,7 +50,6 @@ def make_index(post_content):
     with open('output/index.html', 'w') as f:
         f.write(rendered)
 
-# TODO: make posts page
 def make_about():
     env = Environment(loader=FileSystemLoader("./templates"))
     template = env.get_template("about.html")
@@ -62,6 +61,26 @@ def make_about():
 
 # TODO: deal with tags
 def run_tags(post_content):
+    blog_tags = [post['metadata']['tags'] for post in post_content]
+    tag_dict = {}
+    for tag_list in blog_tags:
+        for tag in tag_list:
+            if tag not in tag_dict:
+                tag_dict[tag] = 1
+            else:
+                tag_dict[tag] += 1
+
+    env = Environment(loader=FileSystemLoader("./templates"))
+    template = env.get_template("tags.html")
+    rendered = template.render(data=tag_dict)
+    with open('output/tags.html', 'w') as f:
+        f.write(rendered)
+
+    # TODO: get list of blogs (and slug links) for blogs with tag name
+
+    # TODO: create html pages with links to blogs with those tags
+
+
     pass
 
 # TODO: RSS feed
