@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+{% for post_list in data %}
+    <ul>
+        <li><a href="../{{post_list[1]}}.html">{{post_list[0]}}</a> | {{post_list[2]}}</li>
+    </ul>
+{% endfor %}
+
+{% endblock %}

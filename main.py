@@ -76,12 +76,32 @@ def run_tags(post_content):
     with open('output/tags.html', 'w') as f:
         f.write(rendered)
 
-    # TODO: get list of blogs (and slug links) for blogs with tag name
+    os.makedirs('output/tags', exist_ok=True)
 
-    # TODO: create html pages with links to blogs with those tags
+    tag_post_dict = {}
 
+    for k,v in tag_dict.items():
+        for post_data in post_content:
+            if k in post_data['metadata']['tags']:
+                if k not in tag_post_dict:
+                    tag_post_dict[k] = [[
+                                    post_data['metadata']['title'],
+                                    post_data['metadata']['slug'],
+                                    post_data['metadata']['date']
+                                    ]]
+                else:
+                    tag_post_dict[k].append([
+                                    post_data['metadata']['title'],
+                                    post_data['metadata']['slug'],
+                                    post_data['metadata']['date']
+                                    ])
+        # THE PROBLEM WITH THIS METHOD IS THAT I CANNOT PASS THE TAG TITLE INTO THE HTML (SEE DATA=TAG_POST_DICT[K])
+        template = env.get_template("single_tag.html")
+        rendered = template.render(data=tag_post_dict[k])
+        with open(f'output/tags/{k}.html', 'w') as f:
+             f.write(rendered)
 
-    pass
+    # print(tag_post_dict)
 
 # TODO: RSS feed
 def make_rss():
