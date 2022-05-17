@@ -1,4 +1,4 @@
-import os
+import os, shutil
 from markdown2 import markdown
 from slugify import slugify
 from jinja2 import Environment, PackageLoader, FileSystemLoader
@@ -57,11 +57,12 @@ def make_about():
     with open('output/about.html', 'w') as f:
         f.write(rendered)
 
-# TODO: Save style.css to '../output/static'
+# currently, this will save css file to output directory, but html files in output/tags will not link to the sheet
+def make_css():
+    os.makedirs('output/static', exist_ok=True)
+    shutil.copy('static/styles.css', 'output/static')
 
-# TODO: deal with tags
 def run_tags(post_content):
-
     blog_tags = [post['metadata']['tags'] for post in post_content if post['metadata']['tags'][0] != '']
     tag_dict = {}
     for tag_list in blog_tags:
@@ -102,8 +103,6 @@ def run_tags(post_content):
         with open(f'output/tags/{k}.html', 'w') as f:
              f.write(rendered)
 
-    # print(tag_post_dict)
-
 # TODO: RSS feed
 def make_rss():
     pass
@@ -114,6 +113,7 @@ def main():
     make_index(post_content)
     make_posts(post_content)
     make_about()
+    make_css()
     run_tags(post_content)
     make_rss()
 
