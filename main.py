@@ -61,7 +61,8 @@ def make_about():
 
 # TODO: deal with tags
 def run_tags(post_content):
-    blog_tags = [post['metadata']['tags'] for post in post_content]
+
+    blog_tags = [post['metadata']['tags'] for post in post_content if post['metadata']['tags'][0] != '']
     tag_dict = {}
     for tag_list in blog_tags:
         for tag in tag_list:
