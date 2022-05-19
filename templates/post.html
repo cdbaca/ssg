@@ -5,6 +5,10 @@
     <h1>{{ data.metadata["title"] }}</h1>
     {{ data.content }}
 
-<p><strong>Tagged:</strong>{% for tag in data.metadata["tags"] %} <a href="tags/{{ tag }}.html">{{ tag }}</a>, {% endfor %}</p>
+    {% if data.metadata["tags"][0] != '' %}
+        <p><strong>Tagged:</strong>{% for tag in data.metadata["tags"] %} <a href="tags/{{ tag }}.html">{{ tag }}</a>, {% endfor %}</p>
+    {% else %}
+        <p><strong>Tagged:</strong> no tags </p>
+    {% endif %}
 
 {% endblock %}

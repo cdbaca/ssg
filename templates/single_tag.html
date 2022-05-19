@@ -1,5 +1,18 @@
 {% extends "base.html" %}
-
+{% block nav %}
+    <nav class="navbar">
+        <span class="logo">
+            <a href="../index.html">Roots to Branches</a>
+        </span>
+        <div class="menu">
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../tags.html">Tags</a></li>
+            </ul>
+        </div>
+    </nav>
+{% endblock %}
+    {% block css %}<link rel="stylesheet" href="../static/styles.css" type="text/css"> {% endblock %}
 {% block content %}
 
 {% for post_list in data %}

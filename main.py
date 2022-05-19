@@ -35,6 +35,7 @@ def make_posts(post_content):
         rendered = template.render(data=post)
         with open(f'output/{post["metadata"]["slug"]}.html', 'w') as f:
             f.write(rendered)
+        # print(post["metadata"]["tags"])
 
 def make_index(post_content):
     env = Environment(loader=FileSystemLoader("./templates"))
@@ -57,7 +58,6 @@ def make_about():
     with open('output/about.html', 'w') as f:
         f.write(rendered)
 
-# currently, this will save css file to output directory, but html files in output/tags will not link to the sheet
 def make_css():
     os.makedirs('output/static', exist_ok=True)
     shutil.copy('static/styles.css', 'output/static')
