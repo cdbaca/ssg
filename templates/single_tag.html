@@ -1,18 +1,16 @@
 {% extends "base.html" %}
+{% block css %}<link rel="stylesheet" href="../static/styles.css" type="text/css"> {% endblock %}
 {% block nav %}
-    <nav class="navbar">
-        <span class="logo">
-            <a href="../index.html">Roots to Branches</a>
-        </span>
-        <div class="menu">
+    <div class="nav">
+        <div class="title"><a href="../index.html">Roots to Branches</a></h2></div>
+        <div class="top-menu">
             <ul>
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../tags.html">Tags</a></li>
+                <li><a href="../about.html"><button class="button">About</button></a></li>
+                <li><a href="../tags.html"><button class="button">Tags</button></a></li>
             </ul>
         </div>
-    </nav>
+    </div>
 {% endblock %}
-    {% block css %}<link rel="stylesheet" href="../static/styles.css" type="text/css"> {% endblock %}
 {% block content %}
 
 {% for post_list in data %}

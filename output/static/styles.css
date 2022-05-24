@@ -5,6 +5,7 @@ body {
 
 h1, h2, h3, h4, h5, a, button {
     font-family: Georgia;
+    color: darkslategray;
 }
 
 .nav .title {
@@ -22,9 +23,13 @@ h1, h2, h3, h4, h5, a, button {
     background-color: #2C2C2C;
 }
 
+a {
+    color: #2C2C2C;
+}
+
 a:hover {
     border-bottom: none;
-    color: #2C2C2C;
+    color: #678070;
 }
 
 .nav {
