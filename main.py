@@ -34,7 +34,7 @@ def make_posts(post_content):
 
     for post in post_content:
         rendered = template.render(data=post)
-        with open(f'output/{post["metadata"]["slug"]}.html', 'w') as f:
+        with open(f'docs/{post["metadata"]["slug"]}.html', 'w') as f:
             f.write(rendered)
         # print(post["metadata"]["tags"])
 
@@ -47,21 +47,21 @@ def make_index(post_content):
 
     rendered = template.render(data=post_metadata)
 
-    os.makedirs('output', exist_ok=True)
+    os.makedirs('docs', exist_ok=True)
 
-    with open('index.html', 'w') as f:
+    with open('docs/index.html', 'w') as f:
         f.write(rendered)
 
 def make_about():
     env = Environment(loader=FileSystemLoader("./templates"))
     template = env.get_template("about.html")
     rendered = template.render()
-    with open('output/about.html', 'w') as f:
+    with open('docs/about.html', 'w') as f:
         f.write(rendered)
 
 def make_css():
-    os.makedirs('output/static', exist_ok=True)
-    shutil.copy('static/styles.css', 'output/static')
+    os.makedirs('docs/static', exist_ok=True)
+    shutil.copy('static/styles.css', 'docs/static')
 
 def run_tags(post_content):
     blog_tags = [post['metadata']['tags'] for post in post_content if post['metadata']['tags'][0] != '']
@@ -76,10 +76,10 @@ def run_tags(post_content):
     env = Environment(loader=FileSystemLoader("./templates"))
     template = env.get_template("tags.html")
     rendered = template.render(data=tag_dict)
-    with open('output/tags.html', 'w') as f:
+    with open('docs/tags.html', 'w') as f:
         f.write(rendered)
 
-    os.makedirs('output/tags', exist_ok=True)
+    os.makedirs('docs/tags', exist_ok=True)
 
     tag_post_dict = {}
 
@@ -101,7 +101,7 @@ def run_tags(post_content):
         # THE PROBLEM WITH THIS METHOD IS THAT I CANNOT PASS THE TAG TITLE INTO THE HTML (SEE DATA=TAG_POST_DICT[K])
         template = env.get_template("single_tag.html")
         rendered = template.render(data=tag_post_dict[k])
-        with open(f'output/tags/{k}.html', 'w') as f:
+        with open(f'docs/tags/{k}.html', 'w') as f:
              f.write(rendered)
 
 # TODO: RSS feed
