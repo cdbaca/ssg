@@ -4,6 +4,7 @@ from slugify import slugify
 from jinja2 import Environment, PackageLoader, FileSystemLoader
 
 def get_files():
+    os.makedirs('posts', exist_ok=True)
     posts = [f for f in os.listdir('posts') if os.path.isfile(os.path.join('posts', f))]
     return(posts)
 
@@ -48,7 +49,7 @@ def make_index(post_content):
 
     os.makedirs('output', exist_ok=True)
 
-    with open('output/index.html', 'w') as f:
+    with open('index.html', 'w') as f:
         f.write(rendered)
 
 def make_about():
