@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
+<h1>Tags</h1>
 <ul>
     {% for k,v in data.items() %}
         <li><a href="./tags/{{k}}.html">{{k}}</a>, {{v}} posts</li>
