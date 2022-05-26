@@ -19,6 +19,16 @@ time. There are lots of reasons for that; the main reason is that I have just lo
 Perhaps it's because I'm just interested in other things or just interested in living a life rather than standing on 
 the spiritual outside looking in.
 
+"Roots to branches" comes from this sense that I like to get down into the roots of things that I'm interested in. 
+If, for example, something at work requires me to use a Python script, I don't ever really just want to run the script.
+I'd rather learn the programming behind the script, the thoughts behind why script-writer made the decisions she made,
+etc. When I got into coffee, I didn't want to just drink good coffee... I wanted to *roast* it, see where it came from,
+what it looks like beforehand, why it tastes different when it comes from different regions. I do this with anything
+that genuinely interests me.
+
+So the blog is a digital space where I'm trying to work from the roots of things to their branches and back again to 
+see if I can gain some more complete understanding of the things I like.
+
 All that said, however, I think the idea of changing and pruning and growing in different directions is one of the 
 benefits of blogging online. A web space that is 100% editable by me (and really, it's *completely* customizable,
 which is a first for me) gives me the chance to shape the space how I want. Robin Sloan talks about that some here:
