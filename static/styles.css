@@ -1,6 +1,32 @@
 body {
     font-family: Georgia;
     background-color: #BECCBA;
+    max-width:none;
+}
+
+.main {
+    margin: auto;
+    margin-top: 25px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.posts {
+    border: 1px solid black;
+    float: left;
+    width: 33%;
+}
+
+.sidebar {
+    border: 1px solid black;
+    float: right;
+    padding: 10px;
+    width: 25%;
+}
+
+.about-content {
+    margin-left: 200px;
+    margin-right: 200px;
 }
 
 h1, h2, h3, h4, h5, a, button {
@@ -16,7 +42,8 @@ h1, h2, h3, h4, h5, a, button {
 
 .button {
     background-color: #BECCBA;
-    border-radius: 75%;
+    border-radius: 50%;
+    padding: 10px;
 }
 
 .button:hover {
@@ -58,4 +85,9 @@ li {
 
 .menu {
     padding-top: 10px;
+}
+
+.post {
+    margin-left: 400px;
+    margin-right: 400px;
 }

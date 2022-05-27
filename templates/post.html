@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-
+    <div class="post">
     <h2>{{ data.metadata["title"] }}</h2>
     {{ data.content }}
 
@@ -10,5 +10,5 @@
     {% else %}
         <p><strong>Tagged:</strong> no tags </p>
     {% endif %}
-
+    </div>
 {% endblock %}
