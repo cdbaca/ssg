@@ -1,15 +1,19 @@
 {% extends "base.html" %}
 {% block css %}<link rel="stylesheet" href="../static/styles.css" type="text/css"> {% endblock %}
 {% block nav %}
-    <div class="nav">
-        <div class="title"><a href="../index.html">Roots to Branches</a></h2></div>
-        <div class="top-menu">
-            <ul>
-                <li><a href="../about.html"><button class="button">About</button></a></li>
-                <li><a href="../tags.html"><button class="button">Tags</button></a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <a class="navbar-brand" href="../index.html">Roots to Branches</a>
+                </div>
+            </div>
+            <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="../about.html"><button class="btn btn-secondary me-md-2">About</button></a>
+                <a href="../tags.html"><button class="btn btn-secondary">Tags</button></a>
+            </div>
         </div>
-    </div>
+    </nav>
 {% endblock %}
 {% block content %}
 

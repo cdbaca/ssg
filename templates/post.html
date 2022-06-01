@@ -1,7 +1,9 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="post">
+<div class="row">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 post">
     <h2>{{ data.metadata["title"] }}</h2>
     {{ data.content }}
 
@@ -11,4 +13,6 @@
         <p><strong>Tagged:</strong> no tags </p>
     {% endif %}
     </div>
+    <div class="col-sm-2"></div>
+</div>
 {% endblock %}

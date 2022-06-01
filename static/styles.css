@@ -4,90 +4,12 @@ body {
     max-width:none;
 }
 
-.main {
-    margin: auto;
-    margin-top: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-}
-
-.posts {
-    border: 1px solid black;
-    float: left;
-    width: 33%;
-}
-
-.sidebar {
-    border: 1px solid black;
-    float: right;
-    padding: 10px;
-    width: 25%;
-}
-
-.about-content {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
 h1, h2, h3, h4, h5, a, button {
     font-family: Georgia;
-    color: darkslategray;
-}
-
-.nav .title {
-    font-family: Georgia;
-    font-size: 40px;
-}
-
-
-.button {
-    background-color: #BECCBA;
-    border-radius: 50%;
-    padding: 10px;
-}
-
-.button:hover {
-    background-color: #2C2C2C;
-}
-
-a {
     color: darkslategray;
 }
 
 a:hover {
     border-bottom: none;
     color: #678070;
-}
-
-.nav {
-    overflow: hidden;
-}
-
-.title {
-    float:left;
-}
-
-.top-menu {
-    float:right;
-    font-size: 30px;
-}
-
-.top-menu li {
-    display: inline;
-    color: #678070;
-    font-size: 30px;
-}
-
-li {
-    list-style: none;
-    padding-left: -10px;
-}
-
-.menu {
-    padding-top: 10px;
-}
-
-.post {
-    margin-left: 400px;
-    margin-right: 400px;
 }

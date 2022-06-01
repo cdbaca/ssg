@@ -5,24 +5,29 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">
+    <!--<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="static/styles.css" type="text/css"> 
     <!--<link rel="stylesheet" href="https://unpkg.com/chota@latest">-->
     <title>Roots to Branches</title>
 </head>
 <body>
     
-    <div class="nav">
-        <div class="title"><a href="./index.html">Roots to Branches</a></div>
-        <div class="top-menu">
-            <ul>
-                <li><a href="./about.html"><button class="button">About</button></a></li>
-                <li><a href="./tags.html"><button class="button">Tags</button></a></li>
-            </ul>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <a class="navbar-brand" href="./index.html">Roots to Branches</a>
+                </div>
+            </div>
+            <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="./about.html"><button class="btn btn-secondary me-md-2">About</button></a>
+                <a href="./tags.html"><button class="btn btn-secondary">Tags</button></a>
+            </div>
         </div>
-    </div>
+    </nav>
     
-    <div class="main">
+    <div class="container-fluid">
         
 <h1>Tags</h1>
 <ul>
