@@ -62,6 +62,7 @@ def make_about():
 def make_css():
     os.makedirs('docs/static', exist_ok=True)
     shutil.copy('static/styles.css', 'docs/static')
+    shutil.copy('static/github.png', 'docs/static')
 
 def run_tags(post_content):
     blog_tags = [post['metadata']['tags'] for post in post_content if post['metadata']['tags'][0] != '']

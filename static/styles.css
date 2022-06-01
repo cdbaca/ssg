@@ -1,15 +1,35 @@
 body {
-    font-family: Georgia;
+    font-family: Palatino, serif;
     background-color: #BECCBA;
-    max-width:none;
+    max-width: none;
+    line-height: 175%;
 }
 
-h1, h2, h3, h4, h5, a, button {
-    font-family: Georgia;
+h1, h2, h3, h4, h5, a, button, .navbar-brand {
+    font-family: Palatino, serif;
     color: darkslategray;
 }
 
-a:hover {
+a:hover, .navbar-brand:hover {
     border-bottom: none;
     color: #678070;
+}
+
+.nav {
+    margin-bottom: 25px;
+}
+
+blockquote {
+    background: lightgrey;
+    font-style: italic;
+    margin-left: 1.5em;
+    margin-right: 5em;
+    border-left: 5px solid darkslategray;
+    padding-left: .5em;
+}
+
+img {
+    display: block;
+    margin: auto;
+    max-width: 100%;
 }

@@ -1,19 +1,16 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row">
-    <div class="col-sm-6">
+<div class="row justify-content-around">
+    <div class="col-sm-5">
         <h3>Posts:</h3>
-
         <ul class="post-list">
             {% for post in data %}
             <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
             {% endfor %}
         </ul>
     </div>
-    <div class="col">
-    </div>
     <div class="col-sm-4">
-        <p><strong>This is the digital home of Chris Baca.</strong></p>
+        <h2>This is the digital home of Chris Baca.</h2>
         <p>It's meant to be not-cool. Not algorithm-y. Not a space where I'm trying to gain followers or build a brand.</p>
         <p>Just a space where I'm looking at the roots of things and seeing where they lead.</p>
         <p>To that end, you may see weird stuff or designs here; mostly it's just me experimenting with building
