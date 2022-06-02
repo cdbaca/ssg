@@ -2,7 +2,7 @@
 {% block content %}
 <div class="row justify-content-around">
     <div class="col-sm-5">
-        <h3>Posts:</h3>
+        <h2>Posts:</h2>
         <ul class="post-list">
             {% for post in data %}
             <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
@@ -16,10 +16,15 @@
         <p>To that end, you may see weird stuff or designs here; mostly it's just me experimenting with building
         a website from scratch. Thanks for stopping by.</p>
         <br>
-        <p><strong>Other Sites I Like:</strong></p>
+        <h3>Other Sites I Like:</h3>
         <ul>
             <li><a href="https://lanebphotography.com">Elaine Baca Photography</a></li>
             <li><a href="https://blog.ayjay.org">Alan Jacobs</a></li>
+            <li><a href="https://austinkleon.com">Austin Kleon</a></li>
+            <li><a href="https://marginalrevolution.com">Marginal Revolution</a></li>
+            <li><a href="https://experimentaltheology.blogspot.com">Experimental Theology</a></li>
+            <li><a href="https://waitbutwhy.com">Wait But Why</a></li>
+            <li><a href="https://xkcd.com">xkcd</a></li>
         </ul>
     </div>
 </div>

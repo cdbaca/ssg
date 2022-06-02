@@ -21,5 +21,29 @@ There's a ton out there on SSGs. Here are the different tutorials I'm using for 
 - https://blog.thea.codes/a-small-static-site-generator/
 - https://www.youtube.com/watch?v=fe8QgK3j4gw&lc=UgzXwbW2XiYbibiUxj94AaABAg.9arQ0nNBndd9arVdRDcKub
 
+If you want your own version, you can clone the repository. Obviously, you'd want to delete any posts in the 
+posts directory, and delete the entire 'docs' directory.
+
+From there, to generate a new post, you can run:
+
+`python3 post.py "Input Post Title"`
+
+After writing your blog post, in that Markdown file (and changing the frontmatter of the post), save the file.
+
+Once it's saved, you should be able to run:
+
+`python3 main.py`
+
+This will generate the HTML files for the blog, including the index, about, and tags page.
+
+If you're using GitHub pages to host the site, you can simply change the top directory (ssg) to a git 
+repository. Then head over to the settings of the repo in GitHub, click "Pages", and activate GitHub Pages for the repo. 
+[More info on that process here.](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site)
+
+You can see my own version of [this blog](https://cdbaca.github.io/ssg/) here.
+
 # Future Goals:
+
 - Generate a page that is instagram/micro.blog-like which allows me to post pictures
+- Generate a Now page
+- Make an RSS feed
