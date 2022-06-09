@@ -30,4 +30,4 @@ hip hop artists.
 Here's a playlist of my favorites from the albums. Not necessarily a song from every one... I anticipate there will be
 albums I don't really like all that much.
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6YjYOrpEQK5Ih5dAbjU47g?utm_source=generator" width="50%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/1HGhY99Loz90tylx4XspGO?utm_source=generator" width="40%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
