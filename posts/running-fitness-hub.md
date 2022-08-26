@@ -5,7 +5,7 @@ date: 08/12/2022
 tags: running, fitness
 ---
 
-There's a _zillion_ different ways of thinking about fitness... according to the internet, anyway. Most are, to put it mildly, bullshit. There's too much just straight up garbage out there, but for the average person, it's hard to know how to even start building a framework for what is good information and what isn't.
+There's a _zillion_ different ways of thinking about fitness... according to the internet, anyway. Most are, to put it mildly, garbage. There's too much just straight up garbage out there, but for the average person, it's hard to know how to even start building a framework for what is good information and what isn't.
 
 Take some common ideas about running: it's good to static stretch before a run, running isn't doing anything unless you're huffing and puffing, strength work is bad for runners (or if you do it, you definitely _shouldn't_ lift heavy, God forbid), etc.
 
@@ -38,4 +38,4 @@ Anyway, like I said, another post for another day. On this page, I'd like to gat
 - [r/Fitness Wiki](https://thefitness.wiki/improving-your-diet/), especially the section on "Improving Your Diet"
 
 ## Miscellaneous
-- [On F***arounditis](https://leangains.com/fuckarounditis/)
+- [On F***arounditis (language warning)](https://leangains.com/fuckarounditis/)
