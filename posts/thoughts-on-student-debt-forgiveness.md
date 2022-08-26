@@ -11,15 +11,15 @@ But, I have some pretty big concerns about how all of this forgiveness is going 
 
 (Also, I'm avoiding all of the what-about-ism nonsense in the discourse -- specifically related to PPP and big corporate bailouts. Those are separate issues that ought to be dealt with separately.)
 
-### Here are my concerns, in no particular order:
+## Here are my concerns, in no particular order:
 
-1. This was a blanket policy that was relatively untargeted.
+### This was a blanket policy that was relatively untargeted.
 
 Let's get the good parts out of the way: targeting Pell recipients was a good move. You have to be pretty low in the income spectrum to be a Pell recipient (I was one after we got married and had a baby -- we were POOR). Students who receive Pell often start in a really difficult spot financially. Even after graduating, it can be difficult to build wealth for these individuals than it is for those that come from families with even a modest amount of wealth.
 
 Other than that, the limit on income ($125k for individuals, $250k for couples) seems unreasonable to me. I want to grant that $125k in some parts of the country is very different from other parts of the country. But that's an amount of affluence that is _unheard of_ compared to much of the world. And who is most likely to be able to make that amount of money (or more) in the first place? College graduates! That means that we're giving targeted debt relief to the people who _are most likely able_ to pay off this debt in the first place. If we're going to choose a group of people who are saddled with debt or in poverty or need assistance, why would we choose college graduates (the group _most likely_ to attain financial security) over individuals who didn't have an opportunity to attend school in the first place?
 
-2. There are deeper cultural problems with higher ed that this does not address, and in fact possibly exacerbates.
+###  There are deeper cultural problems with higher ed that this does not address, and in fact possibly exacerbates.
 
 This is a multi-faceted concern. I'll let Matt Bruenig (a far left guy on economics and law!) talk about my first concern here. IDR stands for income-driven repayment. He is specifically referring to the cap on loan repayment to 5% of the borrower's income.
 
@@ -32,7 +32,7 @@ Number two: **we have a deeper cultural problem here**. Students and parent borr
 
 Number three: perhaps as a subpoint to number two, **colleges bear little-to-no risk or responsibility for this problem**. I have other thoughts about what higher education is for (it shouldn't be just a method of advancing one's career and gaining capital), but the truth is that we're selling it like that right now. If a college offers a product like a degree and markets those degrees as methods of investing in one's future, and the government is funding that investment for students, the university ought to at least bear some responsibility for the outcomes of those students. We'd, of course, expect some students to not be able to pay off the debt due to unforeseen circumstances. But if students cannot get into the career field they were promised, or if they can but cannot make enough income to pay off that debt, the university doesn't currently have to deal with that problem. The government does. Outside of crazy default rates, the government doesn't really prevent colleges from allowing students to use Stafford loans to attend their school. Why not require schools with large endowments to lend to students? Surely that would immediately shift the calculus, both on who is admitted and who gets to borrow? I'm not saying it's all-or-nothing, but right now, colleges get off pretty easy when it comes to dealing with the student debt problem.
 
-3. This could incentivize poor financial decisions on the part of borrowers.
+### This could incentivize poor financial decisions on the part of borrowers.
 
 People may think I'm wrong here, and that's fine. But I also think that student debt forgiveness now will create the expectation for future borrowers that their debt will be forgiven as well. If that's the case, students will continue to choose institutions that are not built with their best interest in mind -- instead, they will be more likely to choose flashy institutions with more amenities and higher costs rather than a local or more pragmatic institution.
 
