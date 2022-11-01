@@ -13,30 +13,34 @@ This was brought on by continued thinking about open web stuff. If Twitter sucks
 
 For the photos feature, I decided to use Flickr as a photo host, and I'm using their API and the [FlickrAPI library](https://stuvel.eu/software/flickrapi/) to get the necessary information to produce both the image, the link to the image in the album, and the title of the image. There's a little bit of sorting magic going on, and I'm sure if I change anything about how my Flickr albums are used, I'll have to adjust the code. But I'm happy with the function:
 
-`def get_imgs():
-    key = credentials.key
-    secret = credentials.secret
-    user_id = 'credentials.user_id'
+`
 
-    flickr = flickrapi.FlickrAPI(key, secret, format='parsed-json')
-    sets   = flickr.photosets.getList(user_id=user_id)
-    set_id  = sets['photosets']['photoset'][0]['id']
-    photo_info = flickr.photosets.getPhotos(photoset_id=set_id)
-    photos_in_album = photo_info['photoset']['photo']
+    def get_imgs():
+        key = credentials.key
+        secret = credentials.secret
+        user_id = 'credentials.user_id'
 
-    photos = []
+        flickr = flickrapi.FlickrAPI(key, secret, format='parsed-json')
+        sets   = flickr.photosets.getList(user_id=user_id)
+        set_id  = sets['photosets']['photoset'][0]['id']
+        photo_info = flickr.photosets.getPhotos(photoset_id=set_id)
+        photos_in_album = photo_info['photoset']['photo']
 
-    for photo in photos_in_album:
+        photos = []
 
-        img_info = flickr.photos.getInfo(photo_id=photo['id'])
+        for photo in photos_in_album:
 
-        img = 'https://live.staticflickr.com/{0}/{1}_{2}_q.jpg'.format(photo['server'], photo['id'], photo['secret'])
-        img_link = 'https://www.flickr.com/photos/{0}/{1}/in/album-{2}/'.format(user_id, photo['id'], set_id)
+            img_info = flickr.photos.getInfo(photo_id=photo['id'])
+
+            img = 'https://live.staticflickr.com/{0}/{1}_{2}_q.jpg'.format(photo['server'], photo['id'], photo['secret'])
+            img_link = 'https://www.flickr.com/photos/{0}/{1}/in/album-{2}/'.format(user_id, photo['id'], set_id)
+            
+            photos.append({'title':photo['title'], 'date_created':img_info['photo']['dateuploaded'], 'img_link':img_link, 'img':img})
+            photos.sort(key=lambda x:x['date_created'], reverse=True)
+
+        return(photos)
         
-        photos.append({'title':photo['title'], 'date_created':img_info['photo']['dateuploaded'], 'img_link':img_link, 'img':img})
-        photos.sort(key=lambda x:x['date_created'], reverse=True)
-
-    return(photos)`
+`
 
 Then I take that data, throw it in a dictionary for an index function that produces the home page, and use that to render the images. Pretty cool.
 
