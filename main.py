@@ -2,6 +2,8 @@ import os, shutil
 from markdown2 import markdown
 from slugify import slugify
 from jinja2 import Environment, PackageLoader, FileSystemLoader
+import flickrapi
+import credentials
 
 def get_files():
     os.makedirs('posts', exist_ok=True)
@@ -38,14 +40,46 @@ def make_posts(post_content):
             f.write(rendered)
         # print(post["metadata"]["tags"])
 
-def make_index(post_content):
+def get_imgs():
+    key = credentials.key
+    secret = credentials.secret
+    user_id = '196813886@N05'
+
+    flickr = flickrapi.FlickrAPI(key, secret, format='parsed-json')
+    sets   = flickr.photosets.getList(user_id=user_id)
+    set_id  = sets['photosets']['photoset'][0]['id']
+    # set_info = flickr.photosets.getInfo(photoset_id=set_id)
+    photo_info = flickr.photosets.getPhotos(photoset_id=set_id)
+    photos_in_album = photo_info['photoset']['photo']
+
+    photos = []
+
+    for photo in photos_in_album:
+
+        img_info = flickr.photos.getInfo(photo_id=photo['id'])
+
+        img = 'https://live.staticflickr.com/{0}/{1}_{2}_q.jpg'.format(photo['server'], photo['id'], photo['secret'])
+        img_link = 'https://www.flickr.com/photos/{0}/{1}/in/album-{2}/'.format(user_id, photo['id'], set_id)
+        
+        photos.append({'title':photo['title'], 'date_created':img_info['photo']['dateuploaded'], 'img_link':img_link, 'img':img})
+        photos.sort(key=lambda x:x['date_created'], reverse=True)
+
+    return(photos)
+
+
+def make_index(post_content, photo_data):
     env = Environment(loader=FileSystemLoader("./templates"))
     template = env.get_template("index.html")
 
     post_metadata = [post['metadata'] for post in post_content]
     post_metadata.sort(key=lambda x: x['date'], reverse=True)
 
-    rendered = template.render(data=post_metadata)
+    content = {}
+
+    content['posts'] = post_metadata
+    content['photos'] = photo_data
+
+    rendered = template.render(data=content)
 
     os.makedirs('docs', exist_ok=True)
 
@@ -112,7 +146,8 @@ def make_rss():
 def main():
     posts = get_files()
     post_content = get_post_content(posts)
-    make_index(post_content)
+    photo_data = get_imgs()
+    make_index(post_content, photo_data)
     make_posts(post_content)
     make_about()
     make_css()

@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/styles.css" type="text/css"> 
+    <!--<link rel="stylesheet" href="https://unpkg.com/chota@latest">-->
+    <title>Roots to Branches</title>
+</head>
+<body>
+    
+    <nav class="navbar nav">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col">
+                    <h1><a class="navbar-brand" href="./index.html">Roots to Branches</a></h1>
+                </div>
+            </div>
+            <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="./about.html"><button class="btn btn-outline-secondary me-md-2">About</button></a>
+                <a href="./tags.html"><button class="btn btn-outline-secondary">Tags</button></a>
+            </div>
+        </div>
+    </nav>
+    
+    <div class="container-fluid">
+        
+<div class="row">
+    <div class="col-sm-3"></div>
+    <div class="col-sm-6 post">
+    <h2>Adding a Photos Feature</h2>
+    <p>In my spare time today and yesterday, I spent some time attempting to get a photo feed on the site. So far, I've been successful, at least with the "getting it working" part. (See the home page). It's not yet the prettiest thing in the world, but I was pretty happy that I was able to get it working.</p>
+
+<p>This was brought on by continued thinking about open web stuff. If Twitter sucks (it does) and Facebook sucks (it <em>definitely</em> does), Instagram isn't far behind. My experience on Instagram has been relatively shitty anyway. There are more advertisements, the feed hasn't been chronological in a long time, and everyone just uses stories now instead of the regular photo posting functionality. I get it. That's what they're trying to push as a TikTok competitor. But I really, <em>really</em> hate TikTok. It seems to me to be peak bad internet. It's algorithm attention-grabbing at its very worst.</p>
+
+<p><a href="https://cheapskatesguide.org/articles/reflections-on-the-internet.html">The internet wasn't supposed to be a consumer hell hole</a>. It was meant to be a way to share information, gain knowledge, make connections we couldn't have otherwise made. I want to continue to do my part in making it closer to that ideal and less the content machine that it has become.</p>
+
+<p>For the photos feature, I decided to use Flickr as a photo host, and I'm using their API and the <a href="https://stuvel.eu/software/flickrapi/">FlickrAPI library</a> to get the necessary information to produce both the image, the link to the image in the album, and the title of the image. There's a little bit of sorting magic going on, and I'm sure if I change anything about how my Flickr albums are used, I'll have to adjust the code. But I'm happy with the function:</p>
+
+<p>`def get<em>imgs():
+    key = credentials.key
+    secret = credentials.secret
+    user</em>id = 'credentials.user_id'</p>
+
+<pre><code>flickr = flickrapi.FlickrAPI(key, secret, format='parsed-json')
+sets   = flickr.photosets.getList(user_id=user_id)
+set_id  = sets['photosets']['photoset'][0]['id']
+photo_info = flickr.photosets.getPhotos(photoset_id=set_id)
+photos_in_album = photo_info['photoset']['photo']
+
+photos = []
+
+for photo in photos_in_album:
+
+    img_info = flickr.photos.getInfo(photo_id=photo['id'])
+
+    img = 'https://live.staticflickr.com/{0}/{1}_{2}_q.jpg'.format(photo['server'], photo['id'], photo['secret'])
+    img_link = 'https://www.flickr.com/photos/{0}/{1}/in/album-{2}/'.format(user_id, photo['id'], set_id)
+
+    photos.append({'title':photo['title'], 'date_created':img_info['photo']['dateuploaded'], 'img_link':img_link, 'img':img})
+    photos.sort(key=lambda x:x['date_created'], reverse=True)
+
+return(photos)`
+</code></pre>
+
+<p>Then I take that data, throw it in a dictionary for an index function that produces the home page, and use that to render the images. Pretty cool.</p>
+
+<p>Back to yesterday's point... this clearly doesn't "reproduce" Instagram in any way. You lose some follow-ability here, and I'm obviously not trying to make some clone with captions, likes, comments, or stories. But it is a way to just put up what I'm doing and who I want to be in the digital space. If we could be happy enough with stuff like this, I think we'd all be better off.</p>
+
+
+    
+        <p><strong>Tagged:</strong> <a href="tags/python.html">python</a>,  <a href="tags/open web.html">open web</a>, </p>
+    
+    </div>
+    <div class="col-sm-3"></div>
+</div>
+
+    </div>
+</body>
+</html>

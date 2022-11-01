@@ -4,10 +4,17 @@
     <div class="col-sm-5">
         <h2>Posts:</h2>
         <ul class="post-list">
-            {% for post in data %}
+            {% for post in data['posts'] %}
             <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
             {% endfor %}
         </ul>
+    </div>
+    <div class="col-sm-3">
+        <h2>Photos:</h2>
+        {% for photo in data['photos']%}
+        <a data-flickr-embed="true" href="{{ photo['img_link']}}" title="{{ photo['title'] }}"><img src="{{ photo['img'] }}" width="200" height="200" alt="{{ photo['title'] }}"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <br>
+        {% endfor %}
     </div>
     <div class="col-sm-4">
         <h2>This is the digital home of Chris Baca.</h2>

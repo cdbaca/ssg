@@ -18,4 +18,4 @@ I'd like a way out of this mindset that having attention is what matters. I want
 ## Some related links:
 - [Get Blogging!](https://getblogging.org/)
 - [Scale is the Enemy](https://blog.ayjay.org/scale-is-the-enemy/)
-- [The Way Out] (https://www.manton.org/2018/09/07/the-way-out.html)
+- [The Way Out](https://www.manton.org/2018/09/07/the-way-out.html)
