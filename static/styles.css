@@ -1,18 +1,18 @@
 body {
     font-family: Palatino, serif;
-    background-color: #BECCBA;
+    background-color: #c4dfd2;
     max-width: none;
     line-height: 175%;
 }
 
 h1, h2, h3, h4, h5, a, button, .navbar-brand {
     font-family: Palatino, serif;
-    color: darkslategray;
+    color: rgb(35, 46, 46);
 }
 
 a:hover, .navbar-brand:hover {
     border-bottom: none;
-    color: #678070;
+    color: #5a605c;
 }
 
 .nav {
