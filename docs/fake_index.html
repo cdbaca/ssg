@@ -7,18 +7,158 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">-->
     <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <!--<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">-->
     <style>
-        .container {
-            display:grid;
-            grid-template-columns: auto auto auto;
-            grid-template-rows: 50px 300px;
-            grid-gap: 3px;
-            
+
+        :root {
+        /* Set sans-serif & mono fonts */
+        --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+            "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
+            "Helvetica Neue", sans-serif;
+        --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+        /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
+        --base-fontsize: 1.15rem;
+
+        /* Major third scale progression - see https://type-scale.com/ */
+        --header-scale: 1.25;
+
+        /* Line height is set to the "Golden ratio" for optimal legibility */
+        --line-height: 1.618;
+
+        /* Default (light) theme */
+        --bg: #fff;
+        --accent-bg: #f5f7ff;
+        --text: #212121;
+        --text-light: #585858;
+        --border: #d8dae1;
+        --accent: #05562f;
+        --accent-light: #90caf9;
+        --code: #d81b60;
+        --preformatted: #444;
+        --marked: #ffdd33;
+        --disabled: #efefef;
         }
 
-        .box {
-            background-color: aquamarine;
+        html {
+        /* Set the font globally */
+        font-family: var(--sans-font);
+        }
+
+        /* Make the body a nice central block */
+        body {
+        color: var(--text);
+        background: var(--bg);
+        font-size: var(--base-fontsize);
+        line-height: var(--line-height);
+        }
+
+        nav a {
+        margin: 1rem 1rem 0 0;
+        border: 1px solid var(--border);
+        border-radius: 5px;
+        color: var(--text) !important;
+        display: inline-block;
+        padding: 0.1rem 1rem;
+        text-decoration: none;
+        transition: 0.4s;
+        }
+
+        nav a:hover {
+        color: var(--accent) !important;
+        border-color: var(--accent);
+        }
+
+        nav a.current:hover {
+        text-decoration: none;
+        }
+
+        footer {
+        margin-top: 4rem;
+        padding: 2rem 1rem 1.5rem 1rem;
+        color: var(--text-light);
+        font-size: 0.9rem;
+        text-align: center;
+        border-top: 1px solid var(--border);
+        }
+
+
+        a button,
+        button,
+        [role="button"],
+        input[type="submit"],
+        input[type="reset"],
+        input[type="button"] {
+        border: none;
+        border-radius: 5px;
+        background: var(--accent);
+        font-size: 1rem;
+        color: var(--bg);
+        padding: 0.7rem 0.9rem;
+        margin: 0.5rem 0;
+        transition: 0.4s;
+        }
+
+         html, body {
+                    height: 100%;
+                    width: 100%;
+                }
+        .container {
+            height: 100%;
+            display:grid;
+            grid-template-rows: 1fr 5fr 5fr 1fr;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap:50px;
+            margin: 10px;
+            grid-template-areas: 
+            ". h h h h h h h h h h ."
+            ". a a a a a . . b b b ."
+            ". p p p p p . . ph ph ph ."
+            ". f f f f f f f f f f .";
+        }
+
+        /*.box {
+            border-style: solid;
+            border-width: 1px;
+            border-color: black;
+        }*/
+
+        .box > p, h1, h2, h3, h4, h5, img, button {
+            padding: 5px;
+        }
+
+        button {
+            margin: 2px;
+        }
+
+        .about {
+            grid-area: a;
+        }
+
+        .blogroll {
+            grid-area: b;
+        }
+        .posts {
+            grid-area: p;
+        }
+
+        .photos {
+            grid-area: ph;
+            /*display: grid;
+            grid-template-rows: auto repeat(2, 200px);
+            grid-template-columns: repeat(2, auto);*/
+        }
+        .header {
+            grid-area: h;
+            display: flex;
+        }
+        .header > :nth-child(2) {
+            margin-left:auto;
+            align-self: center;
+        }
+        
+        .footer {
+            grid-area: f;
         }
     </style>
     <!--<link rel="stylesheet" href="https://unpkg.com/chota@latest">-->
@@ -26,14 +166,36 @@
 </head>
 <body>
 <div class="container">
-    <div class="header">
-        <h1><a class="navbar-brand" href="./index.html">Roots to Branches</a></h1>
-        <a href="./about.html"><button class="btn btn-outline-secondary me-md-2">About</button></a>
-        <a href="./tags.html"><button class="btn btn-outline-secondary">Tags</button></a>   
+    <div class="box header">
+         <div class="logo">
+            <h1><a href="./index.html">Roots to Branches</a></h1>
+        </div>
+        <div class="buttons">
+            <a href="./about.html"><button>About</button></a>
+            <a href="./tags.html"><button>Tags</button></a>
+        </div>
     </div>
-        
-<div class="row justify-content-around">
-    <div class="col-sm-5">
+    <div class="box about">
+        <h2>This is the digital home of Chris Baca.</h2>
+        <p>It's meant to be not-cool. Not algorithm-y. Not a space where I'm trying to gain followers or build a brand.</p>
+        <p>Just a space where I'm looking at the roots of things and seeing where they lead.</p>
+        <p>To that end, you may see weird stuff or designs here; mostly it's just me experimenting with building
+        a website from scratch. Thanks for stopping by.</p>
+        <br>
+    </div>
+    <div class="box blogroll">
+        <h2>Other Sites I Like:</h2>
+        <ul>
+            <li><a href="https://lanebphotography.com">Elaine Baca Photography</a></li>
+            <li><a href="https://blog.ayjay.org">Alan Jacobs</a></li>
+            <li><a href="https://austinkleon.com">Austin Kleon</a></li>
+            <li><a href="https://marginalrevolution.com">Marginal Revolution</a></li>
+            <li><a href="https://experimentaltheology.blogspot.com">Experimental Theology</a></li>
+            <li><a href="https://waitbutwhy.com">Wait But Why</a></li>
+            <li><a href="https://xkcd.com">xkcd</a></li>
+        </ul>
+    </div>
+    <div class="box posts">
         <h2>Posts:</h2>
         <ul class="post-list">
             
@@ -79,40 +241,20 @@
             
         </ul>
     </div>
-    <div class="col-sm-3">
+    <div class="box photos">
         <h2>Photos:</h2>
-        
+        <a data-flickr-embed="true" href="https://www.flickr.com/photos/196813886@N05/52473275821/in/album-72177720303327698/" title="That time of year"><img src="https://live.staticflickr.com/65535/52473275821_672cc70002_q.jpg" width="200" height="200" alt="That time of year"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <br>
         <a data-flickr-embed="true" href="https://www.flickr.com/photos/196813886@N05/52469990937/in/album-72177720303327698/" title="Monkey boy"><img src="https://live.staticflickr.com/65535/52469990937_20497a426e_q.jpg" width="200" height="200" alt="Monkey boy"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         <br>
-        
         <a data-flickr-embed="true" href="https://www.flickr.com/photos/196813886@N05/52467744132/in/album-72177720303327698/" title="Sourdough"><img src="https://live.staticflickr.com/65535/52467744132_90898dc315_q.jpg" width="200" height="200" alt="Sourdough"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         <br>
-        
         <a data-flickr-embed="true" href="https://www.flickr.com/photos/196813886@N05/52467796281/in/album-72177720303327698/" title="Me and Coopy"><img src="https://live.staticflickr.com/65535/52467796281_9bc7d93219_q.jpg" width="200" height="200" alt="Me and Coopy"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         <br>
-        
     </div>
-    <div class="col-sm-4">
-        <h2>This is the digital home of Chris Baca.</h2>
-        <p>It's meant to be not-cool. Not algorithm-y. Not a space where I'm trying to gain followers or build a brand.</p>
-        <p>Just a space where I'm looking at the roots of things and seeing where they lead.</p>
-        <p>To that end, you may see weird stuff or designs here; mostly it's just me experimenting with building
-        a website from scratch. Thanks for stopping by.</p>
-        <br>
-        <h3>Other Sites I Like:</h3>
-        <ul>
-            <li><a href="https://lanebphotography.com">Elaine Baca Photography</a></li>
-            <li><a href="https://blog.ayjay.org">Alan Jacobs</a></li>
-            <li><a href="https://austinkleon.com">Austin Kleon</a></li>
-            <li><a href="https://marginalrevolution.com">Marginal Revolution</a></li>
-            <li><a href="https://experimentaltheology.blogspot.com">Experimental Theology</a></li>
-            <li><a href="https://waitbutwhy.com">Wait But Why</a></li>
-            <li><a href="https://xkcd.com">xkcd</a></li>
-        </ul>
+    <div class="box footer">
+        <h2>Footer</h2>
     </div>
-</div>
-
-    </div>
-    </div>
+</div> 
 </body>
 </html>
