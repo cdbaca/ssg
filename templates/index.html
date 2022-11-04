@@ -1,38 +1,45 @@
 {% extends "base.html" %}
 {% block content %}
-<div class="row justify-content-around">
-    <div class="col-sm-5">
-        <h2>Posts:</h2>
-        <ul class="post-list">
-            {% for post in data['posts'] %}
-            <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
-            {% endfor %}
-        </ul>
-    </div>
-    <div class="col-sm-3">
+<div class="box about">
+    <h2>This is the digital home of Chris Baca.</h2>
+    <p>It's meant to be not-cool. Not algorithm-y. Not a space where I'm trying to gain followers or build a brand.</p>
+    <p>Just a space where I'm looking at the roots of things and seeing where they lead.</p>
+    <p>To that end, you may see weird stuff or designs here; mostly it's just me experimenting with building
+    a website from scratch. Thanks for stopping by.</p>
+    <br>
+</div>
+<div class="box blogroll">
+    <h2>Other Sites I Like:</h2>
+    <ul>
+        <li><a href="https://lanebphotography.com">Elaine Baca Photography</a></li>
+        <li><a href="https://blog.ayjay.org">Alan Jacobs</a></li>
+        <li><a href="https://austinkleon.com">Austin Kleon</a></li>
+        <li><a href="https://marginalrevolution.com">Marginal Revolution</a></li>
+        <li><a href="https://experimentaltheology.blogspot.com">Experimental Theology</a></li>
+        <li><a href="https://waitbutwhy.com">Wait But Why</a></li>
+        <li><a href="https://xkcd.com">xkcd</a></li>
+    </ul>
+</div>
+<div class="box posts">
+    <h2>Posts:</h2>
+    <ul class="post-list">
+        {% for post in data['posts'] %}
+        <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
+        {% endfor %}
+    </ul>
+</div>
+<div class="box photos">
+    <div class="sectionheader">
         <h2>Photos:</h2>
+    </div>
+    <div class="imgbox">
         {% for photo in data['photos']%}
         <a data-flickr-embed="true" href="{{ photo['img_link']}}" title="{{ photo['title'] }}"><img src="{{ photo['img'] }}" width="200" height="200" alt="{{ photo['title'] }}"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
         <br>
         {% endfor %}
     </div>
-    <div class="col-sm-4">
-        <h2>This is the digital home of Chris Baca.</h2>
-        <p>It's meant to be not-cool. Not algorithm-y. Not a space where I'm trying to gain followers or build a brand.</p>
-        <p>Just a space where I'm looking at the roots of things and seeing where they lead.</p>
-        <p>To that end, you may see weird stuff or designs here; mostly it's just me experimenting with building
-        a website from scratch. Thanks for stopping by.</p>
-        <br>
-        <h3>Other Sites I Like:</h3>
-        <ul>
-            <li><a href="https://lanebphotography.com">Elaine Baca Photography</a></li>
-            <li><a href="https://blog.ayjay.org">Alan Jacobs</a></li>
-            <li><a href="https://austinkleon.com">Austin Kleon</a></li>
-            <li><a href="https://marginalrevolution.com">Marginal Revolution</a></li>
-            <li><a href="https://experimentaltheology.blogspot.com">Experimental Theology</a></li>
-            <li><a href="https://waitbutwhy.com">Wait But Why</a></li>
-            <li><a href="https://xkcd.com">xkcd</a></li>
-        </ul>
-    </div>
+</div>
+<div class="box footer">
+    <h2>Footer</h2>
 </div>
 {% endblock %}
