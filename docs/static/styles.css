@@ -214,4 +214,8 @@
             flex-wrap: wrap;
         }
 
+        .post > p > img{
+            max-width: 100%;
+        }
+
       }
