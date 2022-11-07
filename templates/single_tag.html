@@ -1,26 +1,22 @@
 {% extends "base.html" %}
 {% block css %}<link rel="stylesheet" href="../static/styles.css" type="text/css"> {% endblock %}
 {% block nav %}
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <a class="navbar-brand" href="../index.html">Roots to Branches</a>
-                </div>
-            </div>
-            <div class="col d-grid gap-2 d-md-flex justify-content-md-end">
-                <a href="../about.html"><button class="btn btn-secondary me-md-2">About</button></a>
-                <a href="../tags.html"><button class="btn btn-secondary">Tags</button></a>
-            </div>
+    <div class="box header">
+        <div class="logo">
+            <h1><a href="./index.html">Roots to Branches</a></h1>
         </div>
-    </nav>
+        <div class="buttons">
+                <a href="./about.html"><button>About</button></a>
+                <a href="./tags.html"><button>Tags</button></a>
+        </div>
+    </div>
 {% endblock %}
 {% block content %}
-
-{% for post_list in data %}
-    <ul>
-        <li><a href="../{{post_list[1]}}.html">{{post_list[0]}}</a> | {{post_list[2]}}</li>
-    </ul>
-{% endfor %}
-
+<div class="tag-box">
+    {% for post_list in data %}
+        <ul>
+            <li><a href="../{{post_list[1]}}.html">{{post_list[0]}}</a> | {{post_list[2]}}</li>
+        </ul>
+    {% endfor %}
+</div>
 {% endblock %}

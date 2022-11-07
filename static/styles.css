@@ -121,33 +121,21 @@
         height: 100%;
         display:grid;
         grid-template-rows: 1fr 5fr 5fr 1fr;
-        grid-template-columns: repeat(autofit, minmax(12, 1fr));
-        grid-column-gap:50px;
-        margin: 10px;
-       grid-template-areas: 
-        ". h h h h h h h h h h ."
-        ". a a a a . . . b b b ."
-        ". p p p p . . . ph ph ph ."
-        ". f f f f f f f f f f .";
+        grid-template-columns: repeat(12, 1fr);
+        /*grid-column-gap:50px;
+        margin: 10px;*/
     }
 
-    @media (max-width:600px) {
+    /*@media (max-width:800px) {
       .container {
         height: 100%;
         display:grid;
         grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
-        grid-template-columns: repeat(autofit, minmax(12, 1fr));
-       grid-template-areas: 
-        "h h h h h h h h h h h h"
-        "a a a a a a a a a a a a"
-        "b b b b b b b b b b b b"
-        "p p p p p p p p p p p p"
-        "ph ph ph ph ph ph ph ph ph ph ph ph"
-        "f f f f f f f f f f f f";
+        grid-template-columns: 1fr;
         }
-    }
+    }*/
 
-   /* .box {
+    /*.box {
         border-style: solid;
         border-width: 1px;
         border-color: black;
@@ -157,30 +145,9 @@
         padding: 5px;
     }
 
-    .about {
-        grid-area: a;
-    }
-
-    .blogroll {
-        grid-area: b;
-    }
-
-    .posts {
-        grid-area: p;
-    }
-
-    .photos {
-        grid-area: ph;
-    }
-
-    .imgbox {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-    }
-
     .header {
-        grid-area: h;
+        grid-column: 2 / span 10;
+        justify-self: stretch;
         display: flex;
     }
 
@@ -188,9 +155,53 @@
         margin-left:auto;
         align-self: center;
     }
+
+    .about {
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 1;
+    }
+
+    .blogroll {
+        grid-column: 9 / span 3;
+        grid-row: 2 / span 1;
+    }
+
+    .posts {
+        grid-column: 2 / span 4;
+        grid-row: 3 / span 1;
+    }
+
+    .photos {
+        grid-column: 9 / span 3;
+        grid-row: 3 / span 1;
+    }
+
+    .imgbox {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding: 1px;
+    }
     
     .footer {
-        grid-area: f;
+        grid-column: 2 / span 10;
+        grid-row: 4 / 5;
         display: flex;
         justify-content: center;
+        padding-top: 1rem;
+    }
+
+    .post {
+        grid-column: 3 / span 6;
+        grid-row: 2 / 3;
+    }
+
+    .about-box {
+        grid-column: 3 / span 6;
+        grid-row: 2 / 3;
+    }
+
+    .tag-box {
+        grid-column: 3 / span 6;
+        grid-row: 2 / 3;
     }
