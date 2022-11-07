@@ -144,10 +144,10 @@
         "p p p p p p p p p p p p"
         "ph ph ph ph ph ph ph ph ph ph ph ph"
         "f f f f f f f f f f f f";
+        }
     }
-}
 
-    /*.box {
+   /* .box {
         border-style: solid;
         border-width: 1px;
         border-color: black;
@@ -191,4 +191,6 @@
     
     .footer {
         grid-area: f;
+        display: flex;
+        justify-content: center;
     }
