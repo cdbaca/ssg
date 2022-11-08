@@ -195,6 +195,11 @@
         grid-row: 2 / 3;
     }
 
+    .lift-box {
+        grid-column: 3 / span 6;
+        grid-row: 2 / 3;
+    }
+
     @media (max-width:600px) {
         .container {
           height: 100%;

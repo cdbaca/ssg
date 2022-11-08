@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+{% block content %}
+<script src="static/calc.js"></script>
+<div class="box lift-box">
+    <h2>Weight to lift: </h2> <input id="lift" type="number"></input>
+    <button onclick="calculator()">Calculate!</button>
+    <p id="result"></p>
+</div>
+{% endblock %}

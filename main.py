@@ -93,9 +93,17 @@ def make_about():
     with open('docs/about.html', 'w') as f:
         f.write(rendered)
 
+def make_lift():
+    env = Environment(loader=FileSystemLoader("./templates"))
+    template = env.get_template("lift.html")
+    rendered = template.render()
+    with open('docs/lift.html', 'w') as f:
+        f.write(rendered)
+
 def make_css():
     os.makedirs('docs/static', exist_ok=True)
     shutil.copy('static/styles.css', 'docs/static')
+    shutil.copy('static/calc.js', 'docs/static')
     shutil.copy('static/github.png', 'docs/static')
 
 def run_tags(post_content):
@@ -150,6 +158,7 @@ def main():
     make_index(post_content, photo_data)
     make_posts(post_content)
     make_about()
+    make_lift()
     make_css()
     run_tags(post_content)
     make_rss()
