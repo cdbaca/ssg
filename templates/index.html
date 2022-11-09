@@ -34,7 +34,7 @@
     </div>
     <div class="imgbox">
         {% for photo in data['photos']%}
-        <a data-flickr-embed="true" href="{{ photo['img_link']}}" title="{{ photo['title'] }}"><img src="{{ photo['img'] }}" width="200" height="200" alt="{{ photo['title'] }}"></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+        <a data-flickr-embed="true" href="{{ photo['img_link']}}" title="{{ photo['title'] }}"><img src="{{ photo['img'] }}" width="200" height="200" alt="{{ photo['title'] }}"></a>
         <br>
         {% endfor %}
     </div>
