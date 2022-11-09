@@ -48,7 +48,6 @@ def get_imgs():
     flickr = flickrapi.FlickrAPI(key, secret, format='parsed-json')
     sets   = flickr.photosets.getList(user_id=user_id)
     set_id  = sets['photosets']['photoset'][0]['id']
-    # set_info = flickr.photosets.getInfo(photoset_id=set_id)
     photo_info = flickr.photosets.getPhotos(photoset_id=set_id)
     photos_in_album = photo_info['photoset']['photo']
 
@@ -62,10 +61,15 @@ def get_imgs():
         img_link = 'https://www.flickr.com/photos/{0}/{1}/in/album-{2}/'.format(user_id, photo['id'], set_id)
         
         photos.append({'title':photo['title'], 'date_created':img_info['photo']['dateuploaded'], 'img_link':img_link, 'img':img})
-        photos.sort(key=lambda x:x['date_created'], reverse=True)
+       
+    photos.sort(key=lambda x:x['date_created'], reverse=True)
 
-    return(photos)
+    # only get 4 most recent photos
+    recent_photos = []
+    for i in range(0, 4):
+        recent_photos.append(photos[i])
 
+    return(recent_photos)
 
 def make_index(post_content, photo_data):
     env = Environment(loader=FileSystemLoader("./templates"))
@@ -74,9 +78,14 @@ def make_index(post_content, photo_data):
     post_metadata = [post['metadata'] for post in post_content]
     post_metadata.sort(key=lambda x: x['date'], reverse=True)
 
+    # only get 10 most recent posts
+    recent_posts = []
+    for i in range(0, 10):
+        recent_posts.append(post_metadata[i])
+
     content = {}
 
-    content['posts'] = post_metadata
+    content['posts'] = recent_posts #post_metadata
     content['photos'] = photo_data
 
     rendered = template.render(data=content)
@@ -156,12 +165,12 @@ def main():
     post_content = get_post_content(posts)
     photo_data = get_imgs()
     make_index(post_content, photo_data)
-    make_posts(post_content)
-    make_about()
-    make_lift()
-    make_css()
-    run_tags(post_content)
-    make_rss()
+    # make_posts(post_content)
+    # make_about()
+    # make_lift()
+    # make_css()
+    # run_tags(post_content)
+    # make_rss()
 
 if __name__ == '__main__':
     main()
