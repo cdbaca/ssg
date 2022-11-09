@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--<link rel="stylesheet" href="https://unpkg.com/sakura.css/css/sakura.css" type="text/css">-->
+    <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">-->
+    <!--<link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">-->
+    <link rel="stylesheet" href="static/styles.css" type="text/css"> 
+    <!--<link rel="stylesheet" href="https://unpkg.com/chota@latest">-->
+    <title>Roots to Branches</title>
+</head>
+<body>
+    <div class="container">
+    
+        <div class="box header">
+            <div class="logo">
+                    <h1><a href="./index.html">Roots to Branches</a></h1>
+            </div>
+            <div class="buttons">
+                <a href="./about.html"><button>About</button></a>
+                <a href="./tags.html"><button>Tags</button></a>
+                <a href="./lift.html"><button>Lift</button></a>
+            </div>
+        </div>
+        
+    
+<div class="box post">
+    <h1 class="post-title">Lift Calculator in Javascript</h1>
+    <p>I'd classify myself as mediocre as a Python developer. I'm more of a scripter, really. Automating tasks in Python has been pretty fun over the last year and half or so.</p>
+
+<p>But as I've gotten more into web stuff, Javascript keeps staring me in the face, and I've avoided it up until now. If my Python is mediocre, my Javascript ability is best classified as <em>complete and utter novice</em>. That's fine... I'm not planning on being a full-blown Javascript developer, and upon reading and listening to a lot about internet bloat, I'll probably mostly stay away from it.</p>
+
+<p>But! A few months ago, out of frustration from calculating the weights I needed on the bar for lifting, I built a weightlifting calculator in Python and hosted it on <a href="http://cdbaca.pythonanywhere.com/weightlifting/">PythonAnywhere</a> (I doubt if this link will stay live forever, but this is it for now.)</p>
+
+<p>The problem is, as far as I'm aware, I can't do server-side scripting on the static site generator I've got going on here. The thought then became, can I move the calculator over to this site and use client-side scripting with Javascript? Turns out you can!</p>
+
+<p>The Python code was simple:</p>
+
+<p>`</p>
+
+<pre><code>def calculator(request):
+
+    user_input = request.POST['user_input']
+    user_input = float(user_input)
+    weight_no_bar = (user_input-45)/2
+
+    poss_weights = (45, 35, 25, 10, 5, 2.5)
+    weights_to_add = {}
+
+    for weights in poss_weights:
+        weights_to_add[weights] = 0
+
+    def get_weights(weight_no_bar):
+        for num in poss_weights:
+            if weight_no_bar &lt; num:
+                pass
+            else:
+                weight_no_bar = weight_no_bar - num
+                weights_to_add[num] += 1
+                break
+
+        if weight_no_bar &gt; 0:
+            get_weights(weight_no_bar)
+
+    if weight_no_bar &gt; 0:
+        get_weights(weight_no_bar)
+        return render(request, 'result.html', {'results': weights_to_add})
+    else:
+        return render(request, 'result.html', {'result': f'Use {user_input/2} lb dumbbells!'})
+</code></pre>
+
+<p>`</p>
+
+<p>It takes the post request from the form, does some math, and returns a dictionary object to the html page. Then the template form parses the dictionary renders the data.</p>
+
+<p>I've transferred the logic to Javascript (probably poorly, as I barely understand the syntax... all these brackets, ugh!). Here's the same-ish logic in Javascript:</p>
+
+<p>`</p>
+
+<pre><code>function calculator() {
+    document.getElementById("result").innerHTML = '';
+    let user_input = document.getElementById("lift").value
+    user_input = Number.parseFloat(user_input)
+    let weight= (user_input - 45)/2
+    const poss_weights = [45, 35, 25, 10, 5, 2.5]
+    let weights_to_add = {"45":0, "35":0, "25":0, "10":0, "5":0, "2.5":0};
+
+    function get_weights(weight) {
+        for (let num of poss_weights) {
+            if (weight &lt; num) {
+            }
+            else {
+                weight = weight - num
+                weights_to_add[num] += 1
+                break
+            }
+        }
+        if (weight &gt; 0) {
+            get_weights(weight)
+    }
+    }
+    if (weight &gt; 0) {
+        get_weights(weight)
+    }
+
+    for (let key of poss_weights) {
+        document.getElementById("result").innerHTML += `&lt;li&gt;&lt;h5&gt;${key}: ${weights_to_add[key]}&lt;/h5&gt;&lt;/li&gt;`;
+    }
+}
+</code></pre>
+
+<p>`</p>
+
+<p>What's cool about this is that when the JS function runs, it deletes whatever content is in the html "results" tag, then runs the logic as before, then lists the weights and amounts in order for what needs to be put on the bar.</p>
+
+<p><a href="../docs/lift.html">Here's the link</a> to the lift calculator on the SSG.</p>
+
+<p>Not the best thing ever, and it can probably be cleaned up design-wise, but this was one of my goals when redesigning this site. I'm happy with it!</p>
+
+
+    
+        <p><strong>Tagged:</strong> <a href="tags/code.html">code</a>,  <a href="tags/python.html">python</a>,  <a href="tags/javascript.html">javascript</a>, </p>
+    
+</div>
+
+        <div class="box footer">
+            <p><a rel="me" href="https://indieweb.social/@cdbaca">Me @ Mastodon</a></p>
+        </div>
+    </div>
+</body>
+</html>
