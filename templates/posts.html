@@ -1,0 +1,11 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="box posts-box">
+    <h1>All Posts</h1>
+    <ul>
+        {% for post in data %}
+            <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

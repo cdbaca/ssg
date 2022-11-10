@@ -5,6 +5,11 @@ from jinja2 import Environment, PackageLoader, FileSystemLoader
 import flickrapi
 import credentials
 
+PAGES = ['about', 'lift']
+LISTPAGES = {'posts':None, 'photos':None}
+STATICDIR = 'docs/static'
+TEMPLATESDIR = './templates'
+  
 def get_files():
     os.makedirs('posts', exist_ok=True)
     posts = [f for f in os.listdir('posts') if os.path.isfile(os.path.join('posts', f))]
@@ -27,11 +32,14 @@ def get_post_content(posts):
                 'content': html_content
             }
             post_content.append(post_data)
+    
+    post_metadata = [post['metadata'] for post in post_content]
+    sort(post_metadata, 'date')
 
-    return(post_content)
+    return(post_content, post_metadata)
 
 def make_posts(post_content):
-    env = Environment(loader=FileSystemLoader("./templates"))
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("post.html")
 
     for post in post_content:
@@ -39,6 +47,9 @@ def make_posts(post_content):
         with open(f'docs/{post["metadata"]["slug"]}.html', 'w') as f:
             f.write(rendered)
         # print(post["metadata"]["tags"])
+
+def sort(content, sortkey):
+    content.sort(key=lambda x:x[sortkey], reverse=True)
 
 def get_imgs():
     key = credentials.key
@@ -61,22 +72,21 @@ def get_imgs():
         img_link = 'https://www.flickr.com/photos/{0}/{1}/in/album-{2}/'.format(user_id, photo['id'], set_id)
         
         photos.append({'title':photo['title'], 'date_created':img_info['photo']['dateuploaded'], 'img_link':img_link, 'img':img})
-       
-    photos.sort(key=lambda x:x['date_created'], reverse=True)
+
+    sort(photos, 'date_created')   
 
     # only get 4 most recent photos
     recent_photos = []
     for i in range(0, 4):
         recent_photos.append(photos[i])
 
-    return(recent_photos)
+    return(recent_photos, photos)
 
-def make_index(post_content, photo_data):
-    env = Environment(loader=FileSystemLoader("./templates"))
+def make_index(post_metadata, photo_data):
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("index.html")
 
-    post_metadata = [post['metadata'] for post in post_content]
-    post_metadata.sort(key=lambda x: x['date'], reverse=True)
+    # sort(post_metadata, 'date')
 
     # only get 10 most recent posts
     recent_posts = []
@@ -85,7 +95,7 @@ def make_index(post_content, photo_data):
 
     content = {}
 
-    content['posts'] = recent_posts #post_metadata
+    content['posts'] = recent_posts
     content['photos'] = photo_data
 
     rendered = template.render(data=content)
@@ -96,24 +106,36 @@ def make_index(post_content, photo_data):
         f.write(rendered)
 
 def make_about():
-    env = Environment(loader=FileSystemLoader("./templates"))
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("about.html")
     rendered = template.render()
     with open('docs/about.html', 'w') as f:
         f.write(rendered)
 
 def make_lift():
-    env = Environment(loader=FileSystemLoader("./templates"))
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("lift.html")
     rendered = template.render()
     with open('docs/lift.html', 'w') as f:
         f.write(rendered)
 
-def make_css():
-    os.makedirs('docs/static', exist_ok=True)
-    shutil.copy('static/styles.css', 'docs/static')
-    shutil.copy('static/calc.js', 'docs/static')
-    shutil.copy('static/github.png', 'docs/static')
+def make_pages(page_name, *args):
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
+    template = env.get_template(f"{page_name}.html")
+
+    if args:
+        rendered = template.render(data=args[0])
+    else:
+        rendered = template.render()
+
+    with open(f'docs/{page_name}.html', 'w') as f:
+        f.write(rendered)
+
+def make_static():
+    os.makedirs(STATICDIR, exist_ok=True)
+    shutil.copy('static/styles.css', STATICDIR)
+    shutil.copy('static/calc.js', STATICDIR)
+    shutil.copy('static/github.png', STATICDIR)
 
 def run_tags(post_content):
     blog_tags = [post['metadata']['tags'] for post in post_content if post['metadata']['tags'][0] != '']
@@ -125,7 +147,7 @@ def run_tags(post_content):
             else:
                 tag_dict[tag] += 1
 
-    env = Environment(loader=FileSystemLoader("./templates"))
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("tags.html")
     rendered = template.render(data=tag_dict)
     with open('docs/tags.html', 'w') as f:
@@ -162,14 +184,24 @@ def make_rss():
 
 def main():
     posts = get_files()
-    post_content = get_post_content(posts)
-    photo_data = get_imgs()
-    make_index(post_content, photo_data)
-    # make_posts(post_content)
+    post_content, post_metadata = get_post_content(posts)
+    recent_photos, photos = get_imgs()
+    make_index(post_metadata, recent_photos)
+    make_posts(post_content)
     # make_about()
     # make_lift()
-    # make_css()
-    # run_tags(post_content)
+
+    LISTPAGES['photos'] = photos
+    LISTPAGES['posts'] = post_metadata
+
+    for page_name in PAGES:
+        make_pages(page_name)
+
+    for page_name, content in LISTPAGES.items():
+        make_pages(page_name, content)
+
+    make_static()
+    run_tags(post_content)
     # make_rss()
 
 if __name__ == '__main__':
