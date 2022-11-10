@@ -105,20 +105,6 @@ def make_index(post_metadata, photo_data):
     with open('docs/index.html', 'w') as f:
         f.write(rendered)
 
-def make_about():
-    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
-    template = env.get_template("about.html")
-    rendered = template.render()
-    with open('docs/about.html', 'w') as f:
-        f.write(rendered)
-
-def make_lift():
-    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
-    template = env.get_template("lift.html")
-    rendered = template.render()
-    with open('docs/lift.html', 'w') as f:
-        f.write(rendered)
-
 def make_pages(page_name, *args):
     env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template(f"{page_name}.html")
@@ -188,8 +174,6 @@ def main():
     recent_photos, photos = get_imgs()
     make_index(post_metadata, recent_photos)
     make_posts(post_content)
-    # make_about()
-    # make_lift()
 
     LISTPAGES['photos'] = photos
     LISTPAGES['posts'] = post_metadata
