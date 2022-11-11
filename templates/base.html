@@ -11,6 +11,7 @@
     {% block css %}<link rel="stylesheet" href="static/styles.css" type="text/css"> {% endblock %}
     <!--<link rel="stylesheet" href="https://unpkg.com/chota@latest">-->
     <title>Roots to Branches</title>
+    {% block feed %}{% endblock %}
 </head>
 <body>
     <div class="container">
@@ -25,7 +26,6 @@
                 <form style="display: inline" action="./photos.html" method="get"><button>Photos</button></form>
                 <form style="display: inline" action="./tags.html" method="get"><button>Tags</button></form>
                 <form style="display: inline" action="./lift.html" method="get"><button>Lift</button></form>
-                
             </div>
         </div>
         {% endblock %}

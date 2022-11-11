@@ -4,6 +4,7 @@ from slugify import slugify
 from jinja2 import Environment, PackageLoader, FileSystemLoader
 import flickrapi
 import credentials
+from datetime import datetime
 
 PAGES = ['about', 'lift']
 LISTPAGES = {'posts':None, 'photos':None}
@@ -165,8 +166,27 @@ def run_tags(post_content):
              f.write(rendered)
 
 # TODO: RSS feed
-def make_rss():
-    pass
+def make_rss(post_metadata):
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
+    template = env.get_template("feed.xml")
+
+    recent_posts = []
+    for i in range(0, 5):
+        recent_posts.append(post_metadata[i])
+    
+    # Date format: Wed, 10 Nov 2021 15:52:00 EST
+
+    for post in recent_posts:
+        date = post['date']
+        date = datetime.strptime(date, '%m/%d/%Y')
+        post['date'] = date.strftime("%a, %d %b %Y") + " 00:00:00 CST"
+
+    rendered = template.render(data=recent_posts)
+
+    os.makedirs('docs', exist_ok=True)
+
+    with open('docs/feed.xml', 'w') as f:
+        f.write(rendered)
 
 def main():
     posts = get_files()
@@ -186,7 +206,8 @@ def main():
 
     make_static()
     run_tags(post_content)
-    # make_rss()
+
+    make_rss(post_metadata)
 
 if __name__ == '__main__':
     main()

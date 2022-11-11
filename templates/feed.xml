@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://cdbaca.github.io/ssg/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Roots to Branches</title>
+    <link>https://cdbaca.github.io/ssg</link>
+    <description>Looking at the roots of things to see where they lead</description>
+    <language>en-us</language>    
+    {% for post in data %}
+        <item>
+            <title>{{ post.title }}</title>
+            <pubDate>{{ post.date }}</pubDate>
+            <link>https://cdbaca.github.io/ssg/{{ post.slug }}.html</link>
+            <guid>https://cdbaca.github.io/ssg/{{ post.slug }}.html</guid>
+            <!--<description>A description of the page.</description>-->
+        </item>
+    {% endfor %}
+  </channel>
+</rss>

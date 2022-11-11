@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <atom:link href="https://cdbaca.github.io/ssg/feed.xml" rel="self" type="application/rss+xml" />
+    <title>Roots to Branches</title>
+    <link>https://cdbaca.github.io/ssg</link>
+    <description>Looking at the roots of things to see where they lead</description>
+    <language>en-us</language>    
+    
+        <item>
+            <title>Lift Calculator in Javascript</title>
+            <pubDate>Wed, 09 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/lift-calculator-in-javascript.html</link>
+            <guid>https://cdbaca.github.io/ssg/lift-calculator-in-javascript.html</guid>
+            <!--<description>A description of the page.</description>-->
+        </item>
+    
+        <item>
+            <title>Maybe Not *No* Social Media</title>
+            <pubDate>Mon, 07 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/maybe-not-no-social-media.html</link>
+            <guid>https://cdbaca.github.io/ssg/maybe-not-no-social-media.html</guid>
+            <!--<description>A description of the page.</description>-->
+        </item>
+    
+        <item>
+            <title>More on the Indie Web</title>
+            <pubDate>Fri, 04 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/more-on-the-indie-web.html</link>
+            <guid>https://cdbaca.github.io/ssg/more-on-the-indie-web.html</guid>
+            <!--<description>A description of the page.</description>-->
+        </item>
+    
+        <item>
+            <title>Chris Thile on Meaning</title>
+            <pubDate>Wed, 02 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</link>
+            <guid>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</guid>
+            <!--<description>A description of the page.</description>-->
+        </item>
+    
+        <item>
+            <title>Adding a Photos Feature</title>
+            <pubDate>Tue, 01 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/adding-a-photos-feature.html</link>
+            <guid>https://cdbaca.github.io/ssg/adding-a-photos-feature.html</guid>
+            <!--<description>A description of the page.</description>-->
+        </item>
+    
+  </channel>
+</rss>

@@ -1,5 +1,5 @@
 {% extends "base.html" %}
-
+{% block feed %} <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="RSS">{% endblock %}
 {% block content %}
 <div class="box post">
     <h1 class="post-title">{{ data.metadata["title"] }}</h1>
