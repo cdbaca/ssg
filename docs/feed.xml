@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
     <atom:link href="https://cdbaca.github.io/ssg/feed.xml" rel="self" type="application/rss+xml" />
     <title>Roots to Branches</title>
@@ -12,7 +12,22 @@
             <pubDate>Mon, 14 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/social-media-and-this-moment.html</link>
             <guid>https://cdbaca.github.io/ssg/social-media-and-this-moment.html</guid>
-            <!--<description>A description of the page.</description>-->
+            <content:encoded><![CDATA[ <p>It feels like we're having a moment. </p>
+
+<blockquote>
+  <p>Social networks’ evolution into social media brought both opportunity and calamity. Facebook and all the rest enjoyed a massive rise in engagement and the associated data-driven advertising profits that the attention-driven content economy created. The same phenomenon also created the influencer economy, in which individual social-media users became valuable as channels for distributing marketing messages or product sponsorships by means of their posts’ real or imagined reach. Ordinary folk could now make some money or even a lucrative living “creating content” online. The platforms sold them on that promise, creating official programs and mechanisms to facilitate it. In turn, “influencer” became an aspirational role, especially for young people for whom Instagram fame seemed more achievable than traditional celebrity—or perhaps employment of any kind.</p>
+</blockquote>
+
+<p>-- <a href="https://www.theatlantic.com/technology/archive/2022/11/twitter-facebook-social-media-decline/672074/">"The Age of Social Media is Ending"</a> - Ian Bogost</p>
+
+<p>Journalists and news outlets are publishing articles like this more and more frequently, especially in the last ~two weeks since Elon bought Twitter. It's like an awakening is happening across culture, one that many people I've been listening to have been heralding for the last few years. I won't keep going on and on about the open/indie web. But eveyrone from Neil Postman to Alan Jacobs to Austin Kleon to Cal Newport have been dinging this bell for a while now (Postman saw it <em>decades</em> before anyone else did in <em>Entertaining Ourselves to Death</em>.)</p>
+
+<p>But what's even more interesting to me is the cultural icons that are also dealing with this in music and comedy. Bo Burnham's <em>Inside</em> was never really about the pandemic, even if that helped frame it. It was about an individual person's interaction and obsession with the internet and social media. The feeling of constantly being watched, of having one's whole life online ready to be consumed and spit out by the masses.</p>
+
+<p>Kendrick's <em>Mr. Morale and the Big Steppers</em> didn't get the critical acclaim that his work normally does, but the more I've listened to it, the more prescient it has become. "N95", a song about masks, written as a reference to covid-era protection, was never about either covid or the just-sub-surface level idea that "riches and materialism need to be removed to see the real you." No, deeper than that, it's about how we allow the outside world to determine how we present ourselves. Our (often imagined) worst critics determine the masks we put on, and those masks slowly fuse onto our faces until we can't tell the difference between our false selves and our true selves.</p>
+
+<p>Social media may not have been the cause of all of this. We are humans and suffer from that condition, after all. But it has certainly exacerbated those tendencies. And due to its unique ability to force us to live in the algorithm-feed-moment, many of us have forgotten that the world outside is different than the one we interact with every day.</p>
+ ]]></content:encoded>
         </item>
     
         <item>
@@ -20,7 +35,97 @@
             <pubDate>Wed, 09 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/lift-calculator-in-javascript.html</link>
             <guid>https://cdbaca.github.io/ssg/lift-calculator-in-javascript.html</guid>
-            <!--<description>A description of the page.</description>-->
+            <content:encoded><![CDATA[ <p>I'd classify myself as mediocre as a Python developer. I'm more of a scripter, really. Automating tasks in Python has been pretty fun over the last year and half or so.</p>
+
+<p>But as I've gotten more into web stuff, Javascript keeps staring me in the face, and I've avoided it up until now. If my Python is mediocre, my Javascript ability is best classified as <em>complete and utter novice</em>. That's fine... I'm not planning on being a full-blown Javascript developer, and upon reading and listening to a lot about internet bloat, I'll probably mostly stay away from it.</p>
+
+<p>But! A few months ago, out of frustration from calculating the weights I needed on the bar for lifting, I built a weightlifting calculator in Python and hosted it on <a href="http://cdbaca.pythonanywhere.com/weightlifting/">PythonAnywhere</a> (I doubt if this link will stay live forever, but this is it for now.)</p>
+
+<p>The problem is, as far as I'm aware, I can't do server-side scripting on the static site generator I've got going on here. The thought then became, can I move the calculator over to this site and use client-side scripting with Javascript? Turns out you can!</p>
+
+<p>The Python code was simple:</p>
+
+<p>`</p>
+
+<pre><code>def calculator(request):
+
+    user_input = request.POST['user_input']
+    user_input = float(user_input)
+    weight_no_bar = (user_input-45)/2
+
+    poss_weights = (45, 35, 25, 10, 5, 2.5)
+    weights_to_add = {}
+
+    for weights in poss_weights:
+        weights_to_add[weights] = 0
+
+    def get_weights(weight_no_bar):
+        for num in poss_weights:
+            if weight_no_bar &lt; num:
+                pass
+            else:
+                weight_no_bar = weight_no_bar - num
+                weights_to_add[num] += 1
+                break
+
+        if weight_no_bar &gt; 0:
+            get_weights(weight_no_bar)
+
+    if weight_no_bar &gt; 0:
+        get_weights(weight_no_bar)
+        return render(request, 'result.html', {'results': weights_to_add})
+    else:
+        return render(request, 'result.html', {'result': f'Use {user_input/2} lb dumbbells!'})
+</code></pre>
+
+<p>`</p>
+
+<p>It takes the post request from the form, does some math, and returns a dictionary object to the html page. Then the template form parses the dictionary renders the data.</p>
+
+<p>I've transferred the logic to Javascript (probably poorly, as I barely understand the syntax... all these brackets, ugh!). Here's the same-ish logic in Javascript:</p>
+
+<p>`</p>
+
+<pre><code>function calculator() {
+    document.getElementById("result").innerHTML = '';
+    let user_input = document.getElementById("lift").value
+    user_input = Number.parseFloat(user_input)
+    let weight= (user_input - 45)/2
+    const poss_weights = [45, 35, 25, 10, 5, 2.5]
+    let weights_to_add = {"45":0, "35":0, "25":0, "10":0, "5":0, "2.5":0};
+
+    function get_weights(weight) {
+        for (let num of poss_weights) {
+            if (weight &lt; num) {
+            }
+            else {
+                weight = weight - num
+                weights_to_add[num] += 1
+                break
+            }
+        }
+        if (weight &gt; 0) {
+            get_weights(weight)
+    }
+    }
+    if (weight &gt; 0) {
+        get_weights(weight)
+    }
+
+    for (let key of poss_weights) {
+        document.getElementById("result").innerHTML += `&lt;li&gt;&lt;h5&gt;${key}: ${weights_to_add[key]}&lt;/h5&gt;&lt;/li&gt;`;
+    }
+}
+</code></pre>
+
+<p>`</p>
+
+<p>What's cool about this is that when the JS function runs, it deletes whatever content is in the html "results" tag, then runs the logic as before, then lists the weights and amounts in order for what needs to be put on the bar.</p>
+
+<p><a href="../docs/lift.html">Here's the link</a> to the lift calculator on the SSG.</p>
+
+<p>Not the best thing ever, and it can probably be cleaned up design-wise, but this was one of my goals when redesigning this site. I'm happy with it!</p>
+ ]]></content:encoded>
         </item>
     
         <item>
@@ -28,7 +133,12 @@
             <pubDate>Mon, 07 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/maybe-not-no-social-media.html</link>
             <guid>https://cdbaca.github.io/ssg/maybe-not-no-social-media.html</guid>
-            <!--<description>A description of the page.</description>-->
+            <content:encoded><![CDATA[ <p>It's funny to me to see so many people flocking to Mastodon after having been on Twitter. I myself looked at Mastodon a long time ago but couldn't quite make it make sense for myself. And too many <em>interesting</em> things were happening on Twitter (which I have a love/hate relationship with anyway).</p>
+
+<p>Indie web stuff has been on my mind a ton lately, so seeing that people are heading into that wild arena in the form of blogging, federated social media, etc., is really fun. I'll be interested to see if Mastodon can keep pace with the growth, since it's really <a href="https://blog.ayjay.org/scale-again/">anti-scale</a>. That is, in its current iteration, it's built in response to Twitter being a product meant to increase one's audience and reach. It's web-local, it's difficult to find people.</p>
+
+<p>It, like the indie web stuff in general, is built for surprising finds. It's a good thing, but I wonder whether the algorithms of the last decade have formed us into creatures that cannot live in a web where we have to work for it.</p>
+ ]]></content:encoded>
         </item>
     
         <item>
@@ -36,7 +146,60 @@
             <pubDate>Fri, 04 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/more-on-the-indie-web.html</link>
             <guid>https://cdbaca.github.io/ssg/more-on-the-indie-web.html</guid>
-            <!--<description>A description of the page.</description>-->
+            <content:encoded><![CDATA[ <p>Surfing the web... not something any of us normies have done in a long time in our spare time. It used to be like that. Not so much anymore. We've all been corraled to somewhere between 5-10 websites so our attention can get farmed for cash from advertisers. Your regular reminder that this internet world sucks a big butthole, and there is a better way.</p>
+
+<p>I've spent the last week falling down a rabbit hole, which has been, honestly, an <em>amazing</em> feeling. I'm just gonna link a bunch of the stuff I've found, because it's cool and I don't want to forget what I've found. But there's a ton to discover and a ton to learn from that isn't just f*cking algorithms force feeding me whatever it thinks I want to see or read or hear.</p>
+
+<p>What I'm gathering:</p>
+
+<ul>
+<li>There are deeper things going on on the web than I realized. I had just lost sight of that.</li>
+<li>Vanilla HTML/CSS are still dope, and you can make really cool things with them.</li>
+<li>The open web is ripe for normal people to pick up. There are ways of interacting online that are so different than what so many of us have been taught.</li>
+</ul>
+
+<h2>Links to Cool stuff</h2>
+
+<h2>Blogs I Want to Explore (in no particular order)</h2>
+
+<ul>
+<li><a href="https://ncase.me/">Nicky Case</a></li>
+<li><a href="https://kevquirk.com/">Kev Quirk</a></li>
+<li><a href="https://notusknot.com/">notusknot</a></li>
+<li><a href="https://lukesmith.xyz/">Luke Smith</a></li>
+</ul>
+
+<h2>Things I Want to Learn More About</h2>
+
+<ul>
+<li><a href="https://landchad.net/">Becoming an Internet Landlord</a></li>
+<li><a href="https://george.mand.is/2019/11/introducing-bubo-rss-an-absurdly-minimalist-rss-feed-reader/">Bubo RSS</a> - especially to learn how to build my own reader in this style</li>
+<li><a href="https://micropub.spec.indieweb.org/#create">IndieWeb Micropub Protocol</a></li>
+<li><a href="https://mattsegal.dev/simple-django-deployment-1.html">Django Deployment</a>. Not sure this solves the bloat problem... but I have been learning Django for a while, and actual deployment seems out of reach currently.</li>
+</ul>
+
+<h2>One-Off Articles, Videos, or Lists For More Reading</h2>
+
+<ul>
+<li><a href="https://jeffhuang.com/designed_to_last/">"This Page is Designed to Last"</a></li>
+<li><a href="https://www.youtube.com/watch?v=iYpl0QVCr6U">"The Website Obesity Crisis" (2015)</a></li>
+<li><a href="https://512kb.club/">512 kb Club</a></li>
+<li><a href="https://blogroll.org/">Ye Olde Blogroll</a></li>
+<li><a href="https://getblogging.org/">"Get Blogging!"</a></li>
+<li><a href="https://heaventree.xyz/">HeavenTree</a></li>
+</ul>
+
+<h2>Tools</h2>
+
+<ul>
+<li><a href="https://flexbox.malven.co/">CSS Flexbox</a></li>
+<li><a href="https://grid.malven.co/">CSS Grid</a></li>
+<li><a href="https://browsersync.io/#install">BrowserSync</a></li>
+<li><a href="https://github.com/kevquirk/simple.css/blob/main/simple.css">Simple.CSS</a></li>
+</ul>
+
+<p>(It's possible if you're reading this post in November 2022 that the layout's all funky. I'm playing with the CSS, half of which I stole from <a href="https://simplecss.org/">Simple.CSS</a>.)</p>
+ ]]></content:encoded>
         </item>
     
         <item>
@@ -44,7 +207,14 @@
             <pubDate>Wed, 02 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</link>
             <guid>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</guid>
-            <!--<description>A description of the page.</description>-->
+            <content:encoded><![CDATA[ <blockquote>
+  <p>I can't quite shake the sense of a governing pulse. That there is such a thing... that there is some sort of almighty pulse that we're all kind of moving to, whether we're aware of it or not. Sort of ostensibly, I'd say I'm an agnostic. And I live accordingly. But i also have a firm conviction that this is not random or meaningless. And I couldn't tell you why I have that conviction. Maybe it's as simple as it makes me happier to think that there is a reason for all of this. And I am naive enough to where that's gonna color my worldview more than anything else.</p>
+  
+  <p>I do think there is a part of me that would embrace nihilism kind of wholesale, just intellectually. But I don't like the ripples that sends out from me. I don't like how that affects the people around me... It's like, I can feel the pulse in a nihilistic place, but I'm not gonna put it there, because I don't like how that sounds.</p>
+</blockquote>
+
+<p>-- <a href="https://www.premierguitar.com/podcast/wong-notes/chris-thile-cory-wong-interview">Chris Thile - "Chris Thile's Exercise in Joy" from the Wong Notes podcast</a></p>
+ ]]></content:encoded>
         </item>
     
   </channel>

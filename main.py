@@ -5,6 +5,7 @@ from jinja2 import Environment, PackageLoader, FileSystemLoader
 import flickrapi
 import credentials
 from datetime import datetime
+import operator
 
 PAGES = ['about', 'lift']
 LISTPAGES = {'posts':None, 'photos':None}
@@ -165,21 +166,21 @@ def run_tags(post_content):
         with open(f'docs/tags/{k}.html', 'w') as f:
              f.write(rendered)
 
-# TODO: RSS feed
-def make_rss(post_metadata):
+def make_rss(post_content):
     env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("feed.xml")
+    
+    post_content.sort(key=lambda x:x['metadata']['date'], reverse=True)
 
     recent_posts = []
     for i in range(0, 5):
-        recent_posts.append(post_metadata[i])
-    
+        recent_posts.append(post_content[i])
     # Date format: Wed, 10 Nov 2021 15:52:00 EST
 
     for post in recent_posts:
-        date = post['date']
+        date = post['metadata']['date']
         date = datetime.strptime(date, '%m/%d/%Y')
-        post['date'] = date.strftime("%a, %d %b %Y") + " 00:00:00 CST"
+        post['metadata']['date'] = date.strftime("%a, %d %b %Y") + " 00:00:00 CST"
 
     rendered = template.render(data=recent_posts)
 
@@ -207,7 +208,7 @@ def main():
     make_static()
     run_tags(post_content)
 
-    make_rss(post_metadata)
+    make_rss(post_content)
 
 if __name__ == '__main__':
     main()
