@@ -8,6 +8,14 @@
     <language>en-us</language>    
     
         <item>
+            <title>Social Media and This Moment</title>
+            <pubDate>Mon, 14 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/social-media-and-this-moment.html</link>
+            <guid>https://cdbaca.github.io/ssg/social-media-and-this-moment.html</guid>
+            <!--<description>A description of the page.</description>-->
+        </item>
+    
+        <item>
             <title>Lift Calculator in Javascript</title>
             <pubDate>Wed, 09 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/lift-calculator-in-javascript.html</link>
@@ -36,14 +44,6 @@
             <pubDate>Wed, 02 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</link>
             <guid>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</guid>
-            <!--<description>A description of the page.</description>-->
-        </item>
-    
-        <item>
-            <title>Adding a Photos Feature</title>
-            <pubDate>Tue, 01 Nov 2022 00:00:00 CST</pubDate>
-            <link>https://cdbaca.github.io/ssg/adding-a-photos-feature.html</link>
-            <guid>https://cdbaca.github.io/ssg/adding-a-photos-feature.html</guid>
             <!--<description>A description of the page.</description>-->
         </item>
     
