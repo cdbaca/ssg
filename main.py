@@ -3,9 +3,13 @@ from markdown2 import markdown
 from slugify import slugify
 from jinja2 import Environment, PackageLoader, FileSystemLoader
 import flickrapi
+import page_data
 import credentials
+
 from datetime import datetime
-import operator
+
+MENU = page_data.menu
+LINKS = page_data.links
 
 PAGES = ['about', 'lift']
 LISTPAGES = {'posts':None, 'photos':None}
@@ -45,10 +49,9 @@ def make_posts(post_content):
     template = env.get_template("post.html")
 
     for post in post_content:
-        rendered = template.render(data=post)
+        rendered = template.render(data=post, menu=MENU)
         with open(f'docs/{post["metadata"]["slug"]}.html', 'w') as f:
             f.write(rendered)
-        # print(post["metadata"]["tags"])
 
 def sort(content, sortkey):
     content.sort(key=lambda x:x[sortkey], reverse=True)
@@ -88,8 +91,6 @@ def make_index(post_metadata, photo_data):
     env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("index.html")
 
-    # sort(post_metadata, 'date')
-
     # only get 10 most recent posts
     recent_posts = []
     for i in range(0, 10):
@@ -100,7 +101,7 @@ def make_index(post_metadata, photo_data):
     content['posts'] = recent_posts
     content['photos'] = photo_data
 
-    rendered = template.render(data=content)
+    rendered = template.render(data=content, menu=MENU, links=LINKS)
 
     os.makedirs('docs', exist_ok=True)
 
@@ -112,9 +113,9 @@ def make_pages(page_name, *args):
     template = env.get_template(f"{page_name}.html")
 
     if args:
-        rendered = template.render(data=args[0])
+        rendered = template.render(data=args[0], menu=MENU)
     else:
-        rendered = template.render()
+        rendered = template.render(menu=MENU)
 
     with open(f'docs/{page_name}.html', 'w') as f:
         f.write(rendered)
@@ -137,7 +138,7 @@ def run_tags(post_content):
 
     env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("tags.html")
-    rendered = template.render(data=tag_dict)
+    rendered = template.render(data=tag_dict, menu=MENU)
     with open('docs/tags.html', 'w') as f:
         f.write(rendered)
 
@@ -162,7 +163,7 @@ def run_tags(post_content):
                                     ])
         # THE PROBLEM WITH THIS METHOD IS THAT I CANNOT PASS THE TAG TITLE INTO THE HTML (SEE DATA=TAG_POST_DICT[K])
         template = env.get_template("single_tag.html")
-        rendered = template.render(data=tag_post_dict[k])
+        rendered = template.render(data=tag_post_dict[k], menu=MENU)
         with open(f'docs/tags/{k}.html', 'w') as f:
              f.write(rendered)
 
