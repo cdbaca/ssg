@@ -8,6 +8,42 @@
     <language>en-us</language>    
     
         <item>
+            <title>Kierkegaard on Doing the Thing</title>
+            <pubDate>Tue, 15 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/kierkegaard-on-doing-the-thing.html</link>
+            <guid>https://cdbaca.github.io/ssg/kierkegaard-on-doing-the-thing.html</guid>
+            <content:encoded><![CDATA[ <p>In what feels like another lifetime (or, as we Texans say, <em>a-whole-nother</em> lifetime), I spent a ton of time delving into Søren Kierkegaard's life and work. What especially interested me was his understanding of knowledge. For Kierkegaard, there was a difference between kinds of knowledge, which I think still bears out today.</p>
+
+<p>Roughly, knowledge was broken into two broad categories that further splintered after that breakdown:</p>
+
+<ol>
+<li>Objective</li>
+<li>Subjective</li>
+</ol>
+
+<p><strong>Objective knowledge</strong> could be either absolutely certain or relatively certain. I.e., mathematical and purely logical truths are knowable with 100% certainty. 2+2 can be nothing other than 4, and that must be true in any universe. Relatively certain objective knowledge was more in the realm of historical or scientific truth. But it's objective because it's a truth about the external world.</p>
+
+<p><strong>Subjective knowledge</strong>, on the other hand, splinters into true subjective and pseudo-subjective knowledge. Pseudo subjective knowledge is a kind of acting knowledge that we don't enact in our daily lives, despite "knowing" that it is true. E.g., I can "know" that I should treat those around me with respect and graciousness but not act on that "knowledge." (And one gets the sense that Kierkegaard would say, "Well... do you <em>really</em> know that then?"). True subjective knowledge is just what it sounds like: it is when we "know" that something is true, and we act on that truth.</p>
+
+<p>I've found myself thinking about this some again w/r/t the whole open web thing going on right now. I cam across a <a href="https://maggieappleton.com/">really beautiful website</a> yesterday: Maggie Applleton is a writer who focuses on anthropology and technology. She has an essay on the <a href="https://maggieappleton.com/garden-history">origins of digital gardening</a>, which is a topic I'm personally interested in, because it's an embodiment of what I <em>want</em> the web to be like for people. Open curiosity, the willingness to explore a subject one knows little about, building a digital space that sprawls.</p>
+
+<p><a href="https://notes.andymatuschak.org/zUMFE66dxeweppDvgbNAb5hukXzXQu8ErVNv">Another note</a> I came across was from Andy Matuschak's site about content creators who make it their job to write about note-taking and productivity:</p>
+
+<blockquote>
+  <p>But most people who write about note-taking don’t seem particularly accomplished in their own fields, whatever those may be. In fact, most such writers aren’t applying their notes to some exogenous creative problem: their primary creative work is writing about productivity. These writers offer advice on note-taking to help scientists and executives with the challenges of their work, but the advice was developed in a context disconnected from those external realities.</p>
+</blockquote>
+
+<p>This is something that has bothered me about this "sphere" of the internet as I've delved into it. Many indie-web people that I've come across so far aren't self-hosted and writing a blog about, say, running and fitness, or self-sufficiency, or coffee and travel. It's like many of them are stuck in this meta-writing thing where they're stuck writing about writing about the thing.</p>
+
+<p>Kierkegaard tangentially talks about this issue regarding Christendom and the bishops in Denmark in the 19th century. Christianity for them wasn't about the life that ought to be lived. It was self-referential all the way down. The university scholars and influential and wealthy priests and bishops of the Lutheran Church were obsessed with status or producing "new" theological work. They were not interested in living the life the Christianity demanded from them. They pushed what should have been subjective knowledge into the objective sphere. And by doing so, they cheapened what <em>faith</em> was actually supposed to be; they stood on the outside of Christianity, looking in and examining it rather than taking the leap into it and <em>living</em> the faith they professed with such certainty. </p>
+
+<p>Similarly, what I want from (what I hope is) this new moment in the web's development is average, everyday people learning the value of self-hosting and owning your own space. And then I want to see those people using their digital homes to build beautiful things and talk about what they're passionate about.</p>
+
+<p>I'd perhaps encourage the technologically-minded folks (myself included) in this space to jump in and explore topics outside of technology in our digital homes. Are you a developer by day, but roast coffee at night? Write about that, because I want to read it? Are you researching the history of vaccines, or ultramarathons, or knitting? Post about it, make some digital gardens, let's see it!</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Social Media and This Moment</title>
             <pubDate>Mon, 14 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/social-media-and-this-moment.html</link>
@@ -199,21 +235,6 @@
 </ul>
 
 <p>(It's possible if you're reading this post in November 2022 that the layout's all funky. I'm playing with the CSS, half of which I stole from <a href="https://simplecss.org/">Simple.CSS</a>.)</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Chris Thile on Meaning</title>
-            <pubDate>Wed, 02 Nov 2022 00:00:00 CST</pubDate>
-            <link>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</link>
-            <guid>https://cdbaca.github.io/ssg/chris-thile-on-meaning.html</guid>
-            <content:encoded><![CDATA[ <blockquote>
-  <p>I can't quite shake the sense of a governing pulse. That there is such a thing... that there is some sort of almighty pulse that we're all kind of moving to, whether we're aware of it or not. Sort of ostensibly, I'd say I'm an agnostic. And I live accordingly. But i also have a firm conviction that this is not random or meaningless. And I couldn't tell you why I have that conviction. Maybe it's as simple as it makes me happier to think that there is a reason for all of this. And I am naive enough to where that's gonna color my worldview more than anything else.</p>
-  
-  <p>I do think there is a part of me that would embrace nihilism kind of wholesale, just intellectually. But I don't like the ripples that sends out from me. I don't like how that affects the people around me... It's like, I can feel the pulse in a nihilistic place, but I'm not gonna put it there, because I don't like how that sounds.</p>
-</blockquote>
-
-<p>-- <a href="https://www.premierguitar.com/podcast/wong-notes/chris-thile-cory-wong-interview">Chris Thile - "Chris Thile's Exercise in Joy" from the Wong Notes podcast</a></p>
  ]]></content:encoded>
         </item>
     
