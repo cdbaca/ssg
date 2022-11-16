@@ -8,6 +8,19 @@
     <language>en-us</language>    
     
         <item>
+            <title>TIL: 11-16-22</title>
+            <pubDate>Wed, 16 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/til-11-16-22.html</link>
+            <guid>https://cdbaca.github.io/ssg/til-11-16-22.html</guid>
+            <content:encoded><![CDATA[ <p>Well, today was a cool day. Since making the <a href="https://github.com/cdbaca/ssg">static site generator</a>, my goal has been to move the actual website content pages (plus styling/scripts) to my own VPS. I really wasn't sure where to start for a long time. But then I came across <a href="landchad.net">LandChad</a>. Now, the owner of this site holds to some views that I find pretty unagreeable. I won't link to his home page, because I went down that rabbit hole and it wasn't the most wholesome content... Nevertheless, he offers a ton of legitimately helpful advice on getting started with a virtual private server (VPS).</p>
+
+<p>I made my way through grabbing a domain name (via NameCheap), purchasing droplet space from DigitalOcean, and away I went. Honestly, it really wasn't that bad. The kicker for most people, I think, is that you need some familiarity with Linux-based systems and working in the terminal rather than a GUI for managing files. But it was cool because I was able to set up nginx, which is the actual web server on the VPS that I'm using. I'd read about nginx before but it seemed like gobbledygook. The other thing I'll need to keep learning is how to use ssh effectively. SSH is a method for remoting into a non-local server or computer and managing files remotely. I found <a href="https://twitter.com/b0rk/status/1087936439470444544/photo/1">Julie Evans' cartoon</a> and <a href="https://www.youtube.com/watch?v=vpk_1gldOAE">Corey Shafer's video on ssh</a> really hepful here.</p>
+
+<p>Next goals will be to use the server for other things: maybe storage or automating tasks when my laptops are put away. I also want to host a full-blown Django or Flask app. This blog is built by hand on my local computer, and the domain you're reading is just plain ol' vanilla HTML/CSS/JS. Django will change that up with doing server-side work. I plan to use <a href="https://mattsegal.dev/simple-django-deployment-1.html">Matt Segal's Django deployment guide</a> for that.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Kierkegaard on Doing the Thing</title>
             <pubDate>Tue, 15 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/kierkegaard-on-doing-the-thing.html</link>
@@ -174,67 +187,6 @@
 <p>Indie web stuff has been on my mind a ton lately, so seeing that people are heading into that wild arena in the form of blogging, federated social media, etc., is really fun. I'll be interested to see if Mastodon can keep pace with the growth, since it's really <a href="https://blog.ayjay.org/scale-again/">anti-scale</a>. That is, in its current iteration, it's built in response to Twitter being a product meant to increase one's audience and reach. It's web-local, it's difficult to find people.</p>
 
 <p>It, like the indie web stuff in general, is built for surprising finds. It's a good thing, but I wonder whether the algorithms of the last decade have formed us into creatures that cannot live in a web where we have to work for it.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>More on the Indie Web</title>
-            <pubDate>Fri, 04 Nov 2022 00:00:00 CST</pubDate>
-            <link>https://cdbaca.github.io/ssg/more-on-the-indie-web.html</link>
-            <guid>https://cdbaca.github.io/ssg/more-on-the-indie-web.html</guid>
-            <content:encoded><![CDATA[ <p>Surfing the web... not something any of us normies have done in a long time in our spare time. It used to be like that. Not so much anymore. We've all been corraled to somewhere between 5-10 websites so our attention can get farmed for cash from advertisers. Your regular reminder that this internet world sucks a big butthole, and there is a better way.</p>
-
-<p>I've spent the last week falling down a rabbit hole, which has been, honestly, an <em>amazing</em> feeling. I'm just gonna link a bunch of the stuff I've found, because it's cool and I don't want to forget what I've found. But there's a ton to discover and a ton to learn from that isn't just f*cking algorithms force feeding me whatever it thinks I want to see or read or hear.</p>
-
-<p>What I'm gathering:</p>
-
-<ul>
-<li>There are deeper things going on on the web than I realized. I had just lost sight of that.</li>
-<li>Vanilla HTML/CSS are still dope, and you can make really cool things with them.</li>
-<li>The open web is ripe for normal people to pick up. There are ways of interacting online that are so different than what so many of us have been taught.</li>
-</ul>
-
-<h2>Links to Cool stuff</h2>
-
-<h2>Blogs I Want to Explore (in no particular order)</h2>
-
-<ul>
-<li><a href="https://ncase.me/">Nicky Case</a></li>
-<li><a href="https://kevquirk.com/">Kev Quirk</a></li>
-<li><a href="https://notusknot.com/">notusknot</a></li>
-<li><a href="https://lukesmith.xyz/">Luke Smith</a></li>
-</ul>
-
-<h2>Things I Want to Learn More About</h2>
-
-<ul>
-<li><a href="https://landchad.net/">Becoming an Internet Landlord</a></li>
-<li><a href="https://george.mand.is/2019/11/introducing-bubo-rss-an-absurdly-minimalist-rss-feed-reader/">Bubo RSS</a> - especially to learn how to build my own reader in this style</li>
-<li><a href="https://micropub.spec.indieweb.org/#create">IndieWeb Micropub Protocol</a></li>
-<li><a href="https://mattsegal.dev/simple-django-deployment-1.html">Django Deployment</a>. Not sure this solves the bloat problem... but I have been learning Django for a while, and actual deployment seems out of reach currently.</li>
-</ul>
-
-<h2>One-Off Articles, Videos, or Lists For More Reading</h2>
-
-<ul>
-<li><a href="https://jeffhuang.com/designed_to_last/">"This Page is Designed to Last"</a></li>
-<li><a href="https://www.youtube.com/watch?v=iYpl0QVCr6U">"The Website Obesity Crisis" (2015)</a></li>
-<li><a href="https://512kb.club/">512 kb Club</a></li>
-<li><a href="https://blogroll.org/">Ye Olde Blogroll</a></li>
-<li><a href="https://getblogging.org/">"Get Blogging!"</a></li>
-<li><a href="https://heaventree.xyz/">HeavenTree</a></li>
-</ul>
-
-<h2>Tools</h2>
-
-<ul>
-<li><a href="https://flexbox.malven.co/">CSS Flexbox</a></li>
-<li><a href="https://grid.malven.co/">CSS Grid</a></li>
-<li><a href="https://browsersync.io/#install">BrowserSync</a></li>
-<li><a href="https://github.com/kevquirk/simple.css/blob/main/simple.css">Simple.CSS</a></li>
-</ul>
-
-<p>(It's possible if you're reading this post in November 2022 that the layout's all funky. I'm playing with the CSS, half of which I stole from <a href="https://simplecss.org/">Simple.CSS</a>.)</p>
  ]]></content:encoded>
         </item>
     

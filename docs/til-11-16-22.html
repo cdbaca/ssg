@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/styles.css" type="text/css"> 
+    <title>Roots to Branches</title>
+     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="RSS">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="box header">
+            <div class="logo">
+                    <h1><a href="./index.html">Roots to Branches</a></h1>
+            </div>
+            <div class="buttons">
+            
+            <form style="display: inline" action="./about.html" method="get"><button>About</button></form>
+            
+            <form style="display: inline" action="./posts.html" method="get"><button>Posts</button></form>
+            
+            <form style="display: inline" action="./photos.html" method="get"><button>Photos</button></form>
+            
+            <form style="display: inline" action="./tags.html" method="get"><button>Tags</button></form>
+            
+            <form style="display: inline" action="./lift.html" method="get"><button>Lift</button></form>
+                       
+            </div>
+        </div>
+        
+    
+<div class="box post">
+    <h1 class="post-title">TIL: 11-16-22</h1>
+    <p>Well, today was a cool day. Since making the <a href="https://github.com/cdbaca/ssg">static site generator</a>, my goal has been to move the actual website content pages (plus styling/scripts) to my own VPS. I really wasn't sure where to start for a long time. But then I came across <a href="landchad.net">LandChad</a>. Now, the owner of this site holds to some views that I find pretty unagreeable. I won't link to his home page, because I went down that rabbit hole and it wasn't the most wholesome content... Nevertheless, he offers a ton of legitimately helpful advice on getting started with a virtual private server (VPS).</p>
+
+<p>I made my way through grabbing a domain name (via NameCheap), purchasing droplet space from DigitalOcean, and away I went. Honestly, it really wasn't that bad. The kicker for most people, I think, is that you need some familiarity with Linux-based systems and working in the terminal rather than a GUI for managing files. But it was cool because I was able to set up nginx, which is the actual web server on the VPS that I'm using. I'd read about nginx before but it seemed like gobbledygook. The other thing I'll need to keep learning is how to use ssh effectively. SSH is a method for remoting into a non-local server or computer and managing files remotely. I found <a href="https://twitter.com/b0rk/status/1087936439470444544/photo/1">Julie Evans' cartoon</a> and <a href="https://www.youtube.com/watch?v=vpk_1gldOAE">Corey Shafer's video on ssh</a> really hepful here.</p>
+
+<p>Next goals will be to use the server for other things: maybe storage or automating tasks when my laptops are put away. I also want to host a full-blown Django or Flask app. This blog is built by hand on my local computer, and the domain you're reading is just plain ol' vanilla HTML/CSS/JS. Django will change that up with doing server-side work. I plan to use <a href="https://mattsegal.dev/simple-django-deployment-1.html">Matt Segal's Django deployment guide</a> for that.</p>
+
+
+    
+        <p><strong>Tagged:</strong> <a href="tags/TIL.html">TIL</a>,  <a href="tags/code.html">code</a>,  <a href="tags/blogging.html">blogging</a>, </p>
+    
+</div>
+
+    
+        <div class="box footer">
+            <p><a rel="me" href="https://indieweb.social/@cdbaca">Mastodon</a>
+                |
+                <a href="https://github.com/cdbaca">Github</a>
+                |
+                <a href="./feed.xml">RSS</a>
+            </p>
+        </div>
+    
+    </div>
+</body>
+</html>
