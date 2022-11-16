@@ -124,7 +124,6 @@ def make_static():
     os.makedirs(STATICDIR, exist_ok=True)
     shutil.copy('static/styles.css', STATICDIR)
     shutil.copy('static/calc.js', STATICDIR)
-    shutil.copy('static/github.png', STATICDIR)
 
 def run_tags(post_content):
     blog_tags = [post['metadata']['tags'] for post in post_content if post['metadata']['tags'][0] != '']
