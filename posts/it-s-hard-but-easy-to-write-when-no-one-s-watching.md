@@ -13,7 +13,7 @@ But, (and to the point of the title of this post) this is where it gets a little
 
 There is some level of freedom that comes with this. I know that there is no  one reading this right now, and I find actually a tiny bit of comfort in that. I could feasibly say whatever I want -- just to try it out or see if it's what I really think. That's helpful. But there's that small part of my brain that *wants* the attention I'd get at a scaled-up platform. Likes and comments, etc., are addictive in their own little stupid ways.
 
-I'd like a way out of this mindset that having attention is what matters. I want the blog *itself* to matter. I want the writing and the thinking to matter to me more than the attention from others ever did. And I want to discover for myself what I like, rather than letting the dumbass algorithms choose that for me. (["Just nod or shake your head and we'll do the rest... welcome to the internet."](https://www.youtube.com/watch?v=k1BneeJTDcU))
+I'd like a way out of this mindset that having attention is what matters. I want the blog *itself* to matter. I want the writing and the thinking to matter to me more than the attention from others ever did. And I want to discover for myself what I like, rather than letting the dumb algorithms choose that for me. (["Just nod or shake your head and we'll do the rest... welcome to the internet."](https://www.youtube.com/watch?v=k1BneeJTDcU))
 
 ## Some related links:
 - [Get Blogging!](https://getblogging.org/)

@@ -5,9 +5,9 @@ date: 11/04/2022
 tags: open web, blogging
 ---
 
-Surfing the web... not something any of us normies have done in a long time in our spare time. It used to be like that. Not so much anymore. We've all been corraled to somewhere between 5-10 websites so our attention can get farmed for cash from advertisers. Your regular reminder that this internet world sucks a big butthole, and there is a better way.
+Surfing the web... not something any of us normies have done in a long time in our spare time. It used to be like that. Not so much anymore. We've all been corraled to somewhere between 5-10 websites so our attention can get farmed for cash from advertisers. Your regular reminder that this internet world sucks, and there is a better way.
 
-I've spent the last week falling down a rabbit hole, which has been, honestly, an *amazing* feeling. I'm just gonna link a bunch of the stuff I've found, because it's cool and I don't want to forget what I've found. But there's a ton to discover and a ton to learn from that isn't just f*cking algorithms force feeding me whatever it thinks I want to see or read or hear.
+I've spent the last week falling down a rabbit hole, which has been, honestly, an *amazing* feeling. I'm just gonna link a bunch of the stuff I've found, because it's cool and I don't want to forget what I've found. But there's a ton to discover and a ton to learn from that isn't just algorithms force feeding me whatever it thinks I want to see or read or hear.
 
 What I'm gathering:
 
