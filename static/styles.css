@@ -182,11 +182,23 @@
     }
     
     .footer {
-        grid-column: 2 / span 10;
+        grid-column: 6 / 12;
         grid-row: 4 / 5;
         display: flex;
+        /* justify-content: center;*/
+        padding-top: 1rem;
+    }
+
+    .footer > :nth-child(1) {
+        grid-column: 2 / span 10;
+        grid-row: 4 / 5;
         justify-content: center;
         padding-top: 1rem;
+    }
+
+    .footer > :nth-child(2) {
+        margin-left:auto;
+        align-self: center;
     }
 
     .post {
