@@ -8,8 +8,43 @@
     <language>en-us</language>    
     
         <item>
+            <title>TIL: 11-18-22</title>
+            <pubDate>11/18/2022 16:03:38</pubDate>
+            <link>https://cdbaca.github.io/ssg/til-11-18-22.html</link>
+            <guid>https://cdbaca.github.io/ssg/til-11-18-22.html</guid>
+            <content:encoded><![CDATA[ <p>I came across an issue today with the generator I've written. If I write multiple posts in a day, the RSS feed may not pick up the newest post, because all the original post dates were set to today's date, but a time of 00:00:00 CST. So if it doesn't sort it properly, a feed reader may not pick up the newest post of the day because it could get pushed to the bottom of the list of today's posts instead of the top.</p>
+
+<p>To fix that, I introduced datetimes to my "create a post" script, and then had to manipulate that datetime string to do what I needed in the creation of the data structures for the site. E.g., I wanted only the date (not the time) to show up on the index page, but I want them in order of writing in reverse. I also wanted the feed to be in reverse order of writing so that even if I post multiple times a day, feed readers will pick up the newest post.</p>
+
+<p>The problem is, I have multiple functions doing the work of creating posts, manipulating data, creating the index page vs. the RSS feed vs. actual posts. But there is a single reference list of dictionaries I'm passing into these functions. In the script, my "make<em>index" function happens upstream of the "make</em>rss" function. And even though the index function was getting the right order, somehow, after I was passing in and manipulating the data in the function, the <em>original list</em> was getting manipulated even though I assigned it to a new variable.</p>
+
+<p>Apparently, this is a feature/bug in Python (I'm sure someone <em>likes</em> that this happens in Python... I didn't experience that particular joy today). For example, if I have a list of lists called "posts" and then say posts<em>copy = posts, if I manipulate values within the posts</em>copy list, any values I change there <em>will also change</em> the values in the reference list. That's bonkers, but whatever. After a couple of hours of cursing the void, I found my answer <a href="https://stackoverflow.com/questions/68712435/changes-made-in-python-list-showing-up-in-copy-of-original-list">here</a>. Not only do you need to assign the values to a new variable, you have to make a "deepcopy" of the original list and assign it (if the list in question has other data structures inside it). So instead of</p>
+
+<p>`</p>
+
+<p>posts_copy = copy</p>
+
+<p>`</p>
+
+<p>I needed to do:</p>
+
+<p>`</p>
+
+<p>from copy import deepcopy</p>
+
+<p>posts_copy = deepcopy(posts)</p>
+
+<p>`</p>
+
+<p>From there, I was able to manipulate values in the function without worrying about overwriting data in the original list.</p>
+
+<p>I like programming, but that was maddening.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Twitter v. Mastodon v. Micro.blog</title>
-            <pubDate>Fri, 18 Nov 2022 00:00:00 CST</pubDate>
+            <pubDate>11/18/2022</pubDate>
             <link>https://cdbaca.github.io/ssg/twitter-v-mastodon-v-micro-blog.html</link>
             <guid>https://cdbaca.github.io/ssg/twitter-v-mastodon-v-micro-blog.html</guid>
             <content:encoded><![CDATA[ <blockquote>
@@ -33,8 +68,58 @@
         </item>
     
         <item>
+            <title>Fitness Update</title>
+            <pubDate>11/18/2022</pubDate>
+            <link>https://cdbaca.github.io/ssg/fitness-update.html</link>
+            <guid>https://cdbaca.github.io/ssg/fitness-update.html</guid>
+            <content:encoded><![CDATA[ <p>A general fitness update:</p>
+
+<p>I've been working out consistently 8/22/22, which is right at 13 weeks. The first few weeks, I was using the <a href="https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/">r/Fitness Basic Routine</a>. This was helpful just for getting into weightlifting again (I haven't lifted weights since high school!). It helped lower the barrier and increase my confidence since I was just relearning a few basic barbell moves.</p>
+
+<p>After a few weeks, my confidence was high enough that I was able to switch over to a routine that I felt better suited my needs. r/Fitness doesn't recommend it, but I decided to go with <a href="stronglifts.com">StrongLifts 5x5</a>, since it seemed like a logical step up. Roughly the same basic barbell lifts:</p>
+
+<h3>A Day</h3>
+
+<ol>
+<li>Squat</li>
+<li>Bench Press</li>
+<li>Barbell Rows</li>
+</ol>
+
+<h3>B Day</h3>
+
+<ol>
+<li>Squat</li>
+<li>Overhead Press</li>
+<li>Deadlift</li>
+</ol>
+
+<p>You can go to his site for more details. But the basic idea is, start with really low weight on all lifts (the bar if you can, or a little bit of weight if it needs to be off the floor). Every move is 5 sets of 5 reps with the same weight. The next time you do that move, you increase the weight by 5lbs (2.5 weights on each side). Pure linear progression until your form breaks down or you can't lift the weight. Within a few weeks, I felt good enough to also add in extra arm work (A day: dips and skullcrushers, B day: chin ups and barbell or dumbbell curls). </p>
+
+<h3>Postives / Wins</h3>
+
+<ul>
+<li>My chin ups have increased drastically. Before I started lifting, I could only do 1-2 chin ups. I can now do roughly 3 sets of 5 or 6 with no assistance, and that's after I do heavy lifting.</li>
+<li>Deadlift is currently sitting at around 165 lbs.</li>
+<li>I'm seeing body changes which are really cool. I haven't seen real upper body tone on me in a loooooooong time. It's nice to feel like I have muscles and to feel strong.</li>
+</ul>
+
+<h3>Negatives / Struggles</h3>
+
+<ul>
+<li>Currently dealing with ann anterior hip flexor issue. It seems like it might have been caused by bad squat form. I've fixed that (I think), but it's gonna take a while to heal, so I'm sticking around the 115-130 range for my squats.</li>
+<li>Overhead press has been stalled for weeks now. I made it to about 65-70 lbs but just can't get 5x5. </li>
+</ul>
+
+<p>I can see why r/Fitness overall doesn't recommened StrongLifts. Honestly, I think it's a great program for someone starting out. It's simple, effective for building quick strength, and it's a quick workout (mine are usually 45-55 minutes). But I think the deload program doesn't really work. This is obvious by the OHP struggles I'm having. I also think it's possible that for many people who lack strength, growing your squat weight that quickly and squatting so often has the potential for injuring you if you aren't careful or don't listen to your body.</p>
+
+<p>At the end of the day, my goal is really to support other activities I want to do (mainly, running and climbing). I'll continue doing StrongLifts for at least another 2 weeks to finish out 12 full weeks on the program, but I may end up switching to <a href="https://thefitness.wiki/routines/5-3-1-for-beginners/">Jim Wendler's 5/3/1</a> or the <a href="https://thefitness.wiki/routines/gzclp/">GZCL program</a>. My only concern with those are the time commitment. I just don't have more than an hour or so in the mornings, and that's when I'm working out. But either way, I'm trying to play the long game here. I want to be strong and healthy, not necessarily make my life revolve around being "a weightlifter."</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Links 11-17-2022</title>
-            <pubDate>Thu, 17 Nov 2022 00:00:00 CST</pubDate>
+            <pubDate>11/17/2022</pubDate>
             <link>https://cdbaca.github.io/ssg/links-11-17-2022.html</link>
             <guid>https://cdbaca.github.io/ssg/links-11-17-2022.html</guid>
             <content:encoded><![CDATA[ <h2>Links Lurking in My Tabs</h2>
@@ -92,7 +177,7 @@
     
         <item>
             <title>TIL: 11-16-22</title>
-            <pubDate>Wed, 16 Nov 2022 00:00:00 CST</pubDate>
+            <pubDate>11/16/2022</pubDate>
             <link>https://cdbaca.github.io/ssg/til-11-16-22.html</link>
             <guid>https://cdbaca.github.io/ssg/til-11-16-22.html</guid>
             <content:encoded><![CDATA[ <p>Well, today was a cool day. Since making the <a href="https://github.com/cdbaca/ssg">static site generator</a>, my goal has been to move the actual website content pages (plus styling/scripts) to my own VPS. I really wasn't sure where to start for a long time. But then I came across <a href="landchad.net">LandChad</a>. Now, the owner of this site holds to some views that I find pretty unagreeable. I won't link to his home page, because I went down that rabbit hole and it wasn't the most wholesome content... Nevertheless, he offers a ton of legitimately helpful advice on getting started with a virtual private server (VPS).</p>
@@ -100,65 +185,6 @@
 <p>I made my way through grabbing a domain name (via NameCheap), purchasing droplet space from DigitalOcean, and away I went. Honestly, it really wasn't that bad. The kicker for most people, I think, is that you need some familiarity with Linux-based systems and working in the terminal rather than a GUI for managing files. But it was cool because I was able to set up nginx, which is the actual web server on the VPS that I'm using. I'd read about nginx before but it seemed like gobbledygook. The other thing I'll need to keep learning is how to use ssh effectively. SSH is a method for remoting into a non-local server or computer and managing files remotely. I found <a href="https://twitter.com/b0rk/status/1087936439470444544/photo/1">Julie Evans' cartoon</a> and <a href="https://www.youtube.com/watch?v=vpk_1gldOAE">Corey Shafer's video on ssh</a> really hepful here.</p>
 
 <p>Next goals will be to use the server for other things: maybe storage or automating tasks when my laptops are put away. I also want to host a full-blown Django or Flask app. This blog is built by hand on my local computer, and the domain you're reading is just plain ol' vanilla HTML/CSS/JS. Django will change that up with doing server-side work. I plan to use <a href="https://mattsegal.dev/simple-django-deployment-1.html">Matt Segal's Django deployment guide</a> for that.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Kierkegaard on Doing the Thing</title>
-            <pubDate>Tue, 15 Nov 2022 00:00:00 CST</pubDate>
-            <link>https://cdbaca.github.io/ssg/kierkegaard-on-doing-the-thing.html</link>
-            <guid>https://cdbaca.github.io/ssg/kierkegaard-on-doing-the-thing.html</guid>
-            <content:encoded><![CDATA[ <p>In what feels like another lifetime (or, as we Texans say, <em>a-whole-nother</em> lifetime), I spent a ton of time delving into Søren Kierkegaard's life and work. What especially interested me was his understanding of knowledge. For Kierkegaard, there was a difference between kinds of knowledge, which I think still bears out today.</p>
-
-<p>Roughly, knowledge was broken into two broad categories that further splintered after that breakdown:</p>
-
-<ol>
-<li>Objective</li>
-<li>Subjective</li>
-</ol>
-
-<p><strong>Objective knowledge</strong> could be either absolutely certain or relatively certain. I.e., mathematical and purely logical truths are knowable with 100% certainty. 2+2 can be nothing other than 4, and that must be true in any universe. Relatively certain objective knowledge was more in the realm of historical or scientific truth. But it's objective because it's a truth about the external world.</p>
-
-<p><strong>Subjective knowledge</strong>, on the other hand, splinters into true subjective and pseudo-subjective knowledge. Pseudo subjective knowledge is a kind of acting knowledge that we don't enact in our daily lives, despite "knowing" that it is true. E.g., I can "know" that I should treat those around me with respect and graciousness but not act on that "knowledge." (And one gets the sense that Kierkegaard would say, "Well... do you <em>really</em> know that then?"). True subjective knowledge is just what it sounds like: it is when we "know" that something is true, and we act on that truth.</p>
-
-<p>I've found myself thinking about this some again w/r/t the whole open web thing going on right now. I cam across a <a href="https://maggieappleton.com/">really beautiful website</a> yesterday: Maggie Applleton is a writer who focuses on anthropology and technology. She has an essay on the <a href="https://maggieappleton.com/garden-history">origins of digital gardening</a>, which is a topic I'm personally interested in, because it's an embodiment of what I <em>want</em> the web to be like for people. Open curiosity, the willingness to explore a subject one knows little about, building a digital space that sprawls.</p>
-
-<p><a href="https://notes.andymatuschak.org/zUMFE66dxeweppDvgbNAb5hukXzXQu8ErVNv">Another note</a> I came across was from Andy Matuschak's site about content creators who make it their job to write about note-taking and productivity:</p>
-
-<blockquote>
-  <p>But most people who write about note-taking don’t seem particularly accomplished in their own fields, whatever those may be. In fact, most such writers aren’t applying their notes to some exogenous creative problem: their primary creative work is writing about productivity. These writers offer advice on note-taking to help scientists and executives with the challenges of their work, but the advice was developed in a context disconnected from those external realities.</p>
-</blockquote>
-
-<p>This is something that has bothered me about this "sphere" of the internet as I've delved into it. Many indie-web people that I've come across so far aren't self-hosted and writing a blog about, say, running and fitness, or self-sufficiency, or coffee and travel. It's like many of them are stuck in this meta-writing thing where they're stuck writing about writing about the thing.</p>
-
-<p>Kierkegaard tangentially talks about this issue regarding Christendom and the bishops in Denmark in the 19th century. Christianity for them wasn't about the life that ought to be lived. It was self-referential all the way down. The university scholars and influential and wealthy priests and bishops of the Lutheran Church were obsessed with status or producing "new" theological work. They were not interested in living the life the Christianity demanded from them. They pushed what should have been subjective knowledge into the objective sphere. And by doing so, they cheapened what <em>faith</em> was actually supposed to be; they stood on the outside of Christianity, looking in and examining it rather than taking the leap into it and <em>living</em> the faith they professed with such certainty. </p>
-
-<p>Similarly, what I want from (what I hope is) this new moment in the web's development is average, everyday people learning the value of self-hosting and owning your own space. And then I want to see those people using their digital homes to build beautiful things and talk about what they're passionate about.</p>
-
-<p>I'd perhaps encourage the technologically-minded folks (myself included) in this space to jump in and explore topics outside of technology in our digital homes. Are you a developer by day, but roast coffee at night? Write about that, because I want to read it? Are you researching the history of vaccines, or ultramarathons, or knitting? Post about it, make some digital gardens, let's see it!</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Social Media and This Moment</title>
-            <pubDate>Mon, 14 Nov 2022 00:00:00 CST</pubDate>
-            <link>https://cdbaca.github.io/ssg/social-media-and-this-moment.html</link>
-            <guid>https://cdbaca.github.io/ssg/social-media-and-this-moment.html</guid>
-            <content:encoded><![CDATA[ <p>It feels like we're having a moment. </p>
-
-<blockquote>
-  <p>Social networks’ evolution into social media brought both opportunity and calamity. Facebook and all the rest enjoyed a massive rise in engagement and the associated data-driven advertising profits that the attention-driven content economy created. The same phenomenon also created the influencer economy, in which individual social-media users became valuable as channels for distributing marketing messages or product sponsorships by means of their posts’ real or imagined reach. Ordinary folk could now make some money or even a lucrative living “creating content” online. The platforms sold them on that promise, creating official programs and mechanisms to facilitate it. In turn, “influencer” became an aspirational role, especially for young people for whom Instagram fame seemed more achievable than traditional celebrity—or perhaps employment of any kind.</p>
-</blockquote>
-
-<p>-- <a href="https://www.theatlantic.com/technology/archive/2022/11/twitter-facebook-social-media-decline/672074/">"The Age of Social Media is Ending"</a> - Ian Bogost</p>
-
-<p>Journalists and news outlets are publishing articles like this more and more frequently, especially in the last ~two weeks since Elon bought Twitter. It's like an awakening is happening across culture, one that many people I've been listening to have been heralding for the last few years. I won't keep going on and on about the open/indie web. But eveyrone from Neil Postman to Alan Jacobs to Austin Kleon to Cal Newport have been dinging this bell for a while now (Postman saw it <em>decades</em> before anyone else did in <em>Entertaining Ourselves to Death</em>.)</p>
-
-<p>But what's even more interesting to me is the cultural icons that are also dealing with this in music and comedy. Bo Burnham's <em>Inside</em> was never really about the pandemic, even if that helped frame it. It was about an individual person's interaction and obsession with the internet and social media. The feeling of constantly being watched, of having one's whole life online ready to be consumed and spit out by the masses.</p>
-
-<p>Kendrick's <em>Mr. Morale and the Big Steppers</em> didn't get the critical acclaim that his work normally does, but the more I've listened to it, the more prescient it has become. "N95", a song about masks, written as a reference to covid-era protection, was never about either covid or the just-sub-surface level idea that "riches and materialism need to be removed to see the real you." No, deeper than that, it's about how we allow the outside world to determine how we present ourselves. Our (often imagined) worst critics determine the masks we put on, and those masks slowly fuse onto our faces until we can't tell the difference between our false selves and our true selves.</p>
-
-<p>Social media may not have been the cause of all of this. We are humans and suffer from that condition, after all. But it has certainly exacerbated those tendencies. And due to its unique ability to force us to live in the algorithm-feed-moment, many of us have forgotten that the world outside is different than the one we interact with every day.</p>
  ]]></content:encoded>
         </item>
     

@@ -5,6 +5,7 @@ from jinja2 import Environment, PackageLoader, FileSystemLoader
 import flickrapi
 import page_data
 import credentials
+from copy import deepcopy
 
 from datetime import datetime
 
@@ -41,6 +42,8 @@ def get_post_content(posts):
     
     post_metadata = [post['metadata'] for post in post_content]
     sort(post_metadata, 'date')
+    
+    post_content.sort(key=lambda x:x['metadata']['date'], reverse=True)
 
     return(post_content, post_metadata)
 
@@ -92,9 +95,21 @@ def make_index(post_metadata, photo_data):
     template = env.get_template("index.html")
 
     # only get 10 most recent posts
+    copy_metadata = deepcopy(post_metadata)
     recent_posts = []
     for i in range(0, 10):
-        recent_posts.append(post_metadata[i])
+        post = copy_metadata[i]
+
+        date = post['date']
+
+        try:
+            date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
+            post['date'] = date.strftime('%m/%d/%Y')
+        except:
+            date = datetime.strptime(date, '%m/%d/%Y')
+            post['date'] = date.strftime('%m/%d/%Y')
+        
+        recent_posts.append(post)
 
     content = {}
 
@@ -170,19 +185,36 @@ def make_rss(post_content):
     env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("feed.xml")
     
-    post_content.sort(key=lambda x:x['metadata']['date'], reverse=True)
+    # post_content.sort(key=lambda x:x['metadata']['date'], reverse=True)
 
-    recent_posts = []
+    feed_posts = deepcopy(post_content)
+    feed_post_list = []
     for i in range(0, 5):
-        recent_posts.append(post_content[i])
+        post = feed_posts[i]
+        
+        date = feed_posts[i]['metadata']['date']
+        try:
+            date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
+            feed_posts[i]['date'] = date.strftime('%m/%d/%Y %H:%M:%S')
+        except:
+            date = datetime.strptime(date, '%m/%d/%Y')
+            feed_posts[i]['date'] = date.strftime('%m/%d/%Y') + " 00:00:00"
+        
+        feed_post_list.append(post)
+        
+
     # Date format: Wed, 10 Nov 2021 15:52:00 EST
 
-    for post in recent_posts:
-        date = post['metadata']['date']
-        date = datetime.strptime(date, '%m/%d/%Y')
-        post['metadata']['date'] = date.strftime("%a, %d %b %Y") + " 00:00:00 CST"
+    # for post in feed_posts:
+    #     date = post['metadata']['date']
+    #     try:
+    #         date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
+    #         post['metadata']['date'] = date.strftime("%a, %d %b %Y %H %M %S") + " CST"
+    #     except:
+    #         date = datetime.strptime(date, '%m/%d/%Y')
+    #         post['metadata']['date'] = date.strftime("%a, %d %b %Y") + " 00:00:00 CST"
 
-    rendered = template.render(data=recent_posts)
+    rendered = template.render(data=feed_post_list)
 
     os.makedirs('docs', exist_ok=True)
 
@@ -192,9 +224,21 @@ def make_rss(post_content):
 def main():
     posts = get_files()
     post_content, post_metadata = get_post_content(posts)
+    
     recent_photos, photos = get_imgs()
+
+    # for x in post_content:
+    #     print('before make index ', x['metadata']['date'])
+
     make_index(post_metadata, recent_photos)
+
+    # for x in post_content:
+    #     print('after make index ', x['metadata']['date'])
+
     make_posts(post_content)
+
+    # for x in post_content:
+    #     print('after make posts ', x['metadata']['date'])
 
     LISTPAGES['photos'] = photos
     LISTPAGES['posts'] = post_metadata
@@ -206,9 +250,15 @@ def main():
         make_pages(page_name, content)
 
     make_static()
+
     run_tags(post_content)
+    # for x in post_content:
+    #     print('after run tags ', x['metadata']['date'])
 
     make_rss(post_content)
+
+    # for x in post_content:
+    #     print('afer make rss ', x['metadata']['date'])
 
 if __name__ == '__main__':
     main()

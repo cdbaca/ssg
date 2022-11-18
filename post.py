@@ -3,8 +3,8 @@ import datetime
 from slugify import slugify
 
 def make_frontmatter(title):
-    current_day = datetime.date.today()
-    formatted_date = datetime.date.strftime(current_day, '%m/%d/%Y')
+    current_day = datetime.datetime.today()
+    formatted_date = datetime.date.strftime(current_day, '%m/%d/%Y %H:%M:%S %Z')
 
     frontmatter = """---
 title: {0}
