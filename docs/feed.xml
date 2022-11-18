@@ -8,6 +8,31 @@
     <language>en-us</language>    
     
         <item>
+            <title>Twitter v. Mastodon v. Micro.blog</title>
+            <pubDate>Fri, 18 Nov 2022 00:00:00 CST</pubDate>
+            <link>https://cdbaca.github.io/ssg/twitter-v-mastodon-v-micro-blog.html</link>
+            <guid>https://cdbaca.github.io/ssg/twitter-v-mastodon-v-micro-blog.html</guid>
+            <content:encoded><![CDATA[ <blockquote>
+  <blockquote>
+    <p>Twitter right now is mainly about Twitter but also a little about Mastodon. And Mastodon is mainly about Mastodon but also a lot about Twitter. Both places seem to be pretty chaotic, but here at micro.blog @manton &amp; co. are keeping things smooth and steady. It helps that there don’t seem to be many drama-addicted folks around here.</p>
+  </blockquote>
+</blockquote>
+
+<p>-- <a href="https://social.ayjay.org/2022/11/18/twitter-right-now.html">Alan Jacobs</a></p>
+
+<p>Yeah, agreed. I hadn't been on Twitter in while, but jumped to Mastodon just to check things out and see if it could operate differently than Twitter. My observations:</p>
+
+<ol>
+<li><em>Mastodon is better than Twitter in many ways.</em> Built in RSS feeds for accounts, ActivityPub compatible so it's genuinely federated, no quote tweeting, better moderation (similar to the better Reddit communities).</li>
+<li><em>Mastodon doesn't quite live up to what I want it to be.</em> What I wanted was, perhaps, a way for people to be self-hosted but have a local space where that stuff got sent and you could just check in and see what others are thinking or up to.</li>
+<li><em>Lots of people at Mastodon are just talking about Twitter.</em> I actually had to filter out posts that mention the word, but then there are people that call it the "bird site" or talk about Elon or whatever. I want Mastodon to be more than that but maybe that will take some time.</li>
+</ol>
+
+<p>I'm also not convinced Mastodon won't become a sort of Twitter 2.0. Maybe not quite as hateful or outrageous, but still chaotic. I've been considering trying micro.blog instead to see if that would function closer to what I want out of the web. It seesm like it's possible that service is closer than Mastodon.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Links 11-17-2022</title>
             <pubDate>Thu, 17 Nov 2022 00:00:00 CST</pubDate>
             <link>https://cdbaca.github.io/ssg/links-11-17-2022.html</link>
@@ -134,104 +159,6 @@
 <p>Kendrick's <em>Mr. Morale and the Big Steppers</em> didn't get the critical acclaim that his work normally does, but the more I've listened to it, the more prescient it has become. "N95", a song about masks, written as a reference to covid-era protection, was never about either covid or the just-sub-surface level idea that "riches and materialism need to be removed to see the real you." No, deeper than that, it's about how we allow the outside world to determine how we present ourselves. Our (often imagined) worst critics determine the masks we put on, and those masks slowly fuse onto our faces until we can't tell the difference between our false selves and our true selves.</p>
 
 <p>Social media may not have been the cause of all of this. We are humans and suffer from that condition, after all. But it has certainly exacerbated those tendencies. And due to its unique ability to force us to live in the algorithm-feed-moment, many of us have forgotten that the world outside is different than the one we interact with every day.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Lift Calculator in Javascript</title>
-            <pubDate>Wed, 09 Nov 2022 00:00:00 CST</pubDate>
-            <link>https://cdbaca.github.io/ssg/lift-calculator-in-javascript.html</link>
-            <guid>https://cdbaca.github.io/ssg/lift-calculator-in-javascript.html</guid>
-            <content:encoded><![CDATA[ <p>I'd classify myself as mediocre as a Python developer. I'm more of a scripter, really. Automating tasks in Python has been pretty fun over the last year and half or so.</p>
-
-<p>But as I've gotten more into web stuff, Javascript keeps staring me in the face, and I've avoided it up until now. If my Python is mediocre, my Javascript ability is best classified as <em>complete and utter novice</em>. That's fine... I'm not planning on being a full-blown Javascript developer, and upon reading and listening to a lot about internet bloat, I'll probably mostly stay away from it.</p>
-
-<p>But! A few months ago, out of frustration from calculating the weights I needed on the bar for lifting, I built a weightlifting calculator in Python and hosted it on <a href="http://cdbaca.pythonanywhere.com/weightlifting/">PythonAnywhere</a> (I doubt if this link will stay live forever, but this is it for now.)</p>
-
-<p>The problem is, as far as I'm aware, I can't do server-side scripting on the static site generator I've got going on here. The thought then became, can I move the calculator over to this site and use client-side scripting with Javascript? Turns out you can!</p>
-
-<p>The Python code was simple:</p>
-
-<p>`</p>
-
-<pre><code>def calculator(request):
-
-    user_input = request.POST['user_input']
-    user_input = float(user_input)
-    weight_no_bar = (user_input-45)/2
-
-    poss_weights = (45, 35, 25, 10, 5, 2.5)
-    weights_to_add = {}
-
-    for weights in poss_weights:
-        weights_to_add[weights] = 0
-
-    def get_weights(weight_no_bar):
-        for num in poss_weights:
-            if weight_no_bar &lt; num:
-                pass
-            else:
-                weight_no_bar = weight_no_bar - num
-                weights_to_add[num] += 1
-                break
-
-        if weight_no_bar &gt; 0:
-            get_weights(weight_no_bar)
-
-    if weight_no_bar &gt; 0:
-        get_weights(weight_no_bar)
-        return render(request, 'result.html', {'results': weights_to_add})
-    else:
-        return render(request, 'result.html', {'result': f'Use {user_input/2} lb dumbbells!'})
-</code></pre>
-
-<p>`</p>
-
-<p>It takes the post request from the form, does some math, and returns a dictionary object to the html page. Then the template form parses the dictionary renders the data.</p>
-
-<p>I've transferred the logic to Javascript (probably poorly, as I barely understand the syntax... all these brackets, ugh!). Here's the same-ish logic in Javascript:</p>
-
-<p>`</p>
-
-<pre><code>function calculator() {
-    document.getElementById("result").innerHTML = '';
-    let user_input = document.getElementById("lift").value
-    user_input = Number.parseFloat(user_input)
-    let weight= (user_input - 45)/2
-    const poss_weights = [45, 35, 25, 10, 5, 2.5]
-    let weights_to_add = {"45":0, "35":0, "25":0, "10":0, "5":0, "2.5":0};
-
-    function get_weights(weight) {
-        for (let num of poss_weights) {
-            if (weight &lt; num) {
-            }
-            else {
-                weight = weight - num
-                weights_to_add[num] += 1
-                break
-            }
-        }
-        if (weight &gt; 0) {
-            get_weights(weight)
-    }
-    }
-    if (weight &gt; 0) {
-        get_weights(weight)
-    }
-
-    for (let key of poss_weights) {
-        document.getElementById("result").innerHTML += `&lt;li&gt;&lt;h5&gt;${key}: ${weights_to_add[key]}&lt;/h5&gt;&lt;/li&gt;`;
-    }
-}
-</code></pre>
-
-<p>`</p>
-
-<p>What's cool about this is that when the JS function runs, it deletes whatever content is in the html "results" tag, then runs the logic as before, then lists the weights and amounts in order for what needs to be put on the bar.</p>
-
-<p><a href="../docs/lift.html">Here's the link</a> to the lift calculator on the SSG.</p>
-
-<p>Not the best thing ever, and it can probably be cleaned up design-wise, but this was one of my goals when redesigning this site. I'm happy with it!</p>
  ]]></content:encoded>
         </item>
     
