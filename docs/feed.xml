@@ -8,6 +8,47 @@
     <language>en-us</language>    
     
         <item>
+            <title>Changing up the Coffee Routine</title>
+            <pubDate>11/22/2022 09:52:53</pubDate>
+            <link>https://cdbaca.github.io/ssg/changing-up-the-coffee-routine.html</link>
+            <guid>https://cdbaca.github.io/ssg/changing-up-the-coffee-routine.html</guid>
+            <content:encoded><![CDATA[ <p>Probably for the better part of 2+ years, my coffee routine hasn't shifted much. I roast coffee roughly once every six weeks or so, usually about 5 lbs at a time. Once the coffee has had a few days to rest post-roast, I put a little in a jar for the next week's consumption. The rest get sealed with the FoodSaver and frozen.</p>
+
+<p>Nearly every day, I have two cups of coffee -- one in the morning and one around 2pm or so. A while back, James Hoffmann posted <a href="https://www.youtube.com/watch?v=j6VlT_jUVPc">his preferred Aeropress recipe</a>. I use this every time I make an Aeropress now with slight variation:</p>
+
+<h3>Current Aeropress Recipe</h3>
+
+<ol>
+<li>Standard orientation (non-inverted)</li>
+<li>13 g coffee, ground relatively fine</li>
+<li>Coffee in, then add 200 g water at roughly 205 degrees F</li>
+<li>Let steep for 2 minutes, then swirl</li>
+<li>At four minutes, plunge</li>
+</ol>
+
+<p>That's it. I love the simplicity of it, and honestly it makes a pretty incredible cup.</p>
+
+<p>Sometimes in the afternoon I'll do the same, but I also have a Rancilio Silvia (V3), and if I'm feeling frisky for a few weeks, I will hit the espresso in the afternoon. I also got <em>really</em> into making cortados at work in the afternoon at the beginning of this year. I had a goal of getting better at latte (well... cortado) art, so I was drinking a <em>ton</em> of espresso in January and February. That was fun, but got to be a little too much dairy. I did succeed though! I make a pretty mean cortado if I do so say myself. My latte art went from being awful to mediocre+. That is, I can make a heart if I try hard enough and the stars align.</p>
+
+<p>Years ago, I was Chemex-obsessed. In the same way I've used the Aeropress nearly every day for two years, I did the same with the Chemex. Alas, it broke while cleaning it at some point, and I never bothered to buy a new one. Until recently, that is! I needed to buy another one for Thanksgiving because we're having family over this year.</p>
+
+<p>The new Chemex arrived two days ago, and I made my first Chemex in a couple of years. You know how there is just something about a smell or flavor that really takes you back to a point in your life? I know it's cliché, but that really does happen with the Chemex. It smells slightly different, brings out different aromatics, has a brighter flavor than the Aeropress or French Press. That said, I'm guessing I'll stick with the Chemex for a good long while and enjoy the nostalgia it brings with it.</p>
+
+<h3>Current Chemex Recipe</h3>
+
+<ol>
+<li>35 g coffee, ground medium-fine</li>
+<li>Use total 595 g water</li>
+<li>Start with 70 g water to bloom, wait 45 seconds</li>
+<li>Pour remainder of water in spurts of about 100 g or so</li>
+<li>Final goal is for the coffee to finish brewing within 4-5 minutes of starting the bloom</li>
+</ol>
+
+<p>I used to take measurements and grinding and stuff so seriously and tried not to deviate. Coffee, however, is alive. It changes as the days get further out from the roast date. This usually requires a change in the brewing or grinding method. And because people usually have different coffee flavor preferences, I find that it's fine to change up water/coffee ratios, grind size, or whatever until you find what suits you. The only general rules I follow are: get roasted coffee as fresh as you can, and try to find a relatively inexpensive burr grinder. The rest will work itself out. Oh, and immersion brewing (Aeropress and French Press) covers a multitude of sins.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>TIL: 11-18-22</title>
             <pubDate>11/18/2022 16:03:38</pubDate>
             <link>https://cdbaca.github.io/ssg/til-11-18-22.html</link>
@@ -174,19 +215,6 @@ posts_copy = deepcopy(posts)
 <li><a href="https://www.youtube.com/watch?v=vpk_1gldOAE">SSH - Corey Schafer</a></li>
 <li><a href="https://www.youtube.com/watch?v=toBTPGfurLc">Rich Spirit - Kendrick Lamar</a></li>
 </ol>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>TIL: 11-16-22</title>
-            <pubDate>11/16/2022</pubDate>
-            <link>https://cdbaca.github.io/ssg/til-11-16-22.html</link>
-            <guid>https://cdbaca.github.io/ssg/til-11-16-22.html</guid>
-            <content:encoded><![CDATA[ <p>Well, today was a cool day. Since making the <a href="https://github.com/cdbaca/ssg">static site generator</a>, my goal has been to move the actual website content pages (plus styling/scripts) to my own VPS. I really wasn't sure where to start for a long time. But then I came across <a href="landchad.net">LandChad</a>. Now, the owner of this site holds to some views that I find pretty unagreeable. I won't link to his home page, because I went down that rabbit hole and it wasn't the most wholesome content... Nevertheless, he offers a ton of legitimately helpful advice on getting started with a virtual private server (VPS).</p>
-
-<p>I made my way through grabbing a domain name (via NameCheap), purchasing droplet space from DigitalOcean, and away I went. Honestly, it really wasn't that bad. The kicker for most people, I think, is that you need some familiarity with Linux-based systems and working in the terminal rather than a GUI for managing files. But it was cool because I was able to set up nginx, which is the actual web server on the VPS that I'm using. I'd read about nginx before but it seemed like gobbledygook. The other thing I'll need to keep learning is how to use ssh effectively. SSH is a method for remoting into a non-local server or computer and managing files remotely. I found <a href="https://twitter.com/b0rk/status/1087936439470444544/photo/1">Julie Evans' cartoon</a> and <a href="https://www.youtube.com/watch?v=vpk_1gldOAE">Corey Shafer's video on ssh</a> really hepful here.</p>
-
-<p>Next goals will be to use the server for other things: maybe storage or automating tasks when my laptops are put away. I also want to host a full-blown Django or Flask app. This blog is built by hand on my local computer, and the domain you're reading is just plain ol' vanilla HTML/CSS/JS. Django will change that up with doing server-side work. I plan to use <a href="https://mattsegal.dev/simple-django-deployment-1.html">Matt Segal's Django deployment guide</a> for that.</p>
  ]]></content:encoded>
         </item>
     
