@@ -8,6 +8,30 @@
     <language>en-us</language>    
     
         <item>
+            <title>God is (in) the Details</title>
+            <pubDate>11/28/2022 16:19:21</pubDate>
+            <link>https://cdbaca.github.io/ssg/god-is-in-the-details.html</link>
+            <guid>https://cdbaca.github.io/ssg/god-is-in-the-details.html</guid>
+            <content:encoded><![CDATA[ <p>I don't have much to say, except that I listened to two podcasts this week:</p>
+
+<ol>
+<li><a href="https://www.premierguitar.com/podcast/wong-notes/chris-thile-cory-wong-interview">Wong Notes - "Chris Thile's Exercise in Joy"</a></li>
+<li><a href="https://www.singforscience.org/episodes/rivers-cuomo-guido-van-rossum">Sing for Science - "Rivers Cuomo and Guido van Rossum"</a></li>
+</ol>
+
+<p>In both episodes, the interviewees said the phrase "God is in the details" -- in the former, Thile then corrects himself, and says "God <em>is</em> the details."</p>
+
+<p>I find myself thinking and not thinking about God and religion much these days. "God" permeates my work and the culture that surrounds me, and yet, since leaving LIDE, I find myself wanting very little to do with <em>formal</em> and <em>institutional</em> versions of spirituality. (I recognize this is awfully millennial of me)</p>
+
+<p>On the other hand, I cannot deny the draw of spirituality on some deep level within me. There has always, always been a sense of beauty, of love, of transcendence in life. The very existence of these feelings seem to me to be pointers to a deeper reality that I cannot quite grasp. A reality that fades from my vision when I try to look to closely, like a dream that I try to remember just after waking.</p>
+
+<p>Mostly, it's in the details that I have these feelings. The feel of Elaine's hand on my back, the feel of my daughters' hair when I kiss them goodnight on the top of the head, the cold wind in the morning when I'm out walking, the gratitude I feel when surrounded by close friends and family.</p>
+
+<p>Perhaps God is in the details after all, and that is all that we can say about it.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Changing up the Coffee Routine</title>
             <pubDate>11/22/2022 09:52:53</pubDate>
             <link>https://cdbaca.github.io/ssg/changing-up-the-coffee-routine.html</link>
@@ -157,64 +181,6 @@ posts_copy = deepcopy(posts)
 <p>I can see why r/Fitness overall doesn't recommened StrongLifts. Honestly, I think it's a great program for someone starting out. It's simple, effective for building quick strength, and it's a quick workout (mine are usually 45-55 minutes). But I think the deload program doesn't really work. This is obvious by the OHP struggles I'm having. I also think it's possible that for many people who lack strength, growing your squat weight that quickly and squatting so often has the potential for injuring you if you aren't careful or don't listen to your body.</p>
 
 <p>At the end of the day, my goal is really to support other activities I want to do (mainly, running and climbing). I'll continue doing StrongLifts for at least another 2 weeks to finish out 12 full weeks on the program, but I may end up switching to <a href="https://thefitness.wiki/routines/5-3-1-for-beginners/">Jim Wendler's 5/3/1</a> or the <a href="https://thefitness.wiki/routines/gzclp/">GZCL program</a>. My only concern with those are the time commitment. I just don't have more than an hour or so in the mornings, and that's when I'm working out. But either way, I'm trying to play the long game here. I want to be strong and healthy, not necessarily make my life revolve around being "a weightlifter."</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Links 11-17-2022</title>
-            <pubDate>11/17/2022</pubDate>
-            <link>https://cdbaca.github.io/ssg/links-11-17-2022.html</link>
-            <guid>https://cdbaca.github.io/ssg/links-11-17-2022.html</guid>
-            <content:encoded><![CDATA[ <h2>Links Lurking in My Tabs</h2>
-
-<ol>
-<li><a href="https://www.swyx.io/learn-in-public/">Learn in Public</a></li>
-</ol>
-
-<blockquote>
-  <p>Whatever your thing is, make the thing you wish you had found when you were learning. Don’t judge your results by “claps” or retweets or stars or upvotes - just talk to yourself from 3 months ago. I keep an almost-daily dev blog written for no one else but me. Guess what? It’s not about reaching as many people as possible with your content. If you can do that, great, remember me when you’re famous. But chances are that by far the biggest beneficiary of you trying to help past you is future you. If others benefit, that’s icing.</p>
-</blockquote>
-
-<ol>
-<li><a href="https://www.ribbonfarm.com/series/domestic-cozy/">Domestic Cozy</a></li>
-</ol>
-
-<blockquote>
-  <p>Domestic cozy is in an attitude, emerging socioeconomic posture, and aesthetic, that is in many ways the antithesis of premium mediocrity. Unsurprisingly, it takes its cues from the marginal shadow behaviors of premium mediocrity. It finds its best expression in privacy, among friends, rather than in public, among strangers. It prioritizes the needs of the actor rather than the expectations of the spectator. It seeks to predictably control a small, closed environment rather than gamble in a large, open one. It presents a WYSIWYG facade to those granted access rather than performing in a theater of optics.</p>
-</blockquote>
-
-<ol>
-<li><a href="https://solar.lowtechmagazine.com/about.html#hardware">(Solar) Low-Tech Magazine</a></li>
-</ol>
-
-<blockquote>
-  <p>The Internet is not an autonomous being. Its growing energy use is the consequence of actual decisions made by software developers, web designers, marketing departments, publishers and internet users. With a lightweight, off-grid solar-powered website, we want to show that other decisions can be made.</p>
-</blockquote>
-
-<ol>
-<li><a href="https://homebrewserver.club/low-tech-website-howto.html">Homebrew Servers Club</a></li>
-<li><a href="https://applerankings.com">Apple Rankings - finally... a definitive ranking of apples.</a></li>
-<li><a href="https://linuxize.com/post/how-to-create-bash-aliases/">How to Create Bash Aliases</a></li>
-<li><a href="https://vandenbran.de/post/2022-05-10-smol-web-lean-hosting/">My Small Web Setup</a></li>
-</ol>
-
-<h2>Books I Came Across This Week</h2>
-
-<ol>
-<li><a href="https://www.amazon.com/New-Dark-Age-Technology-Future-ebook/dp/B076NR24RZ/ref=sr_1_1?keywords=9781786635471&amp;linkCode=qs&amp;qid=1668542579&amp;s=books&amp;sr=1-1">New Dark Age: Technology and the End of the Future</a></li>
-<li><a href="https://www.amazon.com/Life-Code-Personal-History-Technology-ebook/dp/B01N4P12XJ/ref=sr_1_1?keywords=9780374711412&amp;linkCode=qs&amp;qid=1668542434&amp;s=books&amp;sr=1-1">Life in Code: A Personal History of Technology</a></li>
-<li><a href="https://www.amazon.com/Everything-All-Time-Everywhere-Postmodern-ebook/dp/B08V5F6V5H/ref=tmm_kin_swatch_0?_encoding=UTF8&amp;qid=&amp;sr=">Everything, All the Time, Everywhere: How We Became Postmodern</a></li>
-<li><a href="https://www.amazon.com/We-Have-Never-Been-Modern/dp/0674948394/ref=sr_1_1?crid=15OG65TW087AK&amp;keywords=latour+we+have+never+been+modern&amp;qid=1668542794&amp;s=books&amp;sprefix=latour+we+have+never+been+moder%2Cstripbooks%2C84&amp;sr=1-1">We Have Never Been Modern</a></li>
-<li><a href="https://www.amazon.com/Bacteria-Bach-Back-Evolution-Minds-ebook/dp/B01HDSU2KY/ref=sr_1_1?crid=PP0G561ISSFL&amp;keywords=dennett+bach&amp;qid=1668542767&amp;s=books&amp;sprefix=dennet+bach%2Cstripbooks%2C81&amp;sr=1-1">From Bacteria to Bach and Back: The Evolution of Minds</a> </li>
-</ol>
-
-<h2>Videos</h2>
-
-<ol>
-<li><a href="https://www.youtube.com/watch?v=qE77MbDnljA">Rsync - Corey Schafer</a></li>
-<li><a href="https://www.youtube.com/watch?v=vpk_1gldOAE">SSH - Corey Schafer</a></li>
-<li><a href="https://www.youtube.com/watch?v=toBTPGfurLc">Rich Spirit - Kendrick Lamar</a></li>
-</ol>
  ]]></content:encoded>
         </item>
     
