@@ -8,6 +8,36 @@
     <language>en-us</language>    
     
         <item>
+            <title>John Scalzi on the Artisan Web</title>
+            <pubDate>11/29/2022 15:42:52</pubDate>
+            <link>https://cdbaca.github.io/ssg/john-scalzi-on-the-artisan-web.html</link>
+            <guid>https://cdbaca.github.io/ssg/john-scalzi-on-the-artisan-web.html</guid>
+            <content:encoded><![CDATA[ <blockquote>
+  <blockquote>
+    <p>Now, why should we bring back that artisan, hand-crafted Web? Oh, I don’t know. Wouldn’t it be nice to have a site that’s not run by an amoral billionaire chaos engine, or algorithmically designed to keep you doomscrolling in a state of fear and anger, or is essentially spyware for governments and/or corporations? Wouldn’t it be nice not to have ads shoved in your face every time you open an app to see what your friends are up to? Wouldn’t it be nice to know that when your friends post something, you’ll actually see it without a social media platform deciding whether to shove it down your feed and pump that feed full of stuff you didn’t ask for?</p>
+  </blockquote>
+</blockquote>
+
+<p>--<a href="https://whatever.scalzi.com/2022/11/25/how-to-weave-the-artisan-web/">John Scalzi: "How to Weave the Artisan Web"</a></p>
+
+<p>I know I keep tooting this horn but... dang it, it's true!</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
+            <title>Mastodon No More</title>
+            <pubDate>11/29/2022 09:23:42</pubDate>
+            <link>https://cdbaca.github.io/ssg/mastodon-no-more.html</link>
+            <guid>https://cdbaca.github.io/ssg/mastodon-no-more.html</guid>
+            <content:encoded><![CDATA[ <p>I decided yesterday that Mastodon wasn't a good fit for me and deleted my account at IndieWeb.Social. The premise, I think, was promising. Federated groupings, servers run by real people and not a single corporation, better rules of engagement, etc. But it didn't take long before I was seeing the same sorts of undesirable behavior on my instance that I was seeing on Twitter that made me get off in the first place.</p>
+
+<p>Perhaps it will be a balm for those whose online lives revolve around Twitter. It's just not what I want the internet to be. More and more, I want the internet to be a little more homebrewed, a little less corporate. At least, that's the internet <em>I</em> want to interact with. </p>
+
+<p>I'm still interested in giving micro.blog a go, but there are some technical challenges with building a feed on this website since it's static, and then hooking it up with ActivityPub. I need to do some more reading and digging at the micro.blog forums to see what that will entail. And then the question really is, why do I want the micro-format in the first place? Onen of the other things that bugged me about Twitter a long time ago was that I felt myself "thinking in Tweets" rather than thinking in broader strokes and trying to piece things together. The micro format <em>itself</em> encourages short-form thinking, which is not what I want to find myself doing regularly.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>God is (in) the Details</title>
             <pubDate>11/28/2022 16:19:21</pubDate>
             <link>https://cdbaca.github.io/ssg/god-is-in-the-details.html</link>
@@ -106,81 +136,6 @@ posts_copy = deepcopy(posts)
 <p>From there, I was able to manipulate values in the function without worrying about overwriting data in the original list.</p>
 
 <p>I like programming, but that was maddening.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Twitter v. Mastodon v. Micro.blog</title>
-            <pubDate>11/18/2022</pubDate>
-            <link>https://cdbaca.github.io/ssg/twitter-v-mastodon-v-micro-blog.html</link>
-            <guid>https://cdbaca.github.io/ssg/twitter-v-mastodon-v-micro-blog.html</guid>
-            <content:encoded><![CDATA[ <blockquote>
-  <blockquote>
-    <p>Twitter right now is mainly about Twitter but also a little about Mastodon. And Mastodon is mainly about Mastodon but also a lot about Twitter. Both places seem to be pretty chaotic, but here at micro.blog @manton &amp; co. are keeping things smooth and steady. It helps that there don’t seem to be many drama-addicted folks around here.</p>
-  </blockquote>
-</blockquote>
-
-<p>-- <a href="https://social.ayjay.org/2022/11/18/twitter-right-now.html">Alan Jacobs</a></p>
-
-<p>Yeah, agreed. I hadn't been on Twitter in while, but jumped to Mastodon just to check things out and see if it could operate differently than Twitter. My observations:</p>
-
-<ol>
-<li><em>Mastodon is better than Twitter in many ways.</em> Built in RSS feeds for accounts, ActivityPub compatible so it's genuinely federated, no quote tweeting, better moderation (similar to the better Reddit communities).</li>
-<li><em>Mastodon doesn't quite live up to what I want it to be.</em> What I wanted was, perhaps, a way for people to be self-hosted but have a local space where that stuff got sent and you could just check in and see what others are thinking or up to.</li>
-<li><em>Lots of people at Mastodon are just talking about Twitter.</em> I actually had to filter out posts that mention the word, but then there are people that call it the "bird site" or talk about Elon or whatever. I want Mastodon to be more than that but maybe that will take some time.</li>
-</ol>
-
-<p>I'm also not convinced Mastodon won't become a sort of Twitter 2.0. Maybe not quite as hateful or outrageous, but still chaotic. I've been considering trying micro.blog instead to see if that would function closer to what I want out of the web. It seesm like it's possible that service is closer than Mastodon.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Fitness Update</title>
-            <pubDate>11/18/2022</pubDate>
-            <link>https://cdbaca.github.io/ssg/fitness-update.html</link>
-            <guid>https://cdbaca.github.io/ssg/fitness-update.html</guid>
-            <content:encoded><![CDATA[ <p>A general fitness update:</p>
-
-<p>I've been working out consistently 8/22/22, which is right at 13 weeks. The first few weeks, I was using the <a href="https://thefitness.wiki/routines/r-fitness-basic-beginner-routine/">r/Fitness Basic Routine</a>. This was helpful just for getting into weightlifting again (I haven't lifted weights since high school!). It helped lower the barrier and increase my confidence since I was just relearning a few basic barbell moves.</p>
-
-<p>After a few weeks, my confidence was high enough that I was able to switch over to a routine that I felt better suited my needs. r/Fitness doesn't recommend it, but I decided to go with <a href="stronglifts.com">StrongLifts 5x5</a>, since it seemed like a logical step up. Roughly the same basic barbell lifts:</p>
-
-<h3>A Day</h3>
-
-<ol>
-<li>Squat</li>
-<li>Bench Press</li>
-<li>Barbell Rows</li>
-</ol>
-
-<h3>B Day</h3>
-
-<ol>
-<li>Squat</li>
-<li>Overhead Press</li>
-<li>Deadlift</li>
-</ol>
-
-<p>You can go to his site for more details. But the basic idea is, start with really low weight on all lifts (the bar if you can, or a little bit of weight if it needs to be off the floor). Every move is 5 sets of 5 reps with the same weight. The next time you do that move, you increase the weight by 5lbs (2.5 weights on each side). Pure linear progression until your form breaks down or you can't lift the weight. Within a few weeks, I felt good enough to also add in extra arm work (A day: dips and skullcrushers, B day: chin ups and barbell or dumbbell curls). </p>
-
-<h3>Postives / Wins</h3>
-
-<ul>
-<li>My chin ups have increased drastically. Before I started lifting, I could only do 1-2 chin ups. I can now do roughly 3 sets of 5 or 6 with no assistance, and that's after I do heavy lifting.</li>
-<li>Deadlift is currently sitting at around 165 lbs.</li>
-<li>I'm seeing body changes which are really cool. I haven't seen real upper body tone on me in a loooooooong time. It's nice to feel like I have muscles and to feel strong.</li>
-</ul>
-
-<h3>Negatives / Struggles</h3>
-
-<ul>
-<li>Currently dealing with ann anterior hip flexor issue. It seems like it might have been caused by bad squat form. I've fixed that (I think), but it's gonna take a while to heal, so I'm sticking around the 115-130 range for my squats.</li>
-<li>Overhead press has been stalled for weeks now. I made it to about 65-70 lbs but just can't get 5x5. </li>
-</ul>
-
-<p>I can see why r/Fitness overall doesn't recommened StrongLifts. Honestly, I think it's a great program for someone starting out. It's simple, effective for building quick strength, and it's a quick workout (mine are usually 45-55 minutes). But I think the deload program doesn't really work. This is obvious by the OHP struggles I'm having. I also think it's possible that for many people who lack strength, growing your squat weight that quickly and squatting so often has the potential for injuring you if you aren't careful or don't listen to your body.</p>
-
-<p>At the end of the day, my goal is really to support other activities I want to do (mainly, running and climbing). I'll continue doing StrongLifts for at least another 2 weeks to finish out 12 full weeks on the program, but I may end up switching to <a href="https://thefitness.wiki/routines/5-3-1-for-beginners/">Jim Wendler's 5/3/1</a> or the <a href="https://thefitness.wiki/routines/gzclp/">GZCL program</a>. My only concern with those are the time commitment. I just don't have more than an hour or so in the mornings, and that's when I'm working out. But either way, I'm trying to play the long game here. I want to be strong and healthy, not necessarily make my life revolve around being "a weightlifter."</p>
  ]]></content:encoded>
         </item>
     
