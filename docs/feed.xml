@@ -8,6 +8,60 @@
     <language>en-us</language>    
     
         <item>
+            <title>Robin Sloan on New Ideas</title>
+            <pubDate>12/07/2022 11:02:00</pubDate>
+            <link>https://cdbaca.github.io/ssg/robin-sloan-on-new-ideas.html</link>
+            <guid>https://cdbaca.github.io/ssg/robin-sloan-on-new-ideas.html</guid>
+            <content:encoded><![CDATA[ <blockquote>
+  <blockquote>
+    <p>All along, from the frothy 1990s to the percolating 2000s to the frozen 2010s to today, the web has been the sure thing. All along, it’s been growing and maturing, sprouting new capabilities. From my vantage point, that growth has seemed to accelerate in the past five years...</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>For people who care about creating worlds together, rather than getting rich, the web is the past and the web is the future. What luck, that this decentralized, permissionless system claimed a position at the heart of the internet, and stuck there. It’s limited, of course; frustrating; sometimes maddening. But that’s every creative medium. That’s life.</p>
+  </blockquote>
+</blockquote>
+
+<p>--<a href="https://www.robinsloan.com/lab/new-avenues/">"A Year of New Avenues"</a> - Robin Sloan</p>
+
+<p>And also:</p>
+
+<blockquote>
+  <blockquote>
+    <p>Back in the 2000s, a lot of blogs were about blogs, about blogging. If that sounds exhaustingly meta, well, yes — but it was also SUPER generative. When the thing can describe itself, when it provides the best place to talk about itself, I am telling you, some internal flywheel gets spinning, and powerful things start to happen.</p>
+  </blockquote>
+</blockquote>
+
+<p>I expressed frustration about this a couple of weeks ago (i.e., wanting to see more blogs that weren't <em>about blogs</em> but blogs about other things... homesteading or anthropology or design or whatever). But maybe Robin has a point here... the meta-ness of blogging about blogging is generative.</p>
+
+<p>As a side note, this is sending me down another hole. Three things I've been rolling around in my head:</p>
+
+<ol>
+<li>I like e-ink, but damn do the companies that produce these products not make it easy to develop for their readers. Especially Kindle. I'm an avid Paperwhite user, but I have essentially <em>zero</em> ability to make anything for the Kindle. (I had an idea this morning for building an RSS service that automatically sends to Kindle... worth exploring).</li>
+<li>This site is served on a VPS with a Digital Ocean droplet. But of course, that sent me down the rabbit hole of <a href="https://homebrewserver.club/">homebrewed servers</a>. So I'm thinking about getting a Raspberry Pi or something, hooking it up to a small portable hard drive and setting up my own little server at home. </li>
+<li>Found this via RSS this morning: Ryan Cordell is a professor that teaches about digital humanities. <a href="https://ryancordell.org/teaching/">His teaching page is here</a>. Somewhere along the way, I guess he mentioned that he's moving all of his course stuff to Canvas (his school's LMS), but before that, he was building personal sites that contained his course material... which I LOVE. I get why you wouldn't do this (school policy, requiring students to use another platform, etc.), but the <em>feel</em> of independence and playfulness here is really fun. That's not even the point I'm trying to make though. I have also been thinking about what it means to teach digital literacy to middle and high schoolers. Everything from learning very basic coding, owning your own domain, how the web works, and how to identify and interact with good and bad information. Almost a "philosophy of the web" course/s informed by indie web stuff and Neil Postman.</li>
+</ol>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
+            <title>Currently Listening/Reading: A Tribe Called Quest</title>
+            <pubDate>12/07/2022 09:41:14</pubDate>
+            <link>https://cdbaca.github.io/ssg/currently-listening-reading-a-tribe-called-quest.html</link>
+            <guid>https://cdbaca.github.io/ssg/currently-listening-reading-a-tribe-called-quest.html</guid>
+            <content:encoded><![CDATA[ <h3>Currently listening: <em>Low End Theory</em> - A Tribe Called Quest</h3>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1p12OAWwudgMqfMzjMvl2a?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+
+<h3>Currently reading: <em>Go Ahead in the Rain: Notes to A Tribe Called Quest</em> - Hanif Abdurraqib</h3>
+
+<p><a href="https://www.amazon.com/Go-Ahead-Rain-Called-American/dp/1477316485/ref=sr_1_1?keywords=go+ahead+in+the+rain&amp;qid=1670427939&amp;sr=8-1"><img src="https://m.media-amazon.com/images/I/51EhJ5WCYdL._AC_SY780_.jpg"></img></a></p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>John Scalzi on the Artisan Web</title>
             <pubDate>11/29/2022 15:42:52</pubDate>
             <link>https://cdbaca.github.io/ssg/john-scalzi-on-the-artisan-web.html</link>
@@ -58,84 +112,6 @@
 <p>Mostly, it's in the details that I have these feelings. The feel of Elaine's hand on my back, the feel of my daughters' hair when I kiss them goodnight on the top of the head, the cold wind in the morning when I'm out walking, the gratitude I feel when surrounded by close friends and family.</p>
 
 <p>Perhaps God is in the details after all, and that is all that we can say about it.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Changing up the Coffee Routine</title>
-            <pubDate>11/22/2022 09:52:53</pubDate>
-            <link>https://cdbaca.github.io/ssg/changing-up-the-coffee-routine.html</link>
-            <guid>https://cdbaca.github.io/ssg/changing-up-the-coffee-routine.html</guid>
-            <content:encoded><![CDATA[ <p>Probably for the better part of 2+ years, my coffee routine hasn't shifted much. I roast coffee roughly once every six weeks or so, usually about 5 lbs at a time. Once the coffee has had a few days to rest post-roast, I put a little in a jar for the next week's consumption. The rest get sealed with the FoodSaver and frozen.</p>
-
-<p>Nearly every day, I have two cups of coffee -- one in the morning and one around 2pm or so. A while back, James Hoffmann posted <a href="https://www.youtube.com/watch?v=j6VlT_jUVPc">his preferred Aeropress recipe</a>. I use this every time I make an Aeropress now with slight variation:</p>
-
-<h3>Current Aeropress Recipe</h3>
-
-<ol>
-<li>Standard orientation (non-inverted)</li>
-<li>13 g coffee, ground relatively fine</li>
-<li>Coffee in, then add 200 g water at roughly 205 degrees F</li>
-<li>Let steep for 2 minutes, then swirl</li>
-<li>At four minutes, plunge</li>
-</ol>
-
-<p>That's it. I love the simplicity of it, and honestly it makes a pretty incredible cup.</p>
-
-<p>Sometimes in the afternoon I'll do the same, but I also have a Rancilio Silvia (V3), and if I'm feeling frisky for a few weeks, I will hit the espresso in the afternoon. I also got <em>really</em> into making cortados at work in the afternoon at the beginning of this year. I had a goal of getting better at latte (well... cortado) art, so I was drinking a <em>ton</em> of espresso in January and February. That was fun, but got to be a little too much dairy. I did succeed though! I make a pretty mean cortado if I do so say myself. My latte art went from being awful to mediocre+. That is, I can make a heart if I try hard enough and the stars align.</p>
-
-<p>Years ago, I was Chemex-obsessed. In the same way I've used the Aeropress nearly every day for two years, I did the same with the Chemex. Alas, it broke while cleaning it at some point, and I never bothered to buy a new one. Until recently, that is! I needed to buy another one for Thanksgiving because we're having family over this year.</p>
-
-<p>The new Chemex arrived two days ago, and I made my first Chemex in a couple of years. You know how there is just something about a smell or flavor that really takes you back to a point in your life? I know it's cliché, but that really does happen with the Chemex. It smells slightly different, brings out different aromatics, has a brighter flavor than the Aeropress or French Press. That said, I'm guessing I'll stick with the Chemex for a good long while and enjoy the nostalgia it brings with it.</p>
-
-<h3>Current Chemex Recipe</h3>
-
-<ol>
-<li>35 g coffee, ground medium-fine</li>
-<li>Use total 595 g water</li>
-<li>Start with 70 g water to bloom, wait 45 seconds</li>
-<li>Pour remainder of water in spurts of about 100 g or so</li>
-<li>Final goal is for the coffee to finish brewing within 4-5 minutes of starting the bloom</li>
-</ol>
-
-<p>I used to take measurements and grinding and stuff so seriously and tried not to deviate. Coffee, however, is alive. It changes as the days get further out from the roast date. This usually requires a change in the brewing or grinding method. And because people usually have different coffee flavor preferences, I find that it's fine to change up water/coffee ratios, grind size, or whatever until you find what suits you. The only general rules I follow are: get roasted coffee as fresh as you can, and try to find a relatively inexpensive burr grinder. The rest will work itself out. Oh, and immersion brewing (Aeropress and French Press) covers a multitude of sins.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>TIL: 11-18-22</title>
-            <pubDate>11/18/2022 16:03:38</pubDate>
-            <link>https://cdbaca.github.io/ssg/til-11-18-22.html</link>
-            <guid>https://cdbaca.github.io/ssg/til-11-18-22.html</guid>
-            <content:encoded><![CDATA[ <p>I came across an issue today with the generator I've written. If I write multiple posts in a day, the RSS feed may not pick up the newest post, because all the original post dates were set to today's date, but a time of 00:00:00 CST. So if it doesn't sort it properly, a feed reader may not pick up the newest post of the day because it could get pushed to the bottom of the list of today's posts instead of the top.</p>
-
-<p>To fix that, I introduced datetimes to my "create a post" script, and then had to manipulate that datetime string to do what I needed in the creation of the data structures for the site. E.g., I wanted only the date (not the time) to show up on the index page, but I want them in order of writing in reverse. I also wanted the feed to be in reverse order of writing so that even if I post multiple times a day, feed readers will pick up the newest post.</p>
-
-<p>The problem is, I have multiple functions doing the work of creating posts, manipulating data, creating the index page vs. the RSS feed vs. actual posts. But there is a single reference list of dictionaries I'm passing into these functions. In the script, my "make<em>index" function happens upstream of the "make</em>rss" function. And even though the index function was getting the right order, somehow, after I was passing in and manipulating the data in the function, the <em>original list</em> was getting manipulated even though I assigned it to a new variable.</p>
-
-<p>Apparently, this is a feature/bug in Python (I'm sure someone <em>likes</em> that this happens in Python... I didn't experience that particular joy today). For example, if I have a list of lists called "posts" and then say posts<em>copy = posts, if I manipulate values within the posts</em>copy list, any values I change there <em>will also change</em> the values in the reference list. That's bonkers, but whatever. After a couple of hours of cursing the void, I found my answer <a href="https://stackoverflow.com/questions/68712435/changes-made-in-python-list-showing-up-in-copy-of-original-list">here</a>. Not only do you need to assign the values to a new variable, you have to make a "deepcopy" of the original list and assign it (if the list in question has other data structures inside it). So instead of</p>
-
-<p>`</p>
-
-<pre><code>posts_copy = copy
-</code></pre>
-
-<p>`</p>
-
-<p>I needed to do:</p>
-
-<p>`</p>
-
-<pre><code>from copy import deepcopy
-
-posts_copy = deepcopy(posts)
-</code></pre>
-
-<p>`</p>
-
-<p>From there, I was able to manipulate values in the function without worrying about overwriting data in the original list.</p>
-
-<p>I like programming, but that was maddening.</p>
  ]]></content:encoded>
         </item>
     
