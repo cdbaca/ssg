@@ -8,6 +8,19 @@
     <language>en-us</language>    
     
         <item>
+            <title>Currently Listening - Midnight Marauders by A Tribe Called Quest</title>
+            <pubDate>12/15/2022 17:22:10</pubDate>
+            <link>https://cdbaca.github.io/ssg/currently-listening-midnight-marauders-by-a-tribe-called-quest.html</link>
+            <guid>https://cdbaca.github.io/ssg/currently-listening-midnight-marauders-by-a-tribe-called-quest.html</guid>
+            <content:encoded><![CDATA[ <h3>Currently listening: <em>Midnight Marauders</em> - A Tribe Called Quest</h3>
+
+<p>I gotta say, it's weird to listen to a group's discography, and for each album to be incredible, <em>and</em> for each album to be better than the last. Also fun to listen to these as I read the corresponding chapters in <em>Go Ahead in the Rain: Notes to A Tribe Called Quest</em>.</p>
+
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/4v5x3Oo3UjQ9YmF3hRAip5?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Filling up Time</title>
             <pubDate>12/15/2022 16:15:00</pubDate>
             <link>https://cdbaca.github.io/ssg/filling-up-time.html</link>
@@ -92,19 +105,6 @@
 <p>--<a href="https://whatever.scalzi.com/2022/11/25/how-to-weave-the-artisan-web/">John Scalzi: "How to Weave the Artisan Web"</a></p>
 
 <p>I know I keep tooting this horn but... dang it, it's true!</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Mastodon No More</title>
-            <pubDate>11/29/2022 09:23:42</pubDate>
-            <link>https://cdbaca.github.io/ssg/mastodon-no-more.html</link>
-            <guid>https://cdbaca.github.io/ssg/mastodon-no-more.html</guid>
-            <content:encoded><![CDATA[ <p>I decided yesterday that Mastodon wasn't a good fit for me and deleted my account at IndieWeb.Social. The premise, I think, was promising. Federated groupings, servers run by real people and not a single corporation, better rules of engagement, etc. But it didn't take long before I was seeing the same sorts of undesirable behavior on my instance that I was seeing on Twitter that made me get off in the first place.</p>
-
-<p>Perhaps it will be a balm for those whose online lives revolve around Twitter. It's just not what I want the internet to be. More and more, I want the internet to be a little more homebrewed, a little less corporate. At least, that's the internet <em>I</em> want to interact with. </p>
-
-<p>I'm still interested in giving micro.blog a go, but there are some technical challenges with building a feed on this website since it's static, and then hooking it up with ActivityPub. I need to do some more reading and digging at the micro.blog forums to see what that will entail. And then the question really is, why do I want the micro-format in the first place? Onen of the other things that bugged me about Twitter a long time ago was that I felt myself "thinking in Tweets" rather than thinking in broader strokes and trying to piece things together. The micro format <em>itself</em> encourages short-form thinking, which is not what I want to find myself doing regularly.</p>
  ]]></content:encoded>
         </item>
     

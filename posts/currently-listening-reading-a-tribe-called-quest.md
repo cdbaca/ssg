@@ -2,7 +2,7 @@
 title: Currently Listening/Reading: A Tribe Called Quest
 author: Chris
 date: 12/07/2022 09:41:14 
-tags: hip hop
+tags: hip hop, currently listening
 ---
 
 ### Currently listening: *Low End Theory* - A Tribe Called Quest
