@@ -9,11 +9,13 @@ I lasted about 12 weeks on the StrongLifts program. That is, until I got some ki
 
 After doing some more research, I decided to switch over to the GZCLP Program, named for [Cody LeFever](http://swoleateveryheight.blogspot.com/)'s Reddit username. It's a linear progression, so you're still *basically* adding weight each time. But everything is much slower, and takes a more logical approach to progressive overload for the different lifts.
 
-The basic program is built like a pyramid with tiers:
+### The basic program is built like a pyramid with tiers:
 
-T1 - Main barbell lift for the day. Heavy, low rep sets to build continuous strength.
-T2 - Main assistance for the day, usually an assistance of the *previous workout's* primary lift. Mid-weight, mid-range rep sets.
-T3 - Secondary assistance for the day. 1-3 workouts that are assistance for the T1 and T2 workouts. Low weight, high rep sets.
+- T1 - Main barbell lift for the day. Heavy, low rep sets to build continuous strength.
+- T2 - Main assistance for the day, usually an assistance of the *previous workout's* primary lift. Mid-weight, mid-range rep sets.
+- T3 - Secondary assistance for the day. 1-3 workouts that are assistance for the T1 and T2 workouts. Low weight, high rep sets.
+
+The primary idea here is that the T1 workouts are the "peak" of the pyramid. It's the height of your strength, but it needs support from lower-level bases. T2 helps provide mid-range strength, and T3 provides a solid base to work from. Build out the whole pyramid, and you have a balanced, stable way of maintaining overall strength.
 
 ### Two things I'm finding helpful with this program:
 
