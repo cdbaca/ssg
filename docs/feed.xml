@@ -8,6 +8,32 @@
     <language>en-us</language>    
     
         <item>
+            <title>Workout Program Change - GZCLP</title>
+            <pubDate>12/16/2022 10:21:52</pubDate>
+            <link>https://cdbaca.github.io/ssg/workout-program-change-gzclp.html</link>
+            <guid>https://cdbaca.github.io/ssg/workout-program-change-gzclp.html</guid>
+            <content:encoded><![CDATA[ <p>I lasted about 12 weeks on the StrongLifts program. That is, until I got some kind of hip flexor injury. I suspect it was from a massive amount of squatting, along with not-great form for my anatomy. After I took about a week or two off of heavy squatting, the problem resolved itself, but it did make me question whether StrongLifts was a smart program for me. Some people swear by it, but I did find it unbalanced for progress and the focus on one area (squats) above all others.</p>
+
+<p>After doing some more research, I decided to switch over to the GZCLP Program, named for <a href="http://swoleateveryheight.blogspot.com/">Cody LeFever</a>'s Reddit username. It's a linear progression, so you're still <em>basically</em> adding weight each time. But everything is much slower, and takes a more logical approach to progressive overload for the different lifts.</p>
+
+<p>The basic program is built like a pyramid with tiers:</p>
+
+<p>T1 - Main barbell lift for the day. Heavy, low rep sets to build continuous strength.
+T2 - Main assistance for the day, usually an assistance of the <em>previous workout's</em> primary lift. Mid-weight, mid-range rep sets.
+T3 - Secondary assistance for the day. 1-3 workouts that are assistance for the T1 and T2 workouts. Low weight, high rep sets.</p>
+
+<h3>Two things I'm finding helpful with this program:</h3>
+
+<ol>
+<li>On StrongLifts, you are always pushing for 5x5. If you can't get it, you try twice more, then deload and try again. Honestly, that's kinda dumb the more I got into it. I plateaued very quickly on a few lifts, and couldn't get past those humps even after "following the program." On GZCLP, T1 and T2 have a plan for when you fail. For example, on T1 workouts, when you can't hit 5x3, you move to 6x2, then continue the weight progression. When you can't hit that, you move to 10x1. When you fail again, you reduce by 15%, then go back to 5x3. Makes a lot more sense, and there's a sensible method for deloading and continuing growth.</li>
+<li>The assistance work is varied, and I think will help with strength gains for the primary lifts. I had no method of doing that before, it was just trying the same lifts again and again, which ignores the possibility that some assitance muscles are too weak for me to grow in the main lifts.</li>
+</ol>
+
+<p>For a good overview of the program, see this <a href="https://www.reddit.com/r/Fitness/comments/6pjiwd/heres_a_quick_summary_of_the_gzclp_linear/">Reddit post</a>. There's an infographic, and the user also has a free Google Sheet that I'm using to track my workouts for now. I'm gonna give this a go for 12 weeks and see if I can make some better gains in strength. I already feel stronger than I did at the end of StrongLifts.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Old Philosophy Is Still Good Philosophy</title>
             <pubDate>12/16/2022 08:22:49</pubDate>
             <link>https://cdbaca.github.io/ssg/old-philosophy-is-still-good-philosophy.html</link>
@@ -112,21 +138,6 @@
 <li>This site is served on a VPS with a Digital Ocean droplet. But of course, that sent me down the rabbit hole of <a href="https://homebrewserver.club/">homebrewed servers</a>. So I'm thinking about getting a Raspberry Pi or something, hooking it up to a small portable hard drive and setting up my own little server at home. </li>
 <li>Found this via RSS this morning: Ryan Cordell is a professor that teaches about digital humanities. <a href="https://ryancordell.org/teaching/">His teaching page is here</a>. Somewhere along the way, I guess he mentioned that he's moving all of his course stuff to Canvas (his school's LMS), but before that, he was building personal sites that contained his course material... which I LOVE. I get why you wouldn't do this (school policy, requiring students to use another platform, etc.), but the <em>feel</em> of independence and playfulness here is really fun. That's not even the point I'm trying to make though. I have also been thinking about what it means to teach digital literacy to middle and high schoolers. Everything from learning very basic coding, owning your own domain, how the web works, and how to identify and interact with good and bad information. Almost a "philosophy of the web" course/s informed by indie web stuff and Neil Postman.</li>
 </ol>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Currently Listening/Reading: A Tribe Called Quest</title>
-            <pubDate>12/07/2022 09:41:14</pubDate>
-            <link>https://cdbaca.github.io/ssg/currently-listening-reading-a-tribe-called-quest.html</link>
-            <guid>https://cdbaca.github.io/ssg/currently-listening-reading-a-tribe-called-quest.html</guid>
-            <content:encoded><![CDATA[ <h3>Currently listening: <em>Low End Theory</em> - A Tribe Called Quest</h3>
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/album/1p12OAWwudgMqfMzjMvl2a?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-<h3>Currently reading: <em>Go Ahead in the Rain: Notes to A Tribe Called Quest</em> - Hanif Abdurraqib</h3>
-
-<p><a href="https://www.amazon.com/Go-Ahead-Rain-Called-American/dp/1477316485/ref=sr_1_1?keywords=go+ahead+in+the+rain&amp;qid=1670427939&amp;sr=8-1"><img src="https://m.media-amazon.com/images/I/51EhJ5WCYdL._AC_SY780_.jpg"></img></a></p>
  ]]></content:encoded>
         </item>
     
