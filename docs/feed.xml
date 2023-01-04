@@ -8,8 +8,37 @@
     <language>en-us</language>    
     
         <item>
+            <title>The Dark Forest of the Web</title>
+            <pubDate>2023-01-04 10:57:04</pubDate>
+            <link>https://cdbaca.github.io/ssg/the-dark-forest-of-the-web.html</link>
+            <guid>https://cdbaca.github.io/ssg/the-dark-forest-of-the-web.html</guid>
+            <content:encoded><![CDATA[ <blockquote>
+  <blockquote>
+    <p>The dark forest theory of the web points to the increasingly life-like but life-less state of being online. Most open and publicly available spaces on the web are overrun with bots, advertisers, trolls, data scrapers, clickbait, keyword-stuffing “content creators,” and algorithmically manipulated junk.</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>It's like a dark forest that seems eerily devoid of human life – all the living creatures are hidden beneath the ground or up in trees. If they reveal themselves, they risk being attacked by automated predators.</p>
+  </blockquote>
+</blockquote>
+
+<blockquote>
+  <blockquote>
+    <p>Humans who want to engage in informal, unoptimised, personal interactions have to hide in closed spaces like invite-only Slack channels, Discord groups, email newsletters, small-scale blogs, and digital gardens. Or make themselves illegible and algorithmically incoherent in public venues.</p>
+  </blockquote>
+</blockquote>
+
+<p>--<a href="https://maggieappleton.com/ai-dark-forest">Maggie Appleton, "The Expanding Dark Forest and Generative AI"</a></p>
+
+<p>Love the reference to The Dark Forest theory w/r/t space and why we haven't found life yet. I'm wondering a lot recently whether the internet as we know it is about to make a major, major shift. Or, maybe there'll be a small band of indie web believers, and the rest of web-connected humanity will get sucked into the neverending vortex of <a href="https://www.youtube.com/watch?v=7K1KIsHp-P4">content</a>.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Ezra Klein on Attention</title>
-            <pubDate>12/23/2022 11:14:46</pubDate>
+            <pubDate>2022-12-23 11:46:14</pubDate>
             <link>https://cdbaca.github.io/ssg/ezra-klein-on-attention.html</link>
             <guid>https://cdbaca.github.io/ssg/ezra-klein-on-attention.html</guid>
             <content:encoded><![CDATA[ <blockquote>
@@ -24,7 +53,7 @@
     
         <item>
             <title>Looking to 2023: Presence and Ease</title>
-            <pubDate>12/23/2022 09:43:45</pubDate>
+            <pubDate>2022-12-23 09:45:43</pubDate>
             <link>https://cdbaca.github.io/ssg/looking-to-2023-presence-and-ease.html</link>
             <guid>https://cdbaca.github.io/ssg/looking-to-2023-presence-and-ease.html</guid>
             <content:encoded><![CDATA[ <p>As I'm looking to 2023 and what I want the next year to be like, two words keep coming to mind: <strong>presence</strong> and <strong>ease</strong>. These two words come into focus, I think, because of how much I struggled with these in my own experience of life over the course of the last year.</p>
@@ -111,7 +140,7 @@
     
         <item>
             <title>Best of 2022</title>
-            <pubDate>12/22/2022 09:28:10</pubDate>
+            <pubDate>2022-12-22 09:10:28</pubDate>
             <link>https://cdbaca.github.io/ssg/best-of-2022.html</link>
             <guid>https://cdbaca.github.io/ssg/best-of-2022.html</guid>
             <content:encoded><![CDATA[ <p>I usually try to wait until very close to the end of the year before I make a "best of" post. I do this because it's quite often that I come across something really good in December (this is my only real issue with Spotify's Wrapped, which I love: it happens at the beginning of December, so it misses a whole month of listening). Anyway, here are my favorite things I watched/listened to/read/did this year. None of the lists are in any particular order</p>
@@ -202,7 +231,7 @@
     
         <item>
             <title>Luddite Teens</title>
-            <pubDate>12/16/2022 16:40:23</pubDate>
+            <pubDate>2022-12-16 16:23:40</pubDate>
             <link>https://cdbaca.github.io/ssg/luddite-teens.html</link>
             <guid>https://cdbaca.github.io/ssg/luddite-teens.html</guid>
             <content:encoded><![CDATA[ <blockquote>
@@ -226,36 +255,6 @@
 <p>--<a href="https://archive.ph/WeNjj">"‘Luddite’ Teens Don’t Want Your Likes"</a></p>
 
 <p>Maybe we'll make it out of this thing ok. But it will take time.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Workout Program Change - GZCLP</title>
-            <pubDate>12/16/2022 10:21:52</pubDate>
-            <link>https://cdbaca.github.io/ssg/workout-program-change-gzclp.html</link>
-            <guid>https://cdbaca.github.io/ssg/workout-program-change-gzclp.html</guid>
-            <content:encoded><![CDATA[ <p>I lasted about 12 weeks on the StrongLifts program. That is, until I got some kind of hip flexor injury. I suspect it was from a massive amount of squatting, along with not-great form for my anatomy. After I took about a week or two off of heavy squatting, the problem resolved itself, but it did make me question whether StrongLifts was a smart program for me. Some people swear by it, but I did find it unbalanced for progress and the focus on one area (squats) above all others.</p>
-
-<p>After doing some more research, I decided to switch over to the GZCLP Program, named for <a href="http://swoleateveryheight.blogspot.com/">Cody LeFever</a>'s Reddit username. It's a linear progression, so you're still <em>basically</em> adding weight each time. But everything is much slower, and takes a more logical approach to progressive overload for the different lifts.</p>
-
-<h3>The basic program is built like a pyramid with tiers:</h3>
-
-<ul>
-<li>T1 - Main barbell lift for the day. Heavy, low rep sets to build continuous strength.</li>
-<li>T2 - Main assistance for the day, usually an assistance of the <em>previous workout's</em> primary lift. Mid-weight, mid-range rep sets.</li>
-<li>T3 - Secondary assistance for the day. 1-3 workouts that are assistance for the T1 and T2 workouts. Low weight, high rep sets.</li>
-</ul>
-
-<p>The primary idea here is that the T1 workouts are the "peak" of the pyramid. It's the height of your strength, but it needs support from lower-level bases. T2 helps provide mid-range strength, and T3 provides a solid base to work from. Build out the whole pyramid, and you have a balanced, stable way of maintaining overall strength.</p>
-
-<h3>Two things I'm finding helpful with this program:</h3>
-
-<ol>
-<li>On StrongLifts, you are always pushing for 5x5. If you can't get it, you try twice more, then deload and try again. Honestly, that's kinda dumb the more I got into it. I plateaued very quickly on a few lifts, and couldn't get past those humps even after "following the program." On GZCLP, T1 and T2 have a plan for when you fail. For example, on T1 workouts, when you can't hit 5x3, you move to 6x2, then continue the weight progression. When you can't hit that, you move to 10x1. When you fail again, you reduce by 15%, then go back to 5x3. Makes a lot more sense, and there's a sensible method for deloading and continuing growth.</li>
-<li>The assistance work is varied, and I think will help with strength gains for the primary lifts. I had no method of doing that before, it was just trying the same lifts again and again, which ignores the possibility that some assitance muscles are too weak for me to grow in the main lifts.</li>
-</ol>
-
-<p>For a good overview of the program, see this <a href="https://www.reddit.com/r/Fitness/comments/6pjiwd/heres_a_quick_summary_of_the_gzclp_linear/">Reddit post</a>. There's an infographic, and the user also has a free Google Sheet that I'm using to track my workouts for now. I'm gonna give this a go for 12 weeks and see if I can make some better gains in strength. I already feel stronger than I did at the end of StrongLifts.</p>
  ]]></content:encoded>
         </item>
     

@@ -28,16 +28,38 @@ def get_post_content(posts):
         with open(f'posts/{post}','r') as file:
             html_content = markdown(file.read(), extras=['metadata'])
             metadata = html_content.metadata
-            post_data = {
-                'metadata':
-                    {'title': metadata['title'],
-                     'slug': slugify(metadata['title']),
-                     'author': metadata['author'],
-                     'date': metadata['date'],
-                     'tags': list(metadata['tags'].split(", "))
-                     },
-                'content': html_content
-            }
+            try:
+                post_data = {
+                    'metadata':
+                        {'title': metadata['title'],
+                        'slug': slugify(metadata['title']),
+                        'author': metadata['author'],
+                        'date': datetime.strptime(metadata['date'], "%m/%d/%Y %H:%S:%M"),
+                        'tags': list(metadata['tags'].split(", "))
+                        },
+                    'content': html_content
+                }
+            except:
+                post_data = {
+                    'metadata':
+                        {'title': metadata['title'],
+                        'slug': slugify(metadata['title']),
+                        'author': metadata['author'],
+                        'date': datetime.strptime(metadata['date'], "%m/%d/%Y"),
+                        'tags': list(metadata['tags'].split(", "))
+                        },
+                    'content': html_content
+                }
+            # post_data = {
+            #     'metadata':
+            #         {'title': metadata['title'],
+            #          'slug': slugify(metadata['title']),
+            #          'author': metadata['author'],
+            #          'date': metadata['date'],
+            #          'tags': list(metadata['tags'].split(", "))
+            #          },
+            #     'content': html_content
+            # }
             post_content.append(post_data)
     
     post_metadata = [post['metadata'] for post in post_content]
@@ -106,7 +128,7 @@ def make_index(post_metadata, photo_data):
             date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
             post['date'] = date.strftime('%m/%d/%Y')
         except:
-            date = datetime.strptime(date, '%m/%d/%Y')
+            # date = datetime.strptime(date, '%m/%d/%Y')
             post['date'] = date.strftime('%m/%d/%Y')
         
         recent_posts.append(post)
@@ -197,7 +219,7 @@ def make_rss(post_content):
             date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
             feed_posts[i]['date'] = date.strftime('%m/%d/%Y %H:%M:%S')
         except:
-            date = datetime.strptime(date, '%m/%d/%Y')
+            # date = datetime.strptime(date, '%m/%d/%Y')
             feed_posts[i]['date'] = date.strftime('%m/%d/%Y') + " 00:00:00"
         
         feed_post_list.append(post)
