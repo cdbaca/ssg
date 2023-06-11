@@ -8,6 +8,15 @@
     <language>en-us</language>    
     
         <item>
+            <title>test post</title>
+            <pubDate>2023-06-11 11:31:54</pubDate>
+            <link>https://cdbaca.github.io/ssg/test-post.html</link>
+            <guid>https://cdbaca.github.io/ssg/test-post.html</guid>
+            <content:encoded><![CDATA[ <p>This is a test post to make sure this still works</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>The Dark Forest of the Web</title>
             <pubDate>2023-01-04 10:57:04</pubDate>
             <link>https://cdbaca.github.io/ssg/the-dark-forest-of-the-web.html</link>
@@ -226,35 +235,6 @@
 <p>A final note: last week, I accepted a job offer at Green Line Digital as a data analyst to go work on a friend's team there. My final day at SAGU will be January 6th. And while one should never say never, I don't anticipate I'll be coming back this time. Fully remote work, a healthy pay bump, better benefits... it's gonna be a good thing for us overall even if the transition takes some getting used to.</p>
 
 <p>Overall, I'm thankful for the year, hard parts included.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Luddite Teens</title>
-            <pubDate>2022-12-16 16:23:40</pubDate>
-            <link>https://cdbaca.github.io/ssg/luddite-teens.html</link>
-            <guid>https://cdbaca.github.io/ssg/luddite-teens.html</guid>
-            <content:encoded><![CDATA[ <blockquote>
-  <blockquote>
-    <p>Eventually, too burned out to scroll past yet one more picture-perfect Instagram selfie, she deleted the app.</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <p>“But that wasn’t enough,” she said. “So I put my phone in a box.”</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <p>For the first time, she experienced life in the city as a teenager without an iPhone. She borrowed novels from the library and read them alone in the park. She started admiring graffiti when she rode the subway, then fell in with some teens who taught her how to spray-paint in a freight train yard in Queens. And she began waking up without an alarm clock at 7 a.m., no longer falling asleep to the glow of her phone at midnight. Once, as she later wrote in a text titled the “Luddite Manifesto,” she fantasized about tossing her iPhone into the Gowanus Canal.</p>
-  </blockquote>
-</blockquote>
-
-<p>--<a href="https://archive.ph/WeNjj">"‘Luddite’ Teens Don’t Want Your Likes"</a></p>
-
-<p>Maybe we'll make it out of this thing ok. But it will take time.</p>
  ]]></content:encoded>
         </item>
     
