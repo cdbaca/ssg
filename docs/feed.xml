@@ -8,6 +8,23 @@
     <language>en-us</language>    
     
         <item>
+            <title>Social Web</title>
+            <pubDate>2023-07-21 09:48:01</pubDate>
+            <link>https://cdbaca.github.io/ssg/social-web.html</link>
+            <guid>https://cdbaca.github.io/ssg/social-web.html</guid>
+            <content:encoded><![CDATA[ <p>Had a thought this morning that I wanted to jot down.</p>
+
+<p>Truly being social -- like, out in the real world, i.e., making plans, spending time with people who share and do not share our interests, etc. -- <em>requires</em> friction. Being social is at least some amount of work. It should be easy in some ways, but the act of getting together, of managing schedules, of putting time aside, of having conversations, of being awkward... those are all kind of icky sometimes.</p>
+
+<p>The social web that we've known has essentially tried to reduce all that friction down to zero. Algorithms make decisions for you -- what you see, whose thoughts you see, when you see it. Notifications take away the friction of thinking about the folks you want to talk to and have relationships with. Like buttons take away the requirement of figuring out where our friends stand on things and what they might think about us.</p>
+
+<p>As I was surfing throough some blogs the other day, I realized that there was lot more friction there. You get caught in loops, hit dead ends, you rely on who other people know and what they've come across. There are no machines <em>guiding</em> your path. The path is created by following what catches your eye.</p>
+
+<p>Maybe a better social web is frictiony. Maybe more friction, not less, is what we need to recover some of what we've lost.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Who Killed Google Reader?</title>
             <pubDate>2023-07-18 07:22:37</pubDate>
             <link>https://cdbaca.github.io/ssg/who-killed-google-reader.html</link>
@@ -90,21 +107,6 @@
 <p>--<a href="https://maggieappleton.com/ai-dark-forest">Maggie Appleton, "The Expanding Dark Forest and Generative AI"</a></p>
 
 <p>Love the reference to The Dark Forest theory w/r/t space and why we haven't found life yet. I'm wondering a lot recently whether the internet as we know it is about to make a major, major shift. Or, maybe there'll be a small band of indie web believers, and the rest of web-connected humanity will get sucked into the neverending vortex of <a href="https://www.youtube.com/watch?v=7K1KIsHp-P4">content</a>.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Ezra Klein on Attention</title>
-            <pubDate>2022-12-23 11:46:14</pubDate>
-            <link>https://cdbaca.github.io/ssg/ezra-klein-on-attention.html</link>
-            <guid>https://cdbaca.github.io/ssg/ezra-klein-on-attention.html</guid>
-            <content:encoded><![CDATA[ <blockquote>
-  <blockquote>
-    <p>The cost of so much connection and information has been the deterioration of our capacity for attention and reflection. And it is the quality of our attention and reflection that matters most.</p>
-  </blockquote>
-</blockquote>
-
-<p>--<a href="https://archive.ph/m3Gkc">"The Great Delusion Behind Twitter"</a></p>
  ]]></content:encoded>
         </item>
     
