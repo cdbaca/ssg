@@ -8,6 +8,21 @@
     <language>en-us</language>    
     
         <item>
+            <title>My feelings exactly</title>
+            <pubDate>2023-07-25 14:13:12</pubDate>
+            <link>https://cdbaca.github.io/ssg/my-feelings-exactly.html</link>
+            <guid>https://cdbaca.github.io/ssg/my-feelings-exactly.html</guid>
+            <content:encoded><![CDATA[ <blockquote>
+  <blockquote>
+    <p>The web I want is powered by passion, not money. The web I want doesn't need to ask for permission to track me because they know that tracking me is not the right thing to do. The web I want doesn't make me waste bandwidth by loading pointless video autoplaying in the background. The web I want doesn't try to suck me into an endless, mindless scrolling. The web I want doesn't need to resort to clickbait headlines. The web I want doesn't care about useless metrics like clicks or views. The web I want cares about human flourishing. The web I want is inspiring. The web I want still exists. The web I want is still out there to be found. The web I want is made by people, by great people, by creative people, by interesting people. People like you.</p>
+  </blockquote>
+</blockquote>
+
+<p>-- <a href="https://manuelmoreale.com/the-web-i-want">The web I want</a></p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Social Web</title>
             <pubDate>2023-07-21 09:48:01</pubDate>
             <link>https://cdbaca.github.io/ssg/social-web.html</link>
@@ -78,35 +93,6 @@
             <link>https://cdbaca.github.io/ssg/test-post.html</link>
             <guid>https://cdbaca.github.io/ssg/test-post.html</guid>
             <content:encoded><![CDATA[ <p>This is a test post to make sure this still works</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>The Dark Forest of the Web</title>
-            <pubDate>2023-01-04 10:57:04</pubDate>
-            <link>https://cdbaca.github.io/ssg/the-dark-forest-of-the-web.html</link>
-            <guid>https://cdbaca.github.io/ssg/the-dark-forest-of-the-web.html</guid>
-            <content:encoded><![CDATA[ <blockquote>
-  <blockquote>
-    <p>The dark forest theory of the web points to the increasingly life-like but life-less state of being online. Most open and publicly available spaces on the web are overrun with bots, advertisers, trolls, data scrapers, clickbait, keyword-stuffing “content creators,” and algorithmically manipulated junk.</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <p>It's like a dark forest that seems eerily devoid of human life – all the living creatures are hidden beneath the ground or up in trees. If they reveal themselves, they risk being attacked by automated predators.</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <p>Humans who want to engage in informal, unoptimised, personal interactions have to hide in closed spaces like invite-only Slack channels, Discord groups, email newsletters, small-scale blogs, and digital gardens. Or make themselves illegible and algorithmically incoherent in public venues.</p>
-  </blockquote>
-</blockquote>
-
-<p>--<a href="https://maggieappleton.com/ai-dark-forest">Maggie Appleton, "The Expanding Dark Forest and Generative AI"</a></p>
-
-<p>Love the reference to The Dark Forest theory w/r/t space and why we haven't found life yet. I'm wondering a lot recently whether the internet as we know it is about to make a major, major shift. Or, maybe there'll be a small band of indie web believers, and the rest of web-connected humanity will get sucked into the neverending vortex of <a href="https://www.youtube.com/watch?v=7K1KIsHp-P4">content</a>.</p>
  ]]></content:encoded>
         </item>
     
