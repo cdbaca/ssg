@@ -8,6 +8,31 @@
     <language>en-us</language>    
     
         <item>
+            <title>Open Tabs 7/26</title>
+            <pubDate>2023-07-26 15:18:26</pubDate>
+            <link>https://cdbaca.github.io/ssg/open-tabs-7-26.html</link>
+            <guid>https://cdbaca.github.io/ssg/open-tabs-7-26.html</guid>
+            <content:encoded><![CDATA[ <p><a href="https://austinkleon.com">Austin Kleon</a> says in <em>Steal Like an Artist</em> that you ought to keep a swipe file for anything you find interesting, useful, etc. I'm not very good at that. Usually I have like 20 tabs open, then I forget about them till later and then have to clean them up or forget why I was interested in the first place.</p>
+
+<p>Maybe a blog is a good place to keep a swipe file? Let's see. Maybe eventually I'll just have a dedicated page/section to this stuff if it gets big enough.</p>
+
+<ul>
+<li><a href="https://computingbook.org/FullText.pdf"><em>Introduction to Computing</em> (online textbook)</a></li>
+<li><a href="https://do1.dr-chuck.net/net-intro/EN_us/net-intro.pdf"><em>Introduction to Networking</em> (online textbook) - Charles Severance</a></li>
+<li><a href="https://manuelmoreale.com/personal-blogs">Manuel Moreale - Blogs He Likes</a></li>
+<li><a href="https://escapethealgorithm.substack.com/">Escape the Alrgorithm Substack</a></li>
+<li><a href="https://medium.com/@cprkrn/running-automated-python-scripts-in-the-cloud-with-cronjobs-47476b33f817">Running Python Scripts in the cloud with cronjobs</a></li>
+<li><a href="https://wiki.nikiv.dev/">Personal Wiki Example</a></li>
+<li><a href="https://clig.dev/#guidelines">A guideline for CLIs</a></li>
+<li><a href="https://nocss.club/">nocss.club</a></li>
+<li><a href="https://docs.python.org/3/library/cgi.html">Python Docs on Common Gateway Interface for running server scripts</a></li>
+<li><a href="https://brisray.com/web/webring-history.htm">The History of Webrings</a></li>
+<li>My library apparently gives access to Udemy through the <a href="https://texshare.net/login.php?db=udemy&amp;org=">TexShare database</a>??? Wild. Waiting to get the password.</li>
+</ul>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>My feelings exactly</title>
             <pubDate>2023-07-25 14:13:12</pubDate>
             <link>https://cdbaca.github.io/ssg/my-feelings-exactly.html</link>
@@ -84,15 +109,6 @@
 <p>One thing this made me think of was this blog itself and the work it took to create it. I find it interesting that I very much enjoyed the process of building out the back end of it. Simple as it is, it took (dare I say) <em>some</em> skill. A little Python here, a little server knowledger there, with a sprinkle of command line knowldge. All of that I found quite appealing.</p>
 
 <p>And then I blogged for some time because that was fun too. I still enjoy it somewhat, but I don't think I actually enjoy the act of <em>using</em> the blog as much as I enjoyed <em>building</em> the blog. And perhaps part of the reason I felt strange about that is because I saw writing as inherently creative where I saw the building of the tool as not as creative. It seems silly to write that out, because logically I know that both are equally creative acts. But there is something about the writing thing that sticks in my brain as a more creative act than getting in the weeds of the tech required to build this thing.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>test post</title>
-            <pubDate>2023-06-11 11:31:54</pubDate>
-            <link>https://cdbaca.github.io/ssg/test-post.html</link>
-            <guid>https://cdbaca.github.io/ssg/test-post.html</guid>
-            <content:encoded><![CDATA[ <p>This is a test post to make sure this still works</p>
  ]]></content:encoded>
         </item>
     
