@@ -8,6 +8,21 @@
     <language>en-us</language>    
     
         <item>
+            <title>QOTD - 9/6/2023</title>
+            <pubDate>2023-09-06 09:38:47</pubDate>
+            <link>https://cdbaca.github.io/ssg/qotd-9-6-2023.html</link>
+            <guid>https://cdbaca.github.io/ssg/qotd-9-6-2023.html</guid>
+            <content:encoded><![CDATA[ <blockquote>
+  <blockquote>
+    <p>Real knowldge arises through confrontations with real things. Work, then, offers a broadly available premonition of philosophy. Its value, however, does not lie solely in pointing to some more rarefied experience. Rather, in the best cases, work may itself approach the good sough in philosophy, understood as a way of life: a community of those who desire to know.</p>
+  </blockquote>
+</blockquote>
+
+<p>--Matthew B. Crawford, <em>Shop Class as Soul Craft</em></p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Open Tabs 7/26</title>
             <pubDate>2023-07-26 15:18:26</pubDate>
             <link>https://cdbaca.github.io/ssg/open-tabs-7-26.html</link>
@@ -80,35 +95,6 @@
 <p><a href="https://www.theverge.com/23778253/google-reader-death-2013-rss-social">"Who Killed Google Reader?"</a></p>
 
 <p>Makes me want to build an RSS reader. Also makes me wonder if the internet could have been just a little bit different had Google thrown what they had at this thing. Maybe that's naive or idealistic, but a social network built around following real things, perhaps built a bit more organically, sounds pretty pleasant given all the current shit out there.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Building vs. Using</title>
-            <pubDate>2023-07-16 12:46:03</pubDate>
-            <link>https://cdbaca.github.io/ssg/building-vs-using.html</link>
-            <guid>https://cdbaca.github.io/ssg/building-vs-using.html</guid>
-            <content:encoded><![CDATA[ <p>I think about this blog all the time, but have had very little time to use it. (<em>nota bene</em>: Starting a new job that takes a lot of mental energy may have something to do with it.)</p>
-
-<p>In fact, I did recently pick up the backend side of the blog recently, when we were on our <strong>Great Midwest Tour of 2023</strong> -- perhaps there will be a post about that in the future.</p>
-
-<p>But I just wanted to make a note here as it struck me while I was reading a Substack post from John Warner titled <a href="https://biblioracle.substack.com/p/building-a-creative-practice">"Building a Creative Practice"</a> (h/t <a href="https://austinkleon.substack.com/p/i-dont-want-to-be-the-best">Austin Kleon</a>, as usual). In the post, John writes about what it means to "be creative" and mentions how he and his brother were very different as children in terms of which you would have thought was the more creative kid. John Warner, a writer now, was not "traditionally" creative where his brother (who is now a lawyer) was:</p>
-
-<blockquote>
-  <blockquote>
-    <p>As adults, given my work, I’m supposedly the creative one, but no one would’ve said that when we were kids, and if you asked him, he’d probably be able to tell you the ways thinking creatively have helped him professionally.</p>
-  </blockquote>
-</blockquote>
-
-<blockquote>
-  <blockquote>
-    <p>But I’m still stuck. If we’re not going to judge creativity by the outcome of a particular act that generates a painting, picture, poem, song, story, etc…how do we recognize its existence?</p>
-  </blockquote>
-</blockquote>
-
-<p>One thing this made me think of was this blog itself and the work it took to create it. I find it interesting that I very much enjoyed the process of building out the back end of it. Simple as it is, it took (dare I say) <em>some</em> skill. A little Python here, a little server knowledger there, with a sprinkle of command line knowldge. All of that I found quite appealing.</p>
-
-<p>And then I blogged for some time because that was fun too. I still enjoy it somewhat, but I don't think I actually enjoy the act of <em>using</em> the blog as much as I enjoyed <em>building</em> the blog. And perhaps part of the reason I felt strange about that is because I saw writing as inherently creative where I saw the building of the tool as not as creative. It seems silly to write that out, because logically I know that both are equally creative acts. But there is something about the writing thing that sticks in my brain as a more creative act than getting in the weeds of the tech required to build this thing.</p>
  ]]></content:encoded>
         </item>
     
