@@ -50,16 +50,6 @@ def get_post_content(posts):
                         },
                     'content': html_content
                 }
-            # post_data = {
-            #     'metadata':
-            #         {'title': metadata['title'],
-            #          'slug': slugify(metadata['title']),
-            #          'author': metadata['author'],
-            #          'date': metadata['date'],
-            #          'tags': list(metadata['tags'].split(", "))
-            #          },
-            #     'content': html_content
-            # }
             post_content.append(post_data)
     
     post_metadata = [post['metadata'] for post in post_content]
@@ -128,7 +118,6 @@ def make_index(post_metadata, photo_data):
             date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
             post['date'] = date.strftime('%m/%d/%Y')
         except:
-            # date = datetime.strptime(date, '%m/%d/%Y')
             post['date'] = date.strftime('%m/%d/%Y')
         
         recent_posts.append(post)
@@ -207,8 +196,6 @@ def make_rss(post_content):
     env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("feed.xml")
     
-    # post_content.sort(key=lambda x:x['metadata']['date'], reverse=True)
-
     feed_posts = deepcopy(post_content)
     feed_post_list = []
     for i in range(0, 5):
@@ -219,22 +206,9 @@ def make_rss(post_content):
             date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
             feed_posts[i]['date'] = date.strftime('%m/%d/%Y %H:%M:%S')
         except:
-            # date = datetime.strptime(date, '%m/%d/%Y')
             feed_posts[i]['date'] = date.strftime('%m/%d/%Y') + " 00:00:00"
         
         feed_post_list.append(post)
-        
-
-    # Date format: Wed, 10 Nov 2021 15:52:00 EST
-
-    # for post in feed_posts:
-    #     date = post['metadata']['date']
-    #     try:
-    #         date = datetime.strptime(date, '%m/%d/%Y %H:%M:%S')
-    #         post['metadata']['date'] = date.strftime("%a, %d %b %Y %H %M %S") + " CST"
-    #     except:
-    #         date = datetime.strptime(date, '%m/%d/%Y')
-    #         post['metadata']['date'] = date.strftime("%a, %d %b %Y") + " 00:00:00 CST"
 
     rendered = template.render(data=feed_post_list)
 
@@ -246,21 +220,16 @@ def make_rss(post_content):
 def main():
     posts = get_files()
     post_content, post_metadata = get_post_content(posts)
+
+    print("got posts")
     
     recent_photos, photos = get_imgs()
 
-    # for x in post_content:
-    #     print('before make index ', x['metadata']['date'])
+    print("got images")
 
     make_index(post_metadata, recent_photos)
 
-    # for x in post_content:
-    #     print('after make index ', x['metadata']['date'])
-
     make_posts(post_content)
-
-    # for x in post_content:
-    #     print('after make posts ', x['metadata']['date'])
 
     LISTPAGES['photos'] = photos
     LISTPAGES['posts'] = post_metadata
@@ -273,14 +242,15 @@ def main():
 
     make_static()
 
+    print("made static")
+
     run_tags(post_content)
-    # for x in post_content:
-    #     print('after run tags ', x['metadata']['date'])
+
+    print("made tags")
 
     make_rss(post_content)
 
-    # for x in post_content:
-    #     print('afer make rss ', x['metadata']['date'])
+    print("made rss")
 
 if __name__ == '__main__':
     main()
