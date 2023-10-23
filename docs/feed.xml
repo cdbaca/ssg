@@ -8,6 +8,25 @@
     <language>en-us</language>    
     
         <item>
+            <title>Spotify the Time Machine</title>
+            <pubDate>2023-10-23 09:08:14</pubDate>
+            <link>https://cdbaca.github.io/ssg/spotify-the-time-machine.html</link>
+            <guid>https://cdbaca.github.io/ssg/spotify-the-time-machine.html</guid>
+            <content:encoded><![CDATA[ <p>One of my consistent tech habits that I'm actually glad about is my obsession with trying to keep up with new music that I come across. It's not always "new" music -- more "new to me." Generally, if I come across an album or single or something that I think I might enjoy, I throw it into this month's folder in Spotify.</p>
+
+<p>Every year, at the beginning of the year, I make a new playlist folder titled "New Music [insert year]." Within that folder, each month gets its own playlist, so, January 2023 all the way through December 2023, for example.</p>
+
+<p>I'm not willy-nilly about what goes in the playlists, but I'm also not overly picky. Basically, I scour the New Releases every Friday to see if anything has released that's interesting (Blink-182's new album is a good example of this). If it looks like something I might listen to, it gets thrown into this month's playlist. I also use these playlists for music that's new to me, so anytime I come across an album or single song I enjoy, I move the album into this month's playlist as well.</p>
+
+<p>This has actually been really fun, because I can look back on a year and see what "stuck" and what didn't I can also find stuff that I meant to listen to but forgot that I found. This helps to keep me paying attention to new music as well. I wouldn't call myself obsessed with music, but I certainly love it about 1000x more than podcasts or audiobooks.</p>
+
+<p>I was also thinking this morning about how much I enjoy the fact that I can look back at older years and see what caught my attention. There is plenty of music that was released back in 2017, for example, that I listened to a lot that year but then it slowly faded away. This morning, I'm listening to the soundtrack from the iPhone game <em>Monument Valley 2</em>. The soundscapes are great; it's synth-y, emotional, and instrumental, so it makes for great focus music. But on top of that, my yearly new music playlists turn into a bit of a time machine. Not to put too fine a point on it, but there is some sense of being "taken back" to that time when I first discovered the album, and all the subsequent times I listened to it.</p>
+
+<p>There are lots of ways current tech lends itself to poor habits of the mind. But sometimes, I do think new technology makes our lives just a little bit better. This focused way of using Spotify is definitely something I appreciate.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Not Informed, but Stimulated</title>
             <pubDate>2023-10-20 16:51:19</pubDate>
             <link>https://cdbaca.github.io/ssg/not-informed-but-stimulated.html</link>
@@ -83,31 +102,6 @@
 </blockquote>
 
 <p>--Matthew B. Crawford, <em>Shop Class as Soul Craft</em></p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Open Tabs 7/26</title>
-            <pubDate>2023-07-26 15:18:26</pubDate>
-            <link>https://cdbaca.github.io/ssg/open-tabs-7-26.html</link>
-            <guid>https://cdbaca.github.io/ssg/open-tabs-7-26.html</guid>
-            <content:encoded><![CDATA[ <p><a href="https://austinkleon.com">Austin Kleon</a> says in <em>Steal Like an Artist</em> that you ought to keep a swipe file for anything you find interesting, useful, etc. I'm not very good at that. Usually I have like 20 tabs open, then I forget about them till later and then have to clean them up or forget why I was interested in the first place.</p>
-
-<p>Maybe a blog is a good place to keep a swipe file? Let's see. Maybe eventually I'll just have a dedicated page/section to this stuff if it gets big enough.</p>
-
-<ul>
-<li><a href="https://computingbook.org/FullText.pdf"><em>Introduction to Computing</em> (online textbook)</a></li>
-<li><a href="https://do1.dr-chuck.net/net-intro/EN_us/net-intro.pdf"><em>Introduction to Networking</em> (online textbook) - Charles Severance</a></li>
-<li><a href="https://manuelmoreale.com/personal-blogs">Manuel Moreale - Blogs He Likes</a></li>
-<li><a href="https://escapethealgorithm.substack.com/">Escape the Alrgorithm Substack</a></li>
-<li><a href="https://medium.com/@cprkrn/running-automated-python-scripts-in-the-cloud-with-cronjobs-47476b33f817">Running Python Scripts in the cloud with cronjobs</a></li>
-<li><a href="https://wiki.nikiv.dev/">Personal Wiki Example</a></li>
-<li><a href="https://clig.dev/#guidelines">A guideline for CLIs</a></li>
-<li><a href="https://nocss.club/">nocss.club</a></li>
-<li><a href="https://docs.python.org/3/library/cgi.html">Python Docs on Common Gateway Interface for running server scripts</a></li>
-<li><a href="https://brisray.com/web/webring-history.htm">The History of Webrings</a></li>
-<li>My library apparently gives access to Udemy through the <a href="https://texshare.net/login.php?db=udemy&amp;org=">TexShare database</a>??? Wild. Waiting to get the password.</li>
-</ul>
  ]]></content:encoded>
         </item>
     
