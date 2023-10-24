@@ -8,6 +8,26 @@
     <language>en-us</language>    
     
         <item>
+            <title>Computer Science Education Links</title>
+            <pubDate>2023-10-24 11:13:00</pubDate>
+            <link>https://cdbaca.github.io/ssg/computer-science-education-links.html</link>
+            <guid>https://cdbaca.github.io/ssg/computer-science-education-links.html</guid>
+            <content:encoded><![CDATA[ <p>Working tech-adjacent in digital marketing, and with a lot of data, has made me think about what kind of education would be beneficial from this point forward. My thoughts keep leading me back to computer science, since that's really the baseline for all the work I'm doing now. If I want to go deeper in data engineering or move more into the web dev/software sphere, I think I'm going to need a deeper understanding of computation, design patterns, algorithms, and so on for me to be genuinely useful in roles with more/deeper responsibility. </p>
+
+<p>Part of the reason for this, I think, is because I've tried to start some education in cloud data engineering and the truth is I just have so many gaps in my knowledge. It's very possible I've brought myself to the edge of where I can go by just trying shit out, and a somewhat more formal or structured approach will help to fill out those areas where I'm lacking.</p>
+
+<p>To that end, I just found a few links that I think could be helpful. Daunting, but each link offers what essentially amounts to a full computer science education for (mostly) free.</p>
+
+<ul>
+<li><p><a href="https://github.com/ossu/computer-science#summary">OSSU</a></p></li>
+<li><p><a href="https://teachyourselfcs.com/">Teach Yourself CS</a></p></li>
+<li><p><a href="https://github.com/P1xt/p1xt-guides#computer-science-and-programming---version-40">P1xt - Computer Science Guide</a></p></li>
+<li><p><a href="https://techdevguide.withgoogle.com/">Google's Tech Dev Guide</a></p></li>
+</ul>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Spotify the Time Machine</title>
             <pubDate>2023-10-23 09:08:14</pubDate>
             <link>https://cdbaca.github.io/ssg/spotify-the-time-machine.html</link>
@@ -87,21 +107,6 @@
 <hr />
 
 <p>There is a lot more to say, but that's what is on my mind this morning. It felt good to get a little bird's-eye perspective. Assuming I'm good about making this a priority, which I'd genuinely like to do, I'd like to dive a little deeper on some other thoughts and ideas I think are worth exploring.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>QOTD - 9/6/2023</title>
-            <pubDate>2023-09-06 09:38:47</pubDate>
-            <link>https://cdbaca.github.io/ssg/qotd-9-6-2023.html</link>
-            <guid>https://cdbaca.github.io/ssg/qotd-9-6-2023.html</guid>
-            <content:encoded><![CDATA[ <blockquote>
-  <blockquote>
-    <p>Real knowldge arises through confrontations with real things. Work, then, offers a broadly available premonition of philosophy. Its value, however, does not lie solely in pointing to some more rarefied experience. Rather, in the best cases, work may itself approach the good sough in philosophy, understood as a way of life: a community of those who desire to know.</p>
-  </blockquote>
-</blockquote>
-
-<p>--Matthew B. Crawford, <em>Shop Class as Soul Craft</em></p>
  ]]></content:encoded>
         </item>
     
