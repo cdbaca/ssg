@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="static/styles.css" type="text/css"> 
+    <title>Roots to Branches</title>
+     <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="RSS">
+</head>
+<body>
+    <div class="container">
+    
+        <div class="box header">
+            <div class="logo">
+                    <h1><a href="./index.html">Roots to Branches</a></h1>
+            </div>
+            <div class="buttons">
+            
+            <form style="display: inline" action="./about.html" method="get"><button>About</button></form>
+            
+            <form style="display: inline" action="./posts.html" method="get"><button>Posts</button></form>
+            
+            <form style="display: inline" action="./photos.html" method="get"><button>Photos</button></form>
+            
+            <form style="display: inline" action="./tags.html" method="get"><button>Tags</button></form>
+            
+            <form style="display: inline" action="./lift.html" method="get"><button>Lift</button></form>
+                       
+            </div>
+        </div>
+        
+    
+<div class="box post">
+    <h1 class="post-title">Computer Science Ed - Applicative vs. Normal Order Evaluation</h1>
+    <p>I recently started reading <a href="https://sarabander.github.io/sicp/html/index.xhtml#SEC_Contents"><em>Structure and Interpretation of Computer Programs</em></a> (the first recommended book in the <a href="www.teachyourselfcs.com">Teach Yourself CS</a> curriculum). I'm not even past the first section of the first chapter, and there are already concepts I'm coming across that never crossed my mind before, despite working with Python and Javascript for the last few years.</p>
+
+<p>One concept I found interesting and yet difficult to grasp at first is the idea of the order in which computeres evaluate procedures. In SICP, they write of Scheme (a subset of the Lisp programming language) that it is an applicative-order language. That is,</p>
+
+<blockquote>
+  <blockquote>
+    <p>All the arguments to Scheme procedures are evaluated when the procedure is applied. In contrast, normal-order languages dalay evaluation of procedure arguments until the actual argument values are needed.
+    --1.1.5, <a href="https://sarabander.github.io/sicp/html/1_002e1.xhtml#g_t1_002e1_002e5:~:text=Applicative%20order%20versus%20normal%20order">"Applicative order versus normal order"</a></p>
+  </blockquote>
+</blockquote>
+
+<p>The example problem used to confirm that Scheme is an applicative-order language is the definition of two procedures and a calling of the test procedure:</p>
+
+<p><code>
+    (define (p) (p))
+    (define (test x y)
+        (if (= x 0)
+        0
+        y))
+    (test 0 (p))
+</code></p>
+
+<p>Because Scheme is an applicative-order language, the interpreter attempts to evaluate all the arguments within the test procedure <em>first</em> before the full procedure is applied. When it tries to do this, (p) is called infinitely because (p) calls itself. The interpreter can never finish calling the actual procedure we're attempting to call because it's trying to determine a true value for (p) before determining whether x = 0 or not.</p>
+
+
+    
+        <p><strong>Tagged:</strong> <a href="tags/computer science.html">computer science</a>,  <a href="tags/technology.html">technology</a>, </p>
+    
+</div>
+
+    
+        <div class="box footer">
+            <div class="links">
+            <p><a href="https://github.com/cdbaca">Github</a>
+                |
+                <a href="./feed.xml">RSS</a>
+            </div>
+            <div class="banner">
+                <a href="https://512kb.club"><img src="https://512kb.club/assets/images/green-team.svg" /></a>
+            </div>
+            </p>
+        </div>
+    
+    </div>
+</body>
+</html>
