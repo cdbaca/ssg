@@ -8,6 +8,17 @@
     <language>en-us</language>    
     
         <item>
+            <title>People and Blogs Series -  Manuel Moreale</title>
+            <pubDate>2023-12-08 08:11:35</pubDate>
+            <link>https://cdbaca.github.io/ssg/people-and-blogs-series-manuel-moreale.html</link>
+            <guid>https://cdbaca.github.io/ssg/people-and-blogs-series-manuel-moreale.html</guid>
+            <content:encoded><![CDATA[ <p>I keep ringing the bell a million times over, but I'm such a huge fan of the indie web and blogs in particular. I think it's the best way to resist the pull of large-scale corporations running the internet, and the barrier for entry (despite the technical knowledge sometimes required) is so low, that I think this is the way forward for keeping part of the internet sane.</p>
+
+<p>A series I'm really enjoying from an indie blogger is a weekly series that <a href="https://manuelmoreale.com/">Manuel Moreale</a> is running over at his blog. The series is "People &amp; Blogs" and he's just interviewing other folks on the internet running blogs and who are keeping up their own little corners of the web. The <a href="https://manuelmoreale.com/pb-eli-mellen">most recent one</a> dropped today, and all of them are worth perusing.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>The Blog is Already Back</title>
             <pubDate>2023-12-04 16:14:14</pubDate>
             <link>https://cdbaca.github.io/ssg/the-blog-is-already-back.html</link>
@@ -104,26 +115,6 @@
 <p>This is such a strange, weird, nostalgia-inducing piece of music. Every time I listen to it, I experience unexplainable feelings of longing and melancholy. It's very strange for a piece of music to do that, but there you have it.</p>
 
 <p>Anyway, I'm still taking a trip in my <a href="https://cbaca.blog/spotify-the-time-machine.html">Spotify time machine</a> and came across the album <a href="https://open.spotify.com/album/2Nz9gdj35Unk1AbfL8Igmx?si=azvxpfevQoumuccsolhM_A"><em>Odyssey</em> by Home</a>, which I discovered after the YouTube algorithm so graciously gifted my with "Resonance." It's pretty great -- many of the songs also have that retro feel and its instrumental nature lends itself to being able to continute to focus at work while I listen.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Computer Science Education Links</title>
-            <pubDate>2023-10-24 11:13:00</pubDate>
-            <link>https://cdbaca.github.io/ssg/computer-science-education-links.html</link>
-            <guid>https://cdbaca.github.io/ssg/computer-science-education-links.html</guid>
-            <content:encoded><![CDATA[ <p>Working tech-adjacent in digital marketing, and with a lot of data, has made me think about what kind of education would be beneficial from this point forward. My thoughts keep leading me back to computer science, since that's really the baseline for all the work I'm doing now. If I want to go deeper in data engineering or move more into the web dev/software sphere, I think I'm going to need a deeper understanding of computation, design patterns, algorithms, and so on for me to be genuinely useful in roles with more/deeper responsibility. </p>
-
-<p>Part of the reason for this, I think, is because I've tried to start some education in cloud data engineering and the truth is I just have so many gaps in my knowledge. It's very possible I've brought myself to the edge of where I can go by just trying shit out, and a somewhat more formal or structured approach will help to fill out those areas where I'm lacking.</p>
-
-<p>To that end, I just found a few links that I think could be helpful. Daunting, but each link offers what essentially amounts to a full computer science education for (mostly) free.</p>
-
-<ul>
-<li><p><a href="https://github.com/ossu/computer-science#summary">OSSU</a></p></li>
-<li><p><a href="https://teachyourselfcs.com/">Teach Yourself CS</a></p></li>
-<li><p><a href="https://github.com/P1xt/p1xt-guides#computer-science-and-programming---version-40">P1xt - Computer Science Guide</a></p></li>
-<li><p><a href="https://techdevguide.withgoogle.com/">Google's Tech Dev Guide</a></p></li>
-</ul>
  ]]></content:encoded>
         </item>
     
