@@ -7,4 +7,4 @@ tags: woodworking
 
 Just got an old Bailey #5, and I'll be restoring it soon. Paul Sellers has some no-nonsense videos, and this seems like a very doable way to restore the one I just got.
 
-<iframe src=https://www.youtube.com/watch?v=RYyV6IUpsYk></iframe>
+<iframe src=https://www.youtube.com/embed/RYyV6IUpsYk></iframe>
