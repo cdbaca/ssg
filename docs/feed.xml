@@ -8,6 +8,29 @@
     <language>en-us</language>    
     
         <item>
+            <title>A Lack of Theology</title>
+            <pubDate>2024-01-03 08:50:48</pubDate>
+            <link>https://cdbaca.github.io/ssg/a-lack-of-theology.html</link>
+            <guid>https://cdbaca.github.io/ssg/a-lack-of-theology.html</guid>
+            <content:encoded><![CDATA[ <p>I was doing my normal morning peel through my RSS feeds (thanks Feedly), and I realized my own personal blogosphere has changed significantly from what it was many years ago. A decade ago, or perhaps more, was somewhat of a golden age of the wider blogosphere in general and the Christian / theological blogosphere in particular.</p>
+
+<p>It felt like important conversations were happening. Facebook and Twitter loomed large but those places were built to funnel you to the blogs that people operated on their own or as part of larger networks of blogs like Patheos (which from what I can tell is just a shitty website now, but I digress).</p>
+
+<p>Anyway, to my point. I realized this morning that nearly my entire feed now is taken up by non-theological posts. Probably the most prominent ones I follow are culture and tech related -- e.g., Marginal Revolution, Manuel Morreale, Austin Kleon, Maggie Appleton, David Perrell, Alan Jacobs (though his can be somewhat theological at times).</p>
+
+<p>In fact, the only explicitly theological blog that I can think of that I receive posts from regularly is Richard Beck's Experimental Theology blog. And the truth is I mostly skim his posts now. (Though I should  note that he is the most consistent blogger in my feed aside from Tyler Cowen. Richard Beck has a daily post on weekdays and hasn't missed, I think, ever since I started following him probably a decade ago.)</p>
+
+<p>I wonder, does that say something about me? About the state of theological blogs in 2024? Maybe both. Even before I backed away from the faith trajectory I was on for several years though, I remember seeing the Christian blog scene fade away almost completely. Everything went to big walled gardens that were only accessible with a login somewhere.</p>
+
+<p>But, enough about the tech side. I feel I have said my piece on this many times before and I don't need to always make the same point again and again. </p>
+
+<p>The interesting thing that I think is happening to me is I'm feeling some renewed interest in exploring faith again. I know that it will not feel this way always. This feeling has ebbed and flowed in me just like this many times before. But, with the family Bible study we're doing weekly, listening to some Bible Project podcasts, and a little more open discussion with family about faith in general, I think my attention is turning yet again towards faith, theology, and philosophy. The "big questions" are still not only important to me but also still worth thinking about and wrestling with.</p>
+
+<p>I don't want to make 2024 some big year where I'm trying to become another version of who I was before, or make some outlandish goals that are impractical. But maybe 2024 can be somewhat of a comeback year for my own orientation/lens for how I perceive life.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Site Design Inspiration - Carl Barenbrug</title>
             <pubDate>2023-12-31 14:29:20</pubDate>
             <link>https://cdbaca.github.io/ssg/site-design-inspiration-carl-barenbrug.html</link>
@@ -141,135 +164,6 @@
 </blockquote>
 
 <p>My website build is pretty basic, and is essentially built around plain text files (in Markdown) and a couple of templates and Python scripts. But all of it is essentially plain text. At the time, I was building the site to learn about the very basics of personal web framework building (if you could even call it that). But I also stumbled into a world of more digital simplicity, and hopefully by virtue of that, more resilience.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Best of 2023</title>
-            <pubDate>2023-12-11 19:23:35</pubDate>
-            <link>https://cdbaca.github.io/ssg/best-of-2023.html</link>
-            <guid>https://cdbaca.github.io/ssg/best-of-2023.html</guid>
-            <content:encoded><![CDATA[ <p>Starting this post early this year because I want to make sure that I get everything down that I want to get down. 2023 was... wild? Not sure if that is quite the right word for it. It certainly held so much for me and for our family. I'll get to that at the bottom of the post. But for now, let's go over my favorite things of the year:</p>
-
-<h1>Music</h1>
-
-<h3>Favorite Songs</h3>
-
-<p>I seem to have mostly kept with the 2000s indie | 90s/00s hip-hop | pop | progressive bluegrass trend. My favorite songs of the year are compiled here in this Spotify playlist:</p>
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2ysmC07e9WEr7iYE8hmG00?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-<p>I love Spotify Wrapped, but I never feel like it <em>quite</em> captures the overall feel of my music for the year. Usually when I come across a new song that I listen to a ton, it gets thrown in this playlist. I also don't feel like I came across as much truly new music this year as I have in previous years.</p>
-
-<h3>Favorite Albums</h3>
-
-<ul>
-<li><em>GUTS</em> - Olivia Rodrigo</li>
-<li><em>Celebrants</em> - Nickel Creek</li>
-<li><em>Beneath the Medicine Tree</em> - Copeland (old but rediscovered this year)</li>
-<li><em>College Park</em> - Logic</li>
-<li><em>the record</em> - boygenius (new to me in December but enjoying it a lot)</li>
-<li><em>Transatlanticism</em> - Death Cab for Cutie</li>
-</ul>
-
-<h3>Concerts</h3>
-
-<ul>
-<li>June 2023 - Nickel Creek | <em>Celebrants</em> tour</li>
-<li>September 2023 - Switchfoot | 20 year <em>Beautiful Letdown</em> tour</li>
-<li>October 2023 - Deathcab for Cutie | 20 year <em>Transatlanticism</em> tour + Postal Service | 20 year <em>Give Up</em> tour</li>
-</ul>
-
-<h1>Movies</h1>
-
-<p>(these were all I could remember but I'm sure there are more)</p>
-
-<ul>
-<li><em>Barbarian</em></li>
-<li><em>Spider-Man: Across the Spider-Verse</em></li>
-<li><em>TMNT: Mutant Mayhem</em></li>
-<li><em>The Marvels</em></li>
-<li><em>Everything Everywhere All at Once</em></li>
-<li><em>Parasite</em></li>
-<li><em>Ant-Man: Quantumania</em></li>
-<li><em>Elemental</em> (saw this on our epic midwest roadtrip, half of us were sick lol)</li>
-<li><em>Guardians of the Galaxy, Vol. 3</em> (great first use of "fuck" in the MCU)</li>
-<li><em>Oppenheimer</em></li>
-<li><em>Barbie</em></li>
-<li><em>Knock at the Cabin</em></li>
-<li><em>The Rental</em></li>
-<li><em>Bodies Bodies Bodies</em></li>
-<li><em>No Hard Feelings</em></li>
-<li><em>A Haunting in Venice</em></li>
-<li><em>Mission Impossible: Dead Reckoning</em></li>
-<li><em>The Unbearable Weight of Massive Talent</em></li>
-<li><em>The Killer</em></li>
-<li><em>Leave the World Behind</em></li>
-</ul>
-
-<h1>TV</h1>
-
-<ul>
-<li><em>The Bear</em> (S2, kept the momentum going for sure)</li>
-<li><em>You</em> (S4)</li>
-<li><em>Ted Lasso</em> (S3)</li>
-<li><em>The Crowded Room</em></li>
-<li><em>Black Mirror</em> (S6)</li>
-<li><em>Beef</em> (up there with Loki and The Bear for top 2023 contenders)</li>
-<li><em>Dave</em> (season 3, good, but not as great as S2. "Hearsay" was a banger though.)</li>
-<li><em>Silo</em></li>
-<li><em>The Last of Us</em></li>
-<li><em>Succession</em> (started, I think we're in S2 now)</li>
-<li><em>Loki</em> (S2, best Marvel has done in a long time)</li>
-<li><em>Doctor Who</em> 60th anniversary specials (David Tennant is back!)</li>
-<li><em>Lessons in Chemistry</em></li>
-</ul>
-
-<h1>Books</h1>
-
-<ul>
-<li><em>Gilead</em> - Marilynne Robinson</li>
-<li><em>Harry Potter and the Half-Blood Prince</em> - J.K. Rowling (to Lyla)</li>
-<li><em>Harry Potter and the Prisoner of Azkaban</em> - J.K. Rowling (to Paisley)</li>
-<li><em>Strange Rites</em> - Tara Isabella Burton</li>
-<li><em>Jonathan Strange and Mr. Norrell</em> - Susanna Clarke | <strong>The favorite this year</strong></li>
-<li><em>Shop Class as Soul Craft</em> - Matthew B. Crawford</li>
-<li><em>The Three Body Problem</em> - Cixin Liu</li>
-<li><em>The Dark Forest</em> - Cixin Liu</li>
-<li><em>Death's End</em> - Cixin Liu</li>
-<li><em>The Postmortal</em> - Drew Magary</li>
-<li><em>Wool</em> - Hugh Howey</li>
-<li><em>Shift</em> - Hugh Howey (anticipating finishing this before the end of 2023)</li>
-</ul>
-
-<h1>Everything Else</h1>
-
-<p>This truly was a big year for our family. I talked about some of this in my <a href="https://cbaca.blog/status-update-10-17-23.html">October 2023 update</a>, but the biggest obvious things are that I started a new job at <a href="https://greenline.nyc">Green Line Digital</a> in January, and we finished up our house selling/purchasing process in October/November. We now live in a much newer home with just a little more space for our family. It has been a dream so far.</p>
-
-<p>The girls started 4th and 7th grade, and things are definitely changing for Lyla. It's so strange to see someone genuinely grow up right before your eyes, but that's what she is doing 12/13 is a big year for her.</p>
-
-<p>One of my main goals for the year was my desire to pursue <a href="https://cbaca.blog/looking-to-2023-presence-and-ease.html">presence + ease</a>. I think that I sometimes got this right, but mostly I failed. Starting a new job was a big change for us as a family. While I really do love remote work and wouldn't trade it, there was a big learning curve for all of us, and I often struggled to not be frustrated when we were all home together and I felt the pressure of doing well at a new job. I do think that the end of the year is better than the beginning, especially in terms of being more present. One quote from <em>Gilead</em> that I put in that post was:</p>
-
-<blockquote>
-  <p>Irritation is a form of anger, I recognize that.</p>
-</blockquote>
-
-<p>And it still haunts me somewhat. I am more easily irritated than I want to be, especially at my kiddos, and I want to continue to work on this. Another post will come, I think, where I look at how I want to look forward to the 2024.</p>
-
-<h3>Another couple of highlights:</h3>
-
-<ul>
-<li><p>We bought two farm-fresh turkeys for Thanksgiving. Due to weird timing, Elaine's brother and I had to take the turkeys (Snowflake and Thunder) to get slaughtered and processed. I really didn't know how this would go, and thought I wouldn't want to eat them. But honestly, it was quite an enlightening experience, and those birds had "one bad day" as my sister-in-law likes to say.</p></li>
-<li><p>Not long after that, my best friend from high school and I went duck hunting, which was also a new experience for me. We didn't shoot anything that day, but it was a blast being out there, and honestly made me want to give it a shot again. I'd love to go hunting a few times a year just to be a little more connected to my food and nature.</p></li>
-<li><p>As a celebration of a new job and Elaine's parents moving from GA to TX, we all went to Disney World in February. This was my second trip and a total blast. Lyla's first real roller coaster was Guardians of the Galaxy, and she was TERRIFIED the first time all the way through, but we got to ride it two more times while we were there. 100% the best roller coaster experience I've ever had. It was wild to get up very early and work so I could meet the family at the parks in the afernoon though.</p></li>
-<li><p>We had a long midwest road trip as a family in June. We drove through Kansas City (saw some other old high school friends, and saw Nickel Creek live, which was the girls' first concert ever!), St. Louis, on up to Chicago. Chicago was such a fun time, and it was a place none of us had ever visited. Saw the Cubs play, had deep dish (meh), went to the Museum of Science and Industry, walked Navy Pier, saw the Bean, had Intelligentsia, went to Indiana Dunes National Park. On the way back we stayed in Branson, MO which is WAYYYY prettier than I would have ever thought. In the kindness of an old friend from college, we got to stay in a cabin in the woods and it was beautiful. Branson wasn't much, but Lambert's was maybe the best country food I've ever eaten.</p></li>
-<li><p>Watching the division and world series of the MLB and experiencing the Rangers FINALLY winning a title with Elaine and her family (who are huge fans).</p></li>
-<li><p>My first blood nephew was born, and we got to meet him on his second day on the planet.</p></li>
-<li><p>Went to Louisiana, had a Darrell's special (not as good as my dad said it would be) and saw baby alligators at a roadside attraction place that I passed a million times when I was a kid.</p></li>
-<li><p>Lyla had three theater performances (Cinderella, Jungle Book, Game of Tiaras, The Audition) and Paisley had one (Cinderella, Jungle Book)</p></li>
-<li><p>I took about six months to beat <em>The Legend of Zelda: Tears of the Kingdom</em> -- a fantastic game, but man it's hard to find enough time to beat massive games like this</p></li>
-<li><p>Buzzed my head for the first time ever, that was cool for about a week, and then I hated it.</p></li>
-</ul>
  ]]></content:encoded>
         </item>
     
