@@ -8,6 +8,15 @@
     <language>en-us</language>    
     
         <item>
+            <title>Six Arrows for Naydra</title>
+            <pubDate>2024-01-05 08:37:30</pubDate>
+            <link>https://cdbaca.github.io/ssg/six-arrows-for-naydra.html</link>
+            <guid>https://cdbaca.github.io/ssg/six-arrows-for-naydra.html</guid>
+            <content:encoded><![CDATA[ <p>Hell yeah. <a href="https://blacktaffy.bandcamp.com/album/six-arrows-for-naydra">"Six Arrows for Naydra"</a>, a reimagining of BOTW/TOTK music by Black Taffy. H/T <a href="https://austinkleon.substack.com/p/exact-revenge">Austin Kleon's 10 things Friday newsletter</a>.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>A Lack of Theology</title>
             <pubDate>2024-01-03 08:50:48</pubDate>
             <link>https://cdbaca.github.io/ssg/a-lack-of-theology.html</link>
@@ -121,49 +130,6 @@
             <content:encoded><![CDATA[ <p>Just got an old Bailey #5, and I'll be restoring it soon. Paul Sellers has some no-nonsense videos, and this seems like a very doable way to restore the one I just got.</p>
 
 <iframe src=https://www.youtube.com/embed/RYyV6IUpsYk></iframe>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Links and Readings on Plain Text</title>
-            <pubDate>2023-12-20 10:26:56</pubDate>
-            <link>https://cdbaca.github.io/ssg/links-and-readings-on-plain-text.html</link>
-            <guid>https://cdbaca.github.io/ssg/links-and-readings-on-plain-text.html</guid>
-            <content:encoded><![CDATA[ <p>Via Manuel Morreale's People &amp; Blogs series, I came across some interesting writing, thoughts, and links on focusing on and using plain text for our digital lives. This is interesting to me because I like the thought that plain text is (at minimum) the most durable text format that we have right now (as opposed to .doc or some other file type).</p>
-
-<h1>Here are some links / quotes on this topic:</h1>
-
-<p><a href="https://www.gozgeek.com/posts/2021/my-journey-into-the-plain-text-life-intro/">"My Journey into the Plain Text Life - Intro"</a></p>
-
-<blockquote>
-  <p>Everything Buckets are selling you a filesystem, and removing the step of creating and saving a new file within that filesystem. That’s their primary value. Whatever organization scheme they may claim to offer, you can replicate on the filesystem. I promise. Even tags (symlinks, aliases - look ’em up).
-  <a href="https://web.archive.org/web/20211227173721/https://www.al3x.net/blog/2009/01/31/the-case-against-everything-buckets">"The Case Against Everything Buckets"</a></p>
-</blockquote>
-
-<p><a href="https://plaintextproject.online/">Plain Text Project</a></p>
-
-<p><a href="https://muckhacker.com/elements-of-the-web-text-519c1028ffce">Simple and Universal: A History of Plain Text, and Why It Matters</a></p>
-
-<p><a href="https://tinybrain.fans/low-no-tech-productivity.html">Tiny Brains - Low/No-Tech Productivity</a></p>
-
-<blockquote>
-  <p>Every few years a new company says you should use their special format. You have to pay them a monthly fee to use it — or keep all of your documents in their care. They offer some convenience or features, but at the cost of flexibility, portability, and independence.</p>
-</blockquote>
-
-<blockquote>
-  <p>When you store your writing in one company’s unique format, then you need that program to access it. Then the economy takes a turn, they go out of business, and your work is trapped in an unusable format.</p>
-</blockquote>
-
-<blockquote>
-  <p>You will outlive these companies. Your writing should outlive you. Depending on companies is not an option.</p>
-</blockquote>
-
-<blockquote>
-  <p>Plain text is un-commercial. It removes you from the world of subscriptions and hype. There will always be plenty of free, non-commercial software in the public domain for reading and editing text files.
-  <a href="https://sive.rs/plaintext">"Write Plain Text Files"</a></p>
-</blockquote>
-
-<p>My website build is pretty basic, and is essentially built around plain text files (in Markdown) and a couple of templates and Python scripts. But all of it is essentially plain text. At the time, I was building the site to learn about the very basics of personal web framework building (if you could even call it that). But I also stumbled into a world of more digital simplicity, and hopefully by virtue of that, more resilience.</p>
  ]]></content:encoded>
         </item>
     
