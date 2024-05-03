@@ -8,6 +8,25 @@
     <language>en-us</language>    
     
         <item>
+            <title>Maybe There Are Two Internets</title>
+            <pubDate>2024-05-03 12:47:56</pubDate>
+            <link>https://cdbaca.github.io/ssg/maybe-there-are-two-internets.html</link>
+            <guid>https://cdbaca.github.io/ssg/maybe-there-are-two-internets.html</guid>
+            <content:encoded><![CDATA[ <p>I don't write about it much here, but I work in digital marketing in my day job. Because of this, I consistently experience a bit of cognitive dissonance. On the one hand, I love the idea of the web as an open, democratic place. One where privacy reigns supreme, where you can stumble upon some really amazing stuff on any given day, where you can find people you never would have found before that share your same interests, and chiefly, where corporations decidedly <em>do not</em> have control over your digital assets.</p>
+
+<p>It's the reason I even have a self-hosted blog in the first place. It's why I'm not (really) on social media.</p>
+
+<p>But -- and maybe, probably this is a little bit of self-justification -- maybe it's best to think about the internet as somewhat multifaceted. Maybe it doesn't only need to be the social, open web (though I want more and more of that). The truth is, the fact that portions of the internet are commodified, open to advertising, and that people give away a little bit of their privacy so they can find the products and services they want is not the worst thing. Partially because it provides my own livelihood, of course. But also because the digital economy has lifted a ton of folks up -- people who perhaps otherwise would never have had a voice or been able to build their own business. (Elaine's photography is a good example of this).</p>
+
+<p>I'm starting to think that it may be helpful to think of the internet as somewhat split. There's the commodified side. Which, sure, can be a little icky sometimes. You have to give away a bit of yourself to participate. But there are also ways around this if you really care about privacy.</p>
+
+<p>Then there's the open, non-analytics side. There are anonymous and non-anonymous blogs and sites where you can still stumble across things without worrying about your feeds and how much you linger on something being tracked. Two different spaces, two different purposes.</p>
+
+<p>Maybe it's just a little more complex than the idealism of a one-size-fits-all approach.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Further Down the Road towards a Less Human Web</title>
             <pubDate>2024-02-05 10:46:29</pubDate>
             <link>https://cdbaca.github.io/ssg/further-down-the-road-towards-a-less-human-web.html</link>
@@ -92,17 +111,6 @@
 <p>This is something I think I've not fully been able to articulte in the past, especially w/r/t my ongoing facscination with existentialism and in particularl Kierkegaard.</p>
 
 <p>Ultimately, Kierkegaard's epistemological work enthralled me (and continues to) because I think he maps out a condition that <em>still</em> matters, even in 21st century modernity. Kierkegaard, I think, is a theologian first and foremost (earlier works notwithstanding). His main life's work was later in his writing, and being faithful under modern epistemological conditions was a constant source of tension for him, IMO. The "ache" or something similar to Charles Taylor's term regarding "fullness" in a secular age brings about the <em>need</em> for existential theology -- otherwise, we're perhaps speaking a disingenuous language.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Adding Webmentions Walkthrough (link)</title>
-            <pubDate>2024-01-16 13:39:51</pubDate>
-            <link>https://cdbaca.github.io/ssg/adding-webmentions-walkthrough-link.html</link>
-            <guid>https://cdbaca.github.io/ssg/adding-webmentions-walkthrough-link.html</guid>
-            <content:encoded><![CDATA[ <p>For future me:</p>
-
-<p><a href="https://janmonschke.com/adding-webmentions-to-your-static-blog/">"Adding webmentions to your static blog"</a></p>
  ]]></content:encoded>
         </item>
     
