@@ -1,4 +1,4 @@
-menu = {'About':'about', 'Posts':'posts', 'Photos':'photos', 'Tags':'tags', 'Lift':'lift'}
+menu = {'About':'about','Now':'now', 'Posts':'posts', 'Photos':'photos', 'Tags':'tags', 'Lift':'lift'}
 
 links = {
     'https://lanebphotography.com': 'Elaine Baca Photography',

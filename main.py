@@ -102,6 +102,26 @@ def get_imgs():
 
     return(recent_photos, photos)
 
+def make_now():
+    os.makedirs('now', exist_ok=True)
+    
+    with open(f'now/now_page.md','r') as file:
+        html_content = markdown(file.read())
+
+    env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
+    template = env.get_template('now.html')
+
+    content = {}
+    content['html_content'] = html_content
+
+    rendered = template.render(data=content, menu=MENU)
+
+    os.makedirs('docs', exist_ok=True)
+
+    with open('docs/now.html', 'w') as f:
+        f.write(rendered)
+        
+
 def make_index(post_metadata, photo_data):
     env = Environment(loader=FileSystemLoader(TEMPLATESDIR))
     template = env.get_template("index.html")
@@ -226,6 +246,10 @@ def main():
     recent_photos, photos = get_imgs()
 
     print("got images")
+
+    make_now()
+
+    print("made now")
 
     make_index(post_metadata, recent_photos)
 
