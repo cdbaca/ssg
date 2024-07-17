@@ -8,6 +8,21 @@
     <language>en-us</language>    
     
         <item>
+            <title>The Weekly Scratchpad is Back, Baby</title>
+            <pubDate>2024-07-17 12:10:03</pubDate>
+            <link>https://cdbaca.github.io/ssg/the-weekly-scratchpad-is-back-baby.html</link>
+            <guid>https://cdbaca.github.io/ssg/the-weekly-scratchpad-is-back-baby.html</guid>
+            <content:encoded><![CDATA[ <p>Long ago, in my university career years, I had a running template "scratchpad" that I used to keep track of projects I was running, to-do lists, links I ran into, thoughts, etc. For some reason, when I left that job for the second time (lol) and began working at home, I abandoned that method even though I actually found it quite useful. I have been experimenting with the Arc browser for a while, and it's held some of my website links. I also like the "Spaces" feature, which helps to differentiate what I'm working on. But I have some concerns about Arc (namely, their stupid push for <a href="https://cbaca.blog/further-down-the-road-towards-a-less-human-web.html">"AI search"</a>. Also, Manu <a href="https://manuelmoreale.com/some-more-thoughts-on-tbc">posted some thoughts</a> recently about Arc that made me rethink my use of their product... mostly that it's not "reimagining the internet," but just a fancy Chromium wrapper.)</p>
+
+<p>In any case, what I <em>don't</em> want is for my links and things that I find to get sucked into a separate product that I won't have access to if I decide to stop using it or whatever. This actually happened with my former scratchpad notes because I was using Evernote and stopped last year. And I really hate that exporting notes from Evernote is such a hassle.</p>
+
+<p>All that to say, I'm trying out a new scratchpad process using Apple Notes. Obviously that doesn't exactly solve the problem of them being "stuck" in an application, but Apple is a little friendlier to privacy and I'd anticipate I could transfer all those notes if I wanted to.</p>
+
+<p>In theory, the best solution would be my own homegrown notes system built on .txt or .md files, but I'm not really at the point where I want to build that myself so... here we are.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Feeling Alienated</title>
             <pubDate>2024-07-16 14:11:04</pubDate>
             <link>https://cdbaca.github.io/ssg/feeling-alienated.html</link>
@@ -102,19 +117,6 @@
 <p>But damn if it isn't sad. These were the two top stories last week. AI has been on our societal brain for the last couple of years. We knew Apple was working on this for a while, and it came out and there is tons of hype.</p>
 
 <p>And all I can see is a bleaker, less human web.</p>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Emergence from Modularity - Quote</title>
-            <pubDate>2024-01-19 11:07:11</pubDate>
-            <link>https://cdbaca.github.io/ssg/emergence-from-modularity-quote.html</link>
-            <guid>https://cdbaca.github.io/ssg/emergence-from-modularity-quote.html</guid>
-            <content:encoded><![CDATA[ <blockquote>
-  <p>The prevalence of modularity in computer design, and of "emergent" strategies and techniques in software design, makes my dreams of Morlockian power seem absurdly far-fetched. If the people who design and build the microchips, construct the hardware, and write the software codes don't understand how exactly the whole thing manages to work—or, as is often the case, why it doesn't—then shouldn't I just become the most skillful computer user I can (a "power user," as the lingo has it) and forget about tinkering under the hood? After all, Johnson argues that, as self-organizing systems become more technologically dominant—a development he thinks is inevitable, especially in computer software—the ability to "accommodate uncertainty" (as Baldwin and Clark put it), to accept one's lack of control over the outcome of a given process, will become a cardinal virtue.</p>
-</blockquote>
-
-<p>--Alan Jacobs, <a href="https://www.booksandculture.com/articles/2002/mayjun/10.16.html">"Computer Control (Who's In Charge?)"</a></p>
  ]]></content:encoded>
         </item>
     
