@@ -8,14 +8,6 @@
     a website from scratch. Thanks for stopping by.</p>
     <br>
 </div>
-<div class="box blogroll">
-    <h2>Other Sites I Like:</h2>
-    <ul>
-        {% for link in links %}
-        <li><a href="{{ link }}">{{ links[link] }}</a></li>
-        {% endfor %}
-    </ul>
-</div>
 <div class="box posts">
     <h2>Recent Posts:</h2>
     <ul class="post-list">
@@ -24,7 +16,7 @@
         {% endfor %}
     </ul>
 </div>
-<div class="box photos">
+<div class="box photos"></div>
     <div class="sectionheader">
         <h2>Recent Photos:</h2>
     </div>
@@ -35,4 +27,13 @@
         {% endfor %}
     </div>
 </div>
+<div class="box blogroll"></div>
+    <h2>Other Sites I Like:</h2>
+    <ul>
+        {% for link in links %}
+        <li><a href="{{ link }}">{{ links[link] }}</a></li>
+        {% endfor %}
+    </ul>
+</div>
+
 {% endblock %}
