@@ -15,7 +15,7 @@ Another year, another review. I'll be 100% honest, I both want and don't want to
 
 Yet again, I don't feel like Spotify Wrapped captured the musical year for me. It may have even been worse than [last year](https://cbaca.blog/best-of-2023.html). But! Regardless of what they said I mostly listened to, I feel like we had a pretty great musical year. Here's another Spotify playlist of my favorites:
 
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/2ysmC07e9WEr7iYE8hmG00?utm_source=generator" width="100%" height="152" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0NF9z5n8gXskwcb1w26HD7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
 
 
 ### Favorite Albums (and a word about big "moments")
