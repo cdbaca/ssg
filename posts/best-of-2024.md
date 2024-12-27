@@ -24,62 +24,64 @@ The beginning of the year was filled with boygenius's *the record*, and Tyler Ch
 
 After that, I think it was primarily a hip-hop year, with some incredible releases:
 
-*Ultra 85* - Logic
-*Chromakopia* - Tyler, the Creator
-*Bando Stone and the New World* - Childish Gambino
-*Samurai* - Lupe Fiasco
+- *Ultra 85* - Logic
+- *Chromakopia* - Tyler, the Creator
+- *Bando Stone and the New World* - Childish Gambino
+- *Samurai* - Lupe Fiasco
+
 and OF COURSE:
-*GNX* - Kendrick Lamar
+
+- *GNX* - Kendrick Lamar
 
 The Kendrick and Drake beef was the highlight of the year. It's been talked about a bajillion times online and I do not need to repeat the story. But waking up every day or every other day for over a week to new diss tracks, and watching Kendrick just completely dominate from "eupohoria" forward was thrilling.
 
 Three other albums worth mentioning:
 
-*Weezer (blue)* - Weezer (there was a 30 year deluxe release and it was fun to rediscover the album)
-*No Name* - Jack White (this album just absolutely rips)
-*Beethoven Blues* - Jon Batiste
+- *Weezer (blue)* - Weezer (there was a 30 year deluxe release and it was fun to rediscover the album)
+- *No Name* - Jack White (this album just absolutely rips)
+- *Beethoven Blues* - Jon Batiste
 
 # Movies
 
 The standout movies this year for me were:
 
-*Dune, part II* - movie of the year for me. The sandworm scene, the end fight scene, and of course Paul's speech when he fully embraces his role as the Lisan al-Gaib (that scene gives me goosebumps every time I watch it)
-*Wicked* - I'm starting to realize just how much I like musicals
-*Midsommar* - Not released this year, but we watched it for the first time. Insane movie. Not a "favorite" but it really stuck in my head.
-*Deadpool and Wolverine* - just super fun
-*Wild Robot* - also fun, and quite touching
-*Wonka* - continuing the Timothée love
-*Poor Things* - So strange. Another "not a favorite" but it stuck in my head movie.
-*Interstellar* - IMAX re-release. It was amazing and overwhelming. Standout scene was the moment when Cooper had to re-align the two spaceships. It was *almost* too much to watch.
+- *Dune, part II* - movie of the year for me. The sandworm scene, the end fight scene, and of course Paul's speech when he fully embraces his role as the Lisan al-Gaib (that scene gives me goosebumps every time I watch it)
+- *Wicked* - I'm starting to realize just how much I like musicals
+- *Midsommar* - Not released this year, but we watched it for the first time. Insane movie. Not a "favorite" but it really stuck in my head.
+- *Deadpool and Wolverine* - just super fun
+- *Wild Robot* - also fun, and quite touching
+- *Wonka* - continuing the Timothée love
+- *Poor Things* - So strange. Another "not a favorite" but it stuck in my head movie.
+- *Interstellar* - IMAX re-release. It was amazing and overwhelming. Standout scene was the moment when Cooper had to re-align the two spaceships. It was *almost* too much to watch.
 
 # TV
 
-*The Penguin*
-*No Good Deed*
-*Nobody Wants This*
-*Sopranos (season 1)* - I watched this when I had the flu in September, great TV.
-*The Joy of Painting with Bob Ross* - Silly, but we turn this on for Cooper every time we leave the house, and then we inadvertently watch it for one or two episodes at some point during the day.
-*Seinfeld*
-*Six Feet Under* - we're still in the middle of watching season 1, but it's good
-*Love is Blind, seasons 6 and 7* - trash, but great trash?
-*3 Body Problem* - not as good as the book, of course, but fun anyway
+- *The Penguin*
+- *No Good Deed*
+- *Nobody Wants This*
+- *Sopranos (season 1)* - I watched this when I had the flu in September, great TV.
+- *The Joy of Painting with Bob Ross* - Silly, but we turn this on for Cooper every time we leave the house, and then we inadvertently watch it for one or two episodes at some point during the day.
+- *Seinfeld*
+- *Six Feet Under* - we're still in the middle of watching season 1, but it's good
+-*Love is Blind, seasons 6 and 7* - trash, but great trash?
+- *3 Body Problem* - not as good as the book, of course, but fun anyway
 
 # Books
 
-*Shift* - Hugh Howey
-*Dust* - Hugh Howey
-*Four Thousand Weeks* - Oliver Burkeman
-*On the Edge of the Dark Sea of Darkness* - Andrew Peterson
-*Station Eleven* - Emily St. John Mandel
-*Cibola Burn* - James S.A. Corey
-*Nemesis Games* - James S.A. Corey
-*Babylon's Ashes* - James S.A. Corey
-*Moonbound* - Robin Sloan
-*Fellowship of the Ring* - J.R.R. Tolkien
-*When We Cease to Understand the World* - Benjamin Labatut
-*Demon Copperhead* - Barbara Kingsolver
-*Piranesi* - Susanna Clarke
-*The Silent Patient* - Alex Michaelides
+- *Shift* - Hugh Howey
+- *Dust* - Hugh Howey
+- *Four Thousand Weeks* - Oliver Burkeman
+- *On the Edge of the Dark Sea of Darkness* - Andrew Peterson
+- *Station Eleven* - Emily St. John Mandel
+- *Cibola Burn* - James S.A. Corey
+- *Nemesis Games* - James S.A. Corey
+- *Babylon's Ashes* - James S.A. Corey
+- *Moonbound* - Robin Sloan
+- *Fellowship of the Ring* - J.R.R. Tolkien
+- *When We Cease to Understand the World* - Benjamin Labatut
+- *Demon Copperhead* - Barbara Kingsolver
+- *Piranesi* - Susanna Clarke
+- *The Silent Patient* - Alex Michaelides
 
 # Everything Else
 
