@@ -20,11 +20,13 @@
     <div class="sectionheader">
         <h2>Recent Photos:</h2>
     </div>
-    <div class="imgbox">
+    <!-- <div class="imgbox"> -->
+    <div class="box photos-box">
+        <ul>
         {% for photo in data['photos']%}
         <a data-flickr-embed="true" href="{{ photo['img_link']}}" title="{{ photo['title'] }}"><img src="{{ photo['img'] }}" width="200" height="200" alt="{{ photo['title'] }}"></a>
-        <br>
         {% endfor %}
+        </ul>
     </div>
 </div>
 <div class="box blogroll"></div>
