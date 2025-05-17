@@ -8,6 +8,29 @@
     <language>en-us</language>    
     
         <item>
+            <title>Algorithms Aren't Smart</title>
+            <pubDate>2025-05-17 11:22:19</pubDate>
+            <link>https://cdbaca.github.io/ssg/algorithms-aren-t-smart.html</link>
+            <guid>https://cdbaca.github.io/ssg/algorithms-aren-t-smart.html</guid>
+            <content:encoded><![CDATA[ <p>When I was in college (and for some time after when I had my first office job), I helped tutor a class called developmental math for several years. Tom Ferguson was the professor of that class when I first started, and the guy was incredibly smart -- sometimes to the detriment of those poor students trying to get by in the bare bones of college-level mathematics.</p>
+
+<p>Once, when explaining to students about how to reason about some math problem and when calculators were useful and when they weren't, he said simply, "Calculators are stupid. They don't know anything."</p>
+
+<p>This was long before my journey into trying to understand the very basics of programming and computer science, so I didn't really know what he meant at the time. Of course, I do now. Calculators, computers -- anything digital really -- are stupid. They don't / can't know anything, and if you give them even the <em>slightest</em> wrong instruction, they will follow it with no regard for what you meant. (LLMs notwithstanding, though I think the argument can be made they're just stupid in a different way?)</p>
+
+<p>This memory came back to me when reading this blog post (<a href="https://tadaima.bearblog.dev/if-nothing-is-curated-how-do-we-find-things/">"If nothing is curated, how do we find things?"</a>). Quote:</p>
+
+<blockquote>
+  <p>"And algorithms can only predict content that you've seen before. It'll never surprise you with something different. It keeps you in a little bubble. Oh, you like shoegaze? Well, that's all the algorithm is going to give you until you intentionally start listening to something else."</p>
+</blockquote>
+
+<p>This is my experience exactly. The algorithms are stupid too. They only repeat, relentlessly. There's no magic in it, no surprise. Most often, it feels the the new, best experiences I've had with media or food or other kinds of consumption happened because I stumbled upon it by accident, through a friend recommendation (and no, not through a "social network"), or through making a connection to a work that I liked (à la Austin Kleon's note about "reading what your favorite authors read").</p>
+
+<p>Algorithms aren't smart, but people sometimes are.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>Reading Daniels' Running Formula - Chapter 2</title>
             <pubDate>2025-05-16 10:38:48</pubDate>
             <link>https://cdbaca.github.io/ssg/reading-daniels-running-formula-chapter-2.html</link>
@@ -423,119 +446,6 @@
 <li><a href="https://nfhslearn.com/courses/first-aid-health-and-safety">NFHS First Aid Health and Safety</a></li>
 <li><a href="https://acemethodcoaching.com/product/bronze-bundle/">ACE Method's Hurdle Mastery series</a></li>
 </ul>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Best of 2024</title>
-            <pubDate>2024-12-27 13:15:29</pubDate>
-            <link>https://cdbaca.github.io/ssg/best-of-2024.html</link>
-            <guid>https://cdbaca.github.io/ssg/best-of-2024.html</guid>
-            <content:encoded><![CDATA[ <p>Another year, another review. I'll be 100% honest, I both want and don't want to do this right now. Elaine just got back from the hospital yesterday after an extreme migraine that presented with stroke-like symptoms. I want to remember this year though, and don't want this to get lost in the static. Maybe another post will be forthcoming, but I don't know how much I want to relive a somewhat traumatic Christmas Day.</p>
-
-<h1>Music</h1>
-
-<p>2024 was Kendrick's year, no question.</p>
-
-<h3>Favorite Songs</h3>
-
-<p>Yet again, I don't feel like Spotify Wrapped captured the musical year for me. It may have even been worse than <a href="https://cbaca.blog/best-of-2023.html">last year</a>. But! Regardless of what they said I mostly listened to, I feel like we had a pretty great musical year. Here's another Spotify playlist of my favorites:</p>
-
-<iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/0NF9z5n8gXskwcb1w26HD7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-
-<h3>Favorite Albums (and a word about big "moments")</h3>
-
-<p>The beginning of the year was filled with boygenius's <em>the record</em>, and Tyler Childers's <em>Live on Red Barn Radio I &amp; II</em>. </p>
-
-<p>After that, I think it was primarily a hip-hop year, with some incredible releases:</p>
-
-<ul>
-<li><em>Ultra 85</em> - Logic</li>
-<li><em>Chromakopia</em> - Tyler, the Creator</li>
-<li><em>Bando Stone and the New World</em> - Childish Gambino</li>
-<li><em>Samurai</em> - Lupe Fiasco</li>
-</ul>
-
-<p>and OF COURSE:</p>
-
-<ul>
-<li><em>GNX</em> - Kendrick Lamar</li>
-</ul>
-
-<p>The Kendrick and Drake beef was the highlight of the year. It's been talked about a bajillion times online and I do not need to repeat the story. But waking up every day or every other day for over a week to new diss tracks, and watching Kendrick just completely dominate from "eupohoria" forward was thrilling.</p>
-
-<p>Three other albums worth mentioning:</p>
-
-<ul>
-<li><em>Weezer (blue)</em> - Weezer (there was a 30 year deluxe release and it was fun to rediscover the album)</li>
-<li><em>No Name</em> - Jack White (this album just absolutely rips)</li>
-<li><em>Beethoven Blues</em> - Jon Batiste</li>
-</ul>
-
-<h1>Movies</h1>
-
-<p>The standout movies this year for me were:</p>
-
-<ul>
-<li><em>Dune, part II</em> - movie of the year for me. The sandworm scene, the end fight scene, and of course Paul's speech when he fully embraces his role as the Lisan al-Gaib (that scene gives me goosebumps every time I watch it)</li>
-<li><em>Wicked</em> - I'm starting to realize just how much I like musicals</li>
-<li><em>Midsommar</em> - Not released this year, but we watched it for the first time. Insane movie. Not a "favorite" but it really stuck in my head.</li>
-<li><em>Deadpool and Wolverine</em> - just super fun</li>
-<li><em>Wild Robot</em> - also fun, and quite touching</li>
-<li><em>Wonka</em> - continuing the Timothée love</li>
-<li><em>Poor Things</em> - So strange. Another "not a favorite" but it stuck in my head movie.</li>
-<li><em>Interstellar</em> - IMAX re-release. It was amazing and overwhelming. Standout scene was the moment when Cooper had to re-align the two spaceships. It was <em>almost</em> too much to watch.</li>
-</ul>
-
-<h1>TV</h1>
-
-<ul>
-<li><em>The Penguin</em></li>
-<li><em>No Good Deed</em></li>
-<li><em>Nobody Wants This</em></li>
-<li><em>Sopranos (season 1)</em> - I watched this when I had the flu in September, great TV.</li>
-<li><em>The Joy of Painting with Bob Ross</em> - Silly, but we turn this on for Cooper every time we leave the house, and then we inadvertently watch it for one or two episodes at some point during the day.</li>
-<li><em>Seinfeld</em></li>
-<li><em>Six Feet Under</em> - we're still in the middle of watching season 1, but it's good
--<em>Love is Blind, seasons 6 and 7</em> - trash, but great trash?</li>
-<li><em>3 Body Problem</em> - not as good as the book, of course, but fun anyway</li>
-</ul>
-
-<h1>Books</h1>
-
-<ul>
-<li><em>Shift</em> - Hugh Howey</li>
-<li><em>Dust</em> - Hugh Howey</li>
-<li><em>Four Thousand Weeks</em> - Oliver Burkeman</li>
-<li><em>On the Edge of the Dark Sea of Darkness</em> - Andrew Peterson</li>
-<li><em>Station Eleven</em> - Emily St. John Mandel</li>
-<li><em>Cibola Burn</em> - James S.A. Corey</li>
-<li><em>Nemesis Games</em> - James S.A. Corey</li>
-<li><em>Babylon's Ashes</em> - James S.A. Corey</li>
-<li><em>Moonbound</em> - Robin Sloan</li>
-<li><em>Fellowship of the Ring</em> - J.R.R. Tolkien</li>
-<li><em>When We Cease to Understand the World</em> - Benjamin Labatut</li>
-<li><em>Demon Copperhead</em> - Barbara Kingsolver</li>
-<li><em>Piranesi</em> - Susanna Clarke</li>
-<li><em>The Silent Patient</em> - Alex Michaelides</li>
-</ul>
-
-<h1>Everything Else</h1>
-
-<p>Notable events and things from the year:</p>
-
-<ul>
-<li><p>We started attending <a href="asd.church">All Saints Dallas</a> around July of this year, and this is the first time is a family in a few years that we have all <em>wanted</em> to be attending somewhere regularly.</p></li>
-<li><p>This was my first year coaching cross country in a long time. There were so many cool moments, and it was great to be able to coach a team again. Despite some of its difficulties, coaching brings me joy in a way that many things do not.</p></li>
-<li><p>I spent such a large portion of the year training for the Dinosaur Valley Endurance Run (25K). Lots and lots of weeks with lots and lots of miles. But I felt so strong and good overall. To make a long story short, I was going to run on the Saturday of the race, but nerves got the better of me, and I was up until about 2:30 AM. I was so lucky that the race organizers allowed shorter distances to run on either Saturday or Sunday without pre-notification, so I punted, moved to Sunday, and ran a great race (4th overall, 1st in my age group).</p></li>
-<li><p>We took a little weekend trip to Kansas City in July to visit some good friends up there. It was filled with good food, lake relaxing, and just space to be friends. (Also, I'll probably always remember this was the weekend of the attempted assassination. Wild.)</p></li>
-<li><p>We have a 13 year old 😵‍💫</p></li>
-<li><p>I shot my first ducks this year! Hoping to become (albeit intermittently) something of a small game hunter in the coming years.</p></li>
-</ul>
-
-<hr />
-
-<p>There was, of course, so much more. I'll address a couple of those things in the looking forward to 2025 post. But also, you just can't capture a year in words. These are the things that stand out now. As always, I'm grateful for another year with my beautiful family, another year of joy, sadness, grief, excitement, and all the things in between.</p>
  ]]></content:encoded>
         </item>
     
