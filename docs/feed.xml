@@ -8,6 +8,27 @@
     <language>en-us</language>    
     
         <item>
+            <title>Reading Daniels' Running Formula - Chapters 6 to 9</title>
+            <pubDate>2025-06-02 16:12:17</pubDate>
+            <link>https://cdbaca.github.io/ssg/reading-daniels-running-formula-chapters-6-to-9.html</link>
+            <guid>https://cdbaca.github.io/ssg/reading-daniels-running-formula-chapters-6-to-9.html</guid>
+            <content:encoded><![CDATA[ <h2>Notes &amp; Quotes</h2>
+
+<p>The remainder of Part I of the book was relatively "common sense information" -- or information that I am personally not particularly interested in. These chapters covered environment/altitude specific training, treadmill training, "fitness training" (i.e., non-competitive training), and training breaks/supplemental training.</p>
+
+<p>The altitude stuff I don't care much about at all. I will likely never be able to bring a team or runners up to Colarado to train (as much as I'd like to), and Daniels seems to indicate that it's not that big of a deal anyway. Moreso, the goal during training should be to mimic predicted race conditions.</p>
+
+<p>I basically skipped the chapter on treadmill training. Again, not much I can do here with my own athletes, and if I'm stuck inside I'm not doing much on the treadmill because it sucks so much.</p>
+
+<p>The fitness training chapter was decent, and will likely help me with some of my on-the-side coaching for brand new runners trying to get fit for local races or personal goals.</p>
+
+<p>The training breaks/supplemental training chapter, again, was relatively common sense information. Although I do think his data on supplemental training for strength was lacking / out of date. I think it's relatively common knowledge in the running world now that strength training for runners should include heavy lifting. Body weight stuff, while it might help a little, will not provide the injury prevention/strength benefits needed to sustain a ton of mileage.</p>
+
+<p>A big note from Daniels on resting is that athletes and coached ought to be very open to resting, both for planned and unplanned periods of time. Unplanned for things like illness/injury and planned for resisting burnout.</p>
+ ]]></content:encoded>
+        </item>
+    
+        <item>
             <title>AI Browser? No Thanks</title>
             <pubDate>2025-05-29 08:50:41</pubDate>
             <link>https://cdbaca.github.io/ssg/ai-browser-no-thanks.html</link>
@@ -148,29 +169,6 @@
 <blockquote>
   <p>"If the purpose of a specific workout is to spend time at a specific <em>speed</em> of running, then it might be necessary to not let heart rate be the guide. but if <em>intensity</em> of effort is the most important thing being sought, then heart rate can be very useful."</p>
 </blockquote>
- ]]></content:encoded>
-        </item>
-    
-        <item>
-            <title>Algorithms Aren't Smart</title>
-            <pubDate>2025-05-17 11:22:19</pubDate>
-            <link>https://cdbaca.github.io/ssg/algorithms-aren-t-smart.html</link>
-            <guid>https://cdbaca.github.io/ssg/algorithms-aren-t-smart.html</guid>
-            <content:encoded><![CDATA[ <p>When I was in college (and for some time after when I had my first office job), I helped tutor a class called developmental math for several years. Tom Ferguson was the professor of that class when I first started, and the guy was incredibly smart -- sometimes to the detriment of those poor students trying to get by in the bare bones of college-level mathematics.</p>
-
-<p>Once, when explaining to students about how to reason about some math problem and when calculators were useful and when they weren't, he said simply, "Calculators are stupid. They don't know anything."</p>
-
-<p>This was long before my journey into trying to understand the very basics of programming and computer science, so I didn't really know what he meant at the time. Of course, I do now. Calculators, computers -- anything digital really -- are stupid. They don't / can't know anything, and if you give them even the <em>slightest</em> wrong instruction, they will follow it with no regard for what you meant. (LLMs notwithstanding, though I think the argument can be made they're just stupid in a different way?)</p>
-
-<p>This memory came back to me when reading this blog post (<a href="https://tadaima.bearblog.dev/if-nothing-is-curated-how-do-we-find-things/">"If nothing is curated, how do we find things?"</a>). Quote:</p>
-
-<blockquote>
-  <p>"And algorithms can only predict content that you've seen before. It'll never surprise you with something different. It keeps you in a little bubble. Oh, you like shoegaze? Well, that's all the algorithm is going to give you until you intentionally start listening to something else."</p>
-</blockquote>
-
-<p>This is my experience exactly. The algorithms are stupid too. They only repeat, relentlessly. There's no magic in it, no surprise. Most often, it feels the the new, best experiences I've had with media or food or other kinds of consumption happened because I stumbled upon it by accident, through a friend recommendation (and no, not through a "social network"), or through making a connection to a work that I liked (à la Austin Kleon's note about "reading what your favorite authors read").</p>
-
-<p>Algorithms aren't smart, but people sometimes are.</p>
  ]]></content:encoded>
         </item>
     
