@@ -1,3 +1,28 @@
+## September 2025
+
+### Listening:
+- *Snipe Hunter* - Tyler Childers
+- *Ego Death at a Bachelorette Party* - Hayley Williams
+- *The Blueprint* - Jay-Z
+- *Discovery* - Daft Punk
+- (podcast) *Last Song (Album) Standing* - Dissect Podcast
+
+### Reading:
+- (just finished) *Children of Time* - Adrian Tchaikovsky
+- *The Poisonwood Bible* - Barbara Kingsolver
+- *Map and Territory* - Eliezer Yudkowsky
+
+### Watching:
+- Pop Culture Jeopardy!
+- The Bear S4
+- US Open (we were obsessed)
+- The Paper
+
+### Doing:
+- Finished out the mile training - came out with a 5:36 (initial trial 6:00)
+- Halfway through the cross country season (typing this mid-September)
+- Trying to get back into a good lifting/running mix after almost solely running in August
+
 ## May 2025
 
 ### Listening:
