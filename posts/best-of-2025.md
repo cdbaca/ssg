@@ -29,77 +29,77 @@ Spotify Wrapped didn't capture much of this because I used Apple Music as a test
 
 Not as big of a hip-hop year for me, especially in terms of new releases. Many of these albums are older, because I was heavily influenced by the *Last Song Standing* series this year on the best albums of the 21st century. My biggest, favorite albums this year:
 
--*Ego Death at a Bachelorette Party* - Hayley Williams
--*Discovery* - Daft Punk
--*Snipe Hunter* - Tyler Childers
--*The Blueprint* - Jay-Z
--*Welcome to my Blue Sky* - Momma
+- *Ego Death at a Bachelorette Party* - Hayley Williams
+- *Discovery* - Daft Punk
+- *Snipe Hunter* - Tyler Childers
+- *The Blueprint* - Jay-Z
+- *Welcome to my Blue Sky* - Momma
 
 # Movies
 
 Lots of new movies were "meh" this year. Mid as the kids say.
 
--*Inception* - rewatch with Lyla, with her watching for the first time. Her mind was blown.
--*K Pop Demon Hunters* - okay, so it was actually good
--Marvel: *Thunderbolts*, *Fantastic 4*, *Captain America: BNW* (Thunderbolts was not bad, FF was just "okay", Captain America was pretty weak)
--*Together* (strange)
--*Meet the Roses* - provided some laughs, probably forgettable
--*Superman* (7.5/10)
--*Materialists* - one note the entire movie, boring
-*Mickey 17* (weird, but okay sci-fi)
-*The Woman in Cabin 10* - meh
-*Companion* - solid, Black Mirror-esque
-*The Assessment* - great concept, pretty bleak
-*A House of Dynamite* - not *exactly* realistic but a great thriller
-*Wicked: For Good* - okay, not even close to the first movie
-*Sinners* - a surprising vampire movie, enjoyable
-*Die My Love*
-*My Neighbor Totoro*
-*Kiki's Delivery Service* - these two Studio Ghiblis were maybe my favorite watches of the year
-*Zootopia 2* - standard Pixar fare
+- *Inception* - rewatch with Lyla, with her watching for the first time. Her mind was blown.
+- *K Pop Demon Hunters* - okay, so it was actually good
+- Marvel: *Thunderbolts*, *Fantastic 4*, *Captain America: BNW* (Thunderbolts was not bad, FF was just "okay", Captain America was pretty weak)
+- *Together* (strange)
+- *Meet the Roses* - provided some laughs, probably forgettable
+- *Superman* (7.5/10)
+- *Materialists* - one note the entire movie, boring
+- *Mickey 17* (weird, but okay sci-fi)
+- *The Woman in Cabin 10* - meh
+- *Companion* - solid, Black Mirror-esque
+- *The Assessment* - great concept, pretty bleak
+- *A House of Dynamite* - not *exactly* realistic but a great thriller
+- *Wicked: For Good* - okay, not even close to the first movie
+- *Sinners* - a surprising vampire movie, enjoyable
+- *Die My Love*
+- *My Neighbor Totoro*
+- *Kiki's Delivery Service* - these two Studio Ghiblis were maybe my favorite watches of the year
+- *Zootopia 2* - standard Pixar fare
 
 
 # TV
 
--*The Pitt* - show of the year, and it came out in January
--*Andor* - maybe I take back show of the year for the above, this was also incredible
--*Your Friends & Neighbors* - never disappointed with Jon Hamm
--*Love is Blind* (season whatever) - as always, trashy and great
--*The $1 House* - Tia Weston's YouTube channel, which we now look forward to every Sunday
--*The Diplomat*
--*The Bear* season 4
--*Nobody Wants This* season 2
--*Pop Culture Jeopardy!*
--*US Open*
--*The Four Seasons*
--*Black Mirror* season 7
--*Daredevil* (season 3 and Born Again), season 3 was definitely a top tier season of television
+- *The Pitt* - show of the year, and it came out in January
+- *Andor* - maybe I take back show of the year for the above, this was also incredible
+- *Your Friends & Neighbors* - never disappointed with Jon Hamm
+- *Love is Blind* (season whatever) - as always, trashy and great
+- *The $1 House* - Tia Weston's YouTube channel, which we now look forward to every Sunday
+- *The Diplomat*
+- *The Bear* season 4
+- *Nobody Wants This* season 2
+- *Pop Culture Jeopardy!*
+- *US Open*
+- *The Four Seasons*
+- *Black Mirror* season 7
+- *Daredevil* (season 3 and Born Again), season 3 was definitely a top tier season of television
 
 # Books
 
--*Oryx and Crake* - Margaret Atwood
--*Dune* (reread) - Frank Herbert
--*Dark Matter* - Blake Crouch
--*The Great Gatsby* - F. Scott Fitzgerald
--*Jonathan Strange and Mr. Norrell* (reread) - Susanna Clarke
--*Prey* - Michael Crichton
--*Daniels Running Formula* - Jack Daniels
--*The Dream Hotel* - Laila Lalami
--*Annihilation* (reread) - Jeff VenderMeer
--*Never Let Me Go* - Kazuo Ishiguro
--*Children of Time* - Adrian Tchaikovsky
--*The Poisonwood Bible* - Barbara Kingsolver
--*The Deep Places* - Ross Douthat
--*Your Money or Your Life* - Vicki Robin, Joe Dominguez
--*Persepolis Rising* - James S. A. Corey
--*Tiamat's Wrath* (finishing now) - James S. A. Corey
--*Dilla Time* - Dan Charnas
+- *Oryx and Crake* - Margaret Atwood
+- *Dune* (reread) - Frank Herbert
+- *Dark Matter* - Blake Crouch
+- *The Great Gatsby* - F. Scott Fitzgerald
+- *Jonathan Strange and Mr. Norrell* (reread) - Susanna Clarke
+- *Prey* - Michael Crichton
+- *Daniels Running Formula* - Jack Daniels
+- *The Dream Hotel* - Laila Lalami
+- *Annihilation* (reread) - Jeff VenderMeer
+- *Never Let Me Go* - Kazuo Ishiguro
+- *Children of Time* - Adrian Tchaikovsky
+- *The Poisonwood Bible* - Barbara Kingsolver
+- *The Deep Places* - Ross Douthat
+- *Your Money or Your Life* - Vicki Robin, Joe Dominguez
+- *Persepolis Rising* - James S. A. Corey
+- *Tiamat's Wrath* (finishing now) - James S. A. Corey
+- *Dilla Time* - Dan Charnas
 
 # Everything Else
 
--One major milestone was my goal over the summer of training for a 5:30 1600m. I trained myself all summer using the Daniels' Running Formula method, and boy did it work. I started the summer at 6:00 flat, and by Labor Day was able to run a 5:36. I have not been that fast since high school, so that was a fun experiment.
--Speaking of running, the cross country season was excellent this year. I also used much of the running formula to help train the team, and nearly all students PRed at the state meet, along with all running PRs at some point during the season.
--I know a lot about migraines. And treatments for migraines.
--I became the athletic director for the girls' school. TBD if that was a good idea or a terrible one.
--A couple hunting trips throughout the year, and although I'm sure I've gotten my own birds before, a recent trip resulted in me nailing a teal with 100% certainty! (no one else was shooting at the time). Felt like a big moment.
--Favorite podcasts this year were The Bible Project, Ross Douthat's Interesting Times, some Ezra Klein Show, the returned Heavyweight, and Last Song Standing/Dissect
+- One major milestone was my goal over the summer of training for a 5:30 1600m. I trained myself all summer using the Daniels' Running Formula method, and boy did it work. I started the summer at 6:00 flat, and by Labor Day was able to run a 5:36. I have not been that fast since high school, so that was a fun experiment.
+- Speaking of running, the cross country season was excellent this year. I also used much of the running formula to help train the team, and nearly all students PRed at the state meet, along with all running PRs at some point during the season.
+- I know a lot about migraines. And treatments for migraines.
+- I became the athletic director for the girls' school. TBD if that was a good idea or a terrible one.
+- A couple hunting trips throughout the year, and although I'm sure I've gotten my own birds before, a recent trip resulted in me nailing a teal with 100% certainty! (no one else was shooting at the time). Felt like a big moment.
+- Favorite podcasts this year were The Bible Project, Ross Douthat's Interesting Times, some Ezra Klein Show, the returned Heavyweight, and Last Song Standing/Dissect
