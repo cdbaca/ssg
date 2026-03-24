@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="box photos-box">
+    <ul>
+        {% for photo in data %}
+            <a data-flickr-embed="true" href="{{ photo['img_link']}}" title="{{ photo['title'] }}"><img src="{{ photo['img'] }}" width="200" height="200" alt="{{ photo['title'] }}"></a>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock %}

@@ -2,41 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    {% block css %}<link rel="stylesheet" href="static/tufte.css" type="text/css"> {% endblock %}
+    {% block css %}
+    <link rel="stylesheet" href="static/styles.css" type="text/css">
+    <link rel="stylesheet" href="static/tufte.css" type="text/css">
+    {% endblock %}
     <title>Roots to Branches</title>
     {% block feed %}{% endblock %}
 </head>
 <body>
     <div class="container">
-    {% block nav %}
+        {% block nav %}
         <div class="box header">
             <div class="logo">
-                    <h1><a href="./index.html">Roots to Branches</a></h1>
+                <h1><a href="./index.html">Roots to Branches</a></h1>
             </div>
-            <div class="buttons">
-            {% for item in menu %}
-            <form style="display: inline" action="./{{ menu[item] }}.html" method="get"><button>{{ item }}</button></form>
-            {% endfor %}           
-            </div>
+            <nav class="buttons">
+                {% for item in menu %}
+                <a href="./{{ menu[item] }}.html">{{ item }}</a>
+                {% endfor %}
+            </nav>
         </div>
         {% endblock %}
-    {% block content %}{% endblock %}
-    {% block footer %}
+
+        {% block content %}{% endblock %}
+
+        {% block footer %}
         <div class="box footer">
             <div class="links">
-            <p><a href="https://github.com/cdbaca">Github</a>
-                |
+                <a href="https://github.com/cdbaca">Github</a>
                 <a href="./feed.xml">RSS</a>
             </div>
             <div class="banner">
-                <a href="https://512kb.club"><img src="https://512kb.club/assets/images/green-team.svg" /></a>
+                <a href="https://512kb.club">
+                    <img src="https://512kb.club/assets/images/green-team.svg" alt="512kb club" />
+                </a>
             </div>
-            </p>
         </div>
-    {% endblock %}
+        {% endblock %}
     </div>
 </body>
 </html>

@@ -159,7 +159,26 @@ def make_pages(page_name, *args):
     template = env.get_template(f"{page_name}.html")
 
     if args:
-        rendered = template.render(data=args[0], menu=MENU)
+        data = args[0]
+        # Format dates and group by year if this is a list of post metadata dicts
+        if isinstance(data, list) and len(data) > 0 and isinstance(data[0], dict) and 'date' in data[0]:
+            data = deepcopy(data)
+            for item in data:
+                date = item['date']
+                try:
+                    item['date'] = date.strftime('%m/%d/%Y')
+                except AttributeError:
+                    pass  # already a string
+
+        # For the posts page, group by year
+        if page_name == 'posts':
+            from itertools import groupby as igroup
+            year_groups = []
+            for year, posts in igroup(data, key=lambda p: p['date'][-4:]):
+                year_groups.append({'year': year, 'posts': list(posts)})
+            rendered = template.render(data=year_groups, menu=MENU)
+        else:
+            rendered = template.render(data=data, menu=MENU)
     else:
         rendered = template.render(menu=MENU)
 
@@ -206,9 +225,8 @@ def run_tags(post_content):
                                     post_data['metadata']['slug'],
                                     post_data['metadata']['date']
                                     ])
-        # THE PROBLEM WITH THIS METHOD IS THAT I CANNOT PASS THE TAG TITLE INTO THE HTML (SEE DATA=TAG_POST_DICT[K])
         template = env.get_template("single_tag.html")
-        rendered = template.render(data=tag_post_dict[k], menu=MENU)
+        rendered = template.render(data=tag_post_dict[k], tag_name=k, menu=MENU)
         with open(f'docs/tags/{k}.html', 'w') as f:
              f.write(rendered)
 

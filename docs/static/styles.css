@@ -1,269 +1,767 @@
 :root {
-    /* Set sans-serif & mono fonts */
-    --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
-        "Nimbus Sans L", Roboto, Noto, "Segoe UI", Arial, Helvetica,
-        "Helvetica Neue", sans-serif;
+    /* Fonts */
+    --serif-font: Georgia, "Times New Roman", Times, serif;
+    --sans-font: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Helvetica, Arial, sans-serif;
     --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
 
-    /* Body font size. By default, effectively 18.4px, based on 16px as 'root em' */
-    --base-fontsize: 1.15rem;
+    /* Type scale */
+    --base-fontsize: 1.05rem;
+    --line-height: 1.7;
 
-    /* Major third scale progression - see https://type-scale.com/ */
-    --header-scale: 1.25;
-
-    /* Line height is set to the "Golden ratio" for optimal legibility */
-    --line-height: 1.618;
-
-    /* Default (light) theme */
-    --bg: #fff;
-    --accent-bg: #f5f7ff;
-    --text: #212121;
-    --text-light: #585858;
-    --border: #d8dae1;
+    /* Colors */
+    --bg: #faf9f7;
+    --text: #1a1a1a;
+    --text-light: #6b6b6b;
+    --text-lighter: #9a9a9a;
+    --border: #e2ded8;
+    --border-light: #edeae5;
     --accent: #690707;
-    --accent-light: #90caf9;
-    --code: #d81b60;
-    --preformatted: #444;
-    --marked: #ffdd33;
-    --disabled: #efefef;
-    }
+    --accent-hover: #8a0a0a;
+    --bg-subtle: #f3f1ee;
 
-    html {
-    /* Set the font globally */
+    /* Spacing */
+    --content-max: 680px;
+    --page-padding: 2rem;
+}
+
+/* ─── Reset & Base ─── */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+html {
     font-family: var(--sans-font);
-    }
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
 
-    /* Make the body a nice central block */
-    body {
+body {
     color: var(--text);
     background: var(--bg);
     font-size: var(--base-fontsize);
     line-height: var(--line-height);
-    }
+}
 
-    nav a {
-    margin: 1rem 1rem 0 0;
-    border: 1px solid var(--border);
-    border-radius: 5px;
-    color: var(--text) !important;
-    display: inline-block;
-    padding: 0.1rem 1rem;
-    text-decoration: none;
-    transition: 0.4s;
-    }
+/* ─── Links ─── */
 
-    nav a:hover {
-    color: var(--accent) !important;
-    border-color: var(--accent);
-    }
-
-    nav a.current:hover {
-    text-decoration: none;
-    }
-
-    footer {
-    margin-top: 4rem;
-    padding: 2rem 1rem 1.5rem 1rem;
-    color: var(--text-light);
-    font-size: 0.9rem;
-    text-align: center;
-    border-top: 1px solid var(--border);
-    }
-
-
-    a button,
-    button,
-    [role="button"],
-    input[type="submit"],
-    input[type="reset"],
-    input[type="button"] {
-    border: none;
-    border-radius: 5px;
-    background: var(--accent);
-    font-size: 1rem;
-    color: var(--bg);
-    padding: 0.7rem 0.9rem;
-    margin: 0.5rem 0;
-    transition: 0.4s;
-    }
-
-    a,
-    a:visited {
+a,
+a:visited {
     color: var(--accent);
-    }
+    text-decoration: underline;
+    text-decoration-color: transparent;
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s ease, color 0.2s ease;
+}
 
-    a:hover {
+a:hover {
+    color: var(--accent-hover);
+    text-decoration-color: var(--accent-hover);
+}
+
+/* ─── Layout Container ─── */
+
+.container {
+    min-height: 100%;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.5rem;
+    padding: 0 var(--page-padding);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* ─── Header & Nav ─── */
+
+.header {
+    grid-column: 1 / -1;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    padding: 2rem 0 1.25rem;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 3rem;
+}
+
+.logo h1 {
+    font-family: var(--serif-font);
+    font-size: 1.5rem;
+    font-weight: normal;
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+    letter-spacing: -0.01em;
+}
+
+.logo h1 a {
+    color: var(--text);
     text-decoration: none;
-    }
+}
 
-    button:focus,
-    button:enabled:hover,
-    [role="button"]:focus,
-    [role="button"]:not([aria-disabled="true"]):hover,
-    input[type="submit"]:focus,
-    input[type="submit"]:enabled:hover,
-    input[type="reset"]:focus,
-    input[type="reset"]:enabled:hover,
-    input[type="button"]:focus,
-    input[type="button"]:enabled:hover,
-    label[type="button"]:focus,
-    label[type="button"]:hover {
-    filter: brightness(1.4);
+.logo h1 a:hover {
+    color: var(--accent);
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+    align-items: center;
+}
+
+/* Nav links — replacing the form/button approach in CSS */
+.buttons a {
+    font-family: var(--sans-font);
+    font-size: 0.825rem;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.3rem 0.6rem;
+    border-radius: 3px;
+    transition: color 0.2s ease, background 0.2s ease;
+}
+
+.buttons a:hover {
+    color: var(--accent);
+    background: var(--bg-subtle);
+    text-decoration: none;
+}
+
+/* Keep button styles for the lift calculator */
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+    border: none;
+    border-radius: 4px;
+    background: var(--accent);
+    font-family: var(--sans-font);
+    font-size: 0.9rem;
+    color: var(--bg);
+    padding: 0.5rem 1rem;
+    margin: 0.5rem 0;
     cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+button:hover,
+input[type="submit"]:hover {
+    background: var(--accent-hover);
+}
+
+/* ─── Typography ─── */
+
+h1, h2, h3, h4, h5 {
+    font-family: var(--serif-font);
+    font-weight: normal;
+    line-height: 1.3;
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+    padding: 0;
+}
+
+h1 { font-size: 2rem; }
+h2 { font-size: 1.5rem; }
+h3 { font-size: 1.25rem; font-style: italic; }
+h4 { font-size: 1.1rem; }
+h5 { font-size: 1rem; }
+
+p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* ─── Homepage Layout ─── */
+
+.about {
+    grid-column: 1 / span 7;
+    grid-row: 2;
+    padding-bottom: 2.5rem;
+    border-bottom: 1px solid var(--border-light);
+    margin-bottom: 2.5rem;
+}
+
+.about h2 {
+    font-family: var(--serif-font);
+    font-size: 1.35rem;
+    font-style: italic;
+    font-weight: normal;
+    color: var(--text);
+    margin-top: 0;
+}
+
+.about p {
+    color: var(--text-light);
+    font-size: 0.975rem;
+}
+
+.posts {
+    grid-column: 1 / span 7;
+    grid-row: 3;
+}
+
+.posts h2 {
+    font-family: var(--serif-font);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-lighter);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.post-list li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.post-list li a {
+    font-family: var(--serif-font);
+    font-size: 1rem;
+    color: var(--text);
+    text-decoration: none;
+    flex: 1;
+}
+
+.post-list li a:hover {
+    color: var(--accent);
+}
+
+.post-list .post-date {
+    font-size: 0.8rem;
+    color: var(--text-lighter);
+    white-space: nowrap;
+    font-family: var(--sans-font);
+}
+
+.photos {
+    grid-column: 9 / span 4;
+    grid-row: 2 / span 3;
+    align-self: start;
+}
+
+.photos .sectionheader h2,
+.photos h2 {
+    font-family: var(--serif-font);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-lighter);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--border-light);
+}
+
+.photos-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4px;
+}
+
+.photos-box ul {
+    display: contents;
+}
+
+.photos-box a img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.photos-box a:hover img {
+    opacity: 0.85;
+}
+
+.blogroll {
+    grid-column: 1 / span 7;
+    grid-row: 4;
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.blogroll h2 {
+    font-family: var(--serif-font);
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: var(--text-lighter);
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+}
+
+.blogroll ul li {
+    padding: 0.3rem 0;
+}
+
+.blogroll ul li a {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+.blogroll ul li a:hover {
+    color: var(--accent);
+}
+
+/* ─── Content Pages (post, about, posts list, tags) ─── */
+
+.post,
+.about-box,
+.posts-box,
+.tag-box,
+.lift-box {
+    grid-column: 2 / span 8;
+    grid-row: 2;
+    max-width: var(--content-max);
+    padding-bottom: 4rem;
+}
+
+/* Post title */
+.post h1.post-title {
+    font-family: var(--serif-font);
+    font-size: 2rem;
+    font-weight: normal;
+    line-height: 1.25;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+/* Post meta / tags */
+.post p strong {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-lighter);
+    font-family: var(--sans-font);
+    font-weight: 500;
+}
+
+.post p a[href*="tags"] {
+    font-size: 0.825rem;
+    color: var(--text-light);
+    text-decoration: none;
+    background: var(--bg-subtle);
+    padding: 0.1rem 0.4rem;
+    border-radius: 3px;
+    border: 1px solid var(--border-light);
+    transition: border-color 0.2s, color 0.2s;
+}
+
+.post p a[href*="tags"]:hover {
+    color: var(--accent);
+    border-color: var(--accent);
+}
+
+/* Posts list page */
+.posts-box h1,
+.tag-box h1 {
+    font-family: var(--serif-font);
+    font-size: 1.75rem;
+    font-weight: normal;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.posts-box ul li,
+.tag-box ul li {
+    padding: 0.6rem 0;
+    border-bottom: 1px solid var(--border-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.posts-box ul li a,
+.tag-box ul li a {
+    font-family: var(--serif-font);
+    font-size: 1rem;
+    color: var(--text);
+    text-decoration: none;
+    flex: 1;
+}
+
+.posts-box ul li a:hover,
+.tag-box ul li a:hover {
+    color: var(--accent);
+}
+
+/* Year grouping on posts list page */
+.year-group {
+    margin-bottom: 2rem;
+}
+
+.year-heading {
+    font-family: var(--sans-font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-lighter);
+    margin-top: 2.5rem;
+    margin-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
+    border-bottom: 1px solid var(--border);
+}
+
+/* ─── Now Page Timeline ─── */
+
+.now-content h2 {
+    font-family: var(--sans-font);
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: var(--text-lighter);
+    margin-top: 3rem;
+    margin-bottom: 1.5rem;
+    padding: 0.5rem 0 0.5rem 1rem;
+    border-left: 3px solid var(--accent);
+    border-bottom: none;
+}
+
+.now-content h3 {
+    font-family: var(--serif-font);
+    font-size: 1rem;
+    font-style: italic;
+    font-weight: normal;
+    color: var(--text-light);
+    margin-top: 1.5rem;
+    margin-bottom: 0.4rem;
+}
+
+.now-content ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.now-content ul li {
+    padding: 0.15rem 0;
+    font-size: 0.975rem;
+    color: var(--text);
+}
+
+@media (prefers-color-scheme: dark) {
+    .now-content ul li {
+        color: var(--text);
     }
+}
 
-    form button {
-        padding: 10px;
-    }
+/* About page */
+.about-box h1 {
+    font-family: var(--serif-font);
+    font-size: 2rem;
+    font-weight: normal;
+    margin-top: 0;
+}
 
-     html, body {
-                height: 100%;
-                width: 100%;
-            }
+.about-box h3 {
+    font-style: italic;
+    color: var(--text-light);
+}
 
-    ul {
-        list-style-type: none;
-    }
+.about-box ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
 
+.about-box ul li {
+    padding: 0.2rem 0;
+    font-size: 0.975rem;
+}
+
+/* Lift calculator */
+.lift-box h2 {
+    margin-top: 0;
+}
+
+.lift-box input[type="number"] {
+    font-family: var(--sans-font);
+    font-size: 1rem;
+    padding: 0.4rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--bg);
+    color: var(--text);
+    margin-right: 0.5rem;
+}
+
+/* Photos full page */
+.photos-box.full-page {
+    grid-column: 1 / -1;
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 6px;
+    align-content: start;
+    padding-bottom: 4rem;
+}
+
+.photos-box.full-page a img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.photos-box.full-page a:hover img {
+    opacity: 0.85;
+}
+
+/* ─── Tags page ─── */
+
+.tag-box ul li a {
+    font-size: 0.9rem;
+}
+
+/* ─── Footer ─── */
+
+.footer {
+    grid-column: 1 / -1;
+    grid-row: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1.5rem 0 2rem;
+    margin-top: 3rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.825rem;
+    color: var(--text-lighter);
+}
+
+.footer a {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.footer a:hover {
+    color: var(--accent);
+}
+
+.footer .links {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.footer .links p {
+    margin: 0;
+}
+
+.footer .banner img {
+    height: 20px;
+    width: auto;
+    opacity: 0.6;
+    transition: opacity 0.2s;
+}
+
+.footer .banner img:hover {
+    opacity: 1;
+}
+
+/* ─── Responsive ─── */
+
+@media (max-width: 768px) {
     .container {
-        height: 100%;
-        display:grid;
-        grid-template-rows: 1fr 5fr 5fr 1fr;
-        grid-template-columns: repeat(12, 1fr);
-    }
-
-    /*.box {
-        border-style: solid;
-        border-width: 1px;
-        border-color: black;
-    }*/
-
-    .box > p, h1, h2, h3, h4, h5, img, button {
-        padding: 5px;
+        grid-template-columns: 1fr;
+        padding: 0 1.25rem;
     }
 
     .header {
-        grid-column: 2 / span 10;
-        /*justify-self: stretch;*/
-        display: flex;
-        flex-wrap: wrap;
+        grid-column: 1 / -1;
+        margin-bottom: 2rem;
     }
 
-    .header > :nth-child(2) {
-        margin-left:auto;
-        align-self: center;
-    }
-
-    .about {
-        grid-column: 2 / span 4;
-        grid-row: 2 / span 1;
-    }
-
+    .about,
+    .posts,
     .blogroll {
-        grid-column: 9 / span 3;
-        grid-row: 3 / span 1;
-    }
-
-    .posts {
-        grid-column: 2 / span 4;
-        grid-row: 3 / span 1;
+        grid-column: 1 / -1;
+        grid-row: auto;
     }
 
     .photos {
-        grid-column: 9 / span 3;
-        grid-row: 2 / span 1;
-    }
-
-    .imgbox {
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        padding: 1px;
-    }
-    
-    .footer {
-        grid-column: 6 / 12;
-        grid-row: 4 / 5;
-        display: flex;
-        /* justify-content: center;*/
-        padding-top: 1rem;
-    }
-
-    .footer > :nth-child(1) {
-        grid-column: 2 / span 10;
-        grid-row: 4 / 5;
-        justify-content: center;
-        padding-top: 1rem;
-    }
-
-    .footer > :nth-child(2) {
-        margin-left:auto;
-        align-self: center;
-    }
-
-    .post {
-        grid-column: 3 / span 6;
-        grid-row: 2 / 3;
-    }
-
-    .about-box {
-        grid-column: 3 / span 6;
-        grid-row: 2 / 3;
-    }
-
-    .posts-box {
-        grid-column: 3 / span 6;
-        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        grid-row: auto;
+        margin-top: 2rem;
     }
 
     .photos-box {
-        grid-column: 3 / -1;
-        grid-row: 2 / 3;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: flex-start;
+        grid-template-columns: repeat(2, 1fr);
     }
 
-    .photos-box > img {
-        padding: 1px;
-    }
-
-    .tag-box {
-        grid-column: 3 / span 6;
-        grid-row: 2 / 3;
-    }
-
+    .post,
+    .about-box,
+    .posts-box,
+    .tag-box,
     .lift-box {
-        grid-column: 3 / span 6;
-        grid-row: 2 / 3;
+        grid-column: 1 / -1;
+        grid-row: auto;
     }
 
-    @media (max-width:600px) {
-        .container {
-          height: 100%;
-          display:grid;
-          grid-template-rows: 1fr 2fr 1fr;
-          grid-template-columns: 1fr;
-          }
-        
-        .box {
-            grid-column: 1 / -1;
-            grid-row: auto
-        }
+    .footer {
+        grid-column: 1 / -1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
 
-        .header {
-            display: flex;
-            flex-wrap: wrap;
-        }
-        
-        .header > :nth-child(2) {
-            margin-left:auto;
-            align-self: center;
-            flex-wrap: wrap;
-        }
+    .post > p > img {
+        max-width: 100%;
+    }
+}
 
-        .post > p > img{
-            max-width: 100%;
-        }
+@media (max-width: 480px) {
+    .buttons a {
+        font-size: 0.75rem;
+        padding: 0.25rem 0.4rem;
+    }
 
-      }
+    .logo h1 {
+        font-size: 1.25rem;
+    }
+}
+
+/* ─── Dark Mode ─── */
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        /* Match tufte.css dark background exactly so post pages are seamless */
+        --bg: #151515;
+        --text: #dddddd;
+        --text-light: #a0a0a0;
+        --text-lighter: #6e6e6e;
+        --border: #2e2e2e;
+        --border-light: #252525;
+        /* Accent red needs to be brighter to stay readable on dark bg */
+        --accent: #c0392b;
+        --accent-hover: #e74c3c;
+        --bg-subtle: #1e1e1e;
+    }
+
+    /* Logo link needs explicit color since it inherits --text,
+       which the browser was overriding in auto-invert mode */
+    .logo h1 a {
+        color: var(--text);
+    }
+
+    .logo h1 a:hover {
+        color: var(--accent);
+    }
+
+    /* Nav links */
+    .buttons a {
+        color: var(--text-light);
+    }
+
+    .buttons a:hover {
+        color: var(--accent);
+        background: var(--bg-subtle);
+    }
+
+    /* Post list links — light text on dark, red on hover */
+    .post-list li a,
+    .posts-box ul li a,
+    .tag-box ul li a {
+        color: var(--text);
+    }
+
+    .post-list li a:hover,
+    .posts-box ul li a:hover,
+    .tag-box ul li a:hover {
+        color: var(--accent);
+    }
+
+    /* About page list */
+    .about-box ul li {
+        color: var(--text);
+    }
+
+    /* Blogroll links */
+    .blogroll ul li a {
+        color: var(--text-light);
+    }
+
+    .blogroll ul li a:hover {
+        color: var(--accent);
+    }
+
+    /* Footer */
+    .footer a {
+        color: var(--text-light);
+    }
+
+    .footer a:hover {
+        color: var(--accent);
+    }
+
+    .footer .banner img {
+        opacity: 0.4;
+        /* Invert the badge so it's legible on dark bg */
+        filter: invert(1);
+    }
+
+    .footer .banner img:hover {
+        opacity: 0.7;
+    }
+
+    /* Tag pills on post pages */
+    .post p a[href*="tags"] {
+        color: var(--text-light);
+        background: var(--bg-subtle);
+        border-color: var(--border);
+    }
+
+    .post p a[href*="tags"]:hover {
+        color: var(--accent);
+        border-color: var(--accent);
+    }
+
+    /* Lift calculator input */
+    .lift-box input[type="number"] {
+        background: var(--bg-subtle);
+        border-color: var(--border);
+        color: var(--text);
+    }
+}

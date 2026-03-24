@@ -2,10 +2,18 @@
 {% block content %}
 <div class="box posts-box">
     <h1>All Posts</h1>
-    <ul>
-        {% for post in data %}
-            <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
-        {% endfor %}
-    </ul>
+    {% for group in data %}
+    <div class="year-group">
+        <h2 class="year-heading">{{ group.year }}</h2>
+        <ul>
+            {% for post in group.posts %}
+            <li>
+                <a href="{{ post.slug }}.html">{{ post.title }}</a>
+                <span class="post-date">{{ post.date }}</span>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}

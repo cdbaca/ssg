@@ -67,13 +67,14 @@
 ## May 2024
 
 ### Listening: 
-Madvillainy - MF Doom
+- Madvillainy - MF Doom
 
 ### Reading: 
-Dune
+- Dune
 
 ### Watching: 
-Fallout, Tokyo Vice
+- Fallout
+- Tokyo Vice
 
 ### Doing:
-Just finished up coaching track and field at Mercy Prep. Had a big showing at state!
+- Just finished up coaching track and field at Mercy Prep. Had a big showing at state!

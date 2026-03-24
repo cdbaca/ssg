@@ -1,36 +1,39 @@
 {% extends "base.html" %}
 {% block content %}
+
 <div class="box about">
     <h2>This is the digital home of Chris Baca.</h2>
     <p>It's meant to be not-cool. Not algorithm-y. Not a space where I'm trying to gain followers or build a brand.</p>
     <p>Just a space where I'm looking at the roots of things and seeing where they lead.</p>
-    <p>To that end, you may see weird stuff or designs here; mostly it's just me experimenting with building
-    a website from scratch. Thanks for stopping by.</p>
-    <br>
 </div>
+
 <div class="box posts">
-    <h2>Recent Posts:</h2>
+    <h2>Recent Posts</h2>
     <ul class="post-list">
         {% for post in data['posts'] %}
-        <li><a href="{{ post.slug }}.html">{{ post.title }}</a> | {{ post.date}} </li>
+        <li>
+            <a href="{{ post.slug }}.html">{{ post.title }}</a>
+            <span class="post-date">{{ post.date }}</span>
+        </li>
         {% endfor %}
     </ul>
 </div>
-<div class="box photos"></div>
+
+<div class="box photos">
     <div class="sectionheader">
-        <h2>Recent Photos:</h2>
+        <h2>Recent Photos</h2>
     </div>
-    <!-- <div class="imgbox"> -->
-    <div class="box photos-box">
-        <ul>
-        {% for photo in data['photos']%}
-        <a data-flickr-embed="true" href="{{ photo['img_link']}}" title="{{ photo['title'] }}"><img src="{{ photo['img'] }}" width="200" height="200" alt="{{ photo['title'] }}"></a>
+    <div class="photos-box">
+        {% for photo in data['photos'] %}
+        <a data-flickr-embed="true" href="{{ photo['img_link'] }}" title="{{ photo['title'] }}">
+            <img src="{{ photo['img'] }}" alt="{{ photo['title'] }}">
+        </a>
         {% endfor %}
-        </ul>
     </div>
 </div>
-<div class="box blogroll"></div>
-    <h2>Other Sites I Like:</h2>
+
+<div class="box blogroll">
+    <h2>Other Sites I Like</h2>
     <ul>
         {% for link in links %}
         <li><a href="{{ link }}">{{ links[link] }}</a></li>

@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block feed %} <link rel="alternate" type="application/rss+xml" href="/feed.xml" title="RSS">{% endblock %}
+{% block content %}
+<div class="box post">
+    <h1 class="post-title">{{ data.metadata["title"] }}</h1>
+    {{ data.content }}
+
+    {% if data.metadata["tags"][0] != '' %}
+        <p><strong>Tagged:</strong>{% for tag in data.metadata["tags"] %} <a href="tags/{{ tag }}.html">{{ tag }}</a>, {% endfor %}</p>
+    {% else %}
+        <p><strong>Tagged:</strong> no tags </p>
+    {% endif %}
+</div>
+{% endblock %}

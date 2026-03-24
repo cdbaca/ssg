@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+{% block css %}<link rel="stylesheet" href="../static/tufte.css" type="text/css"> {% endblock %}
+{% block nav %}
+<div class="box header">
+    <div class="logo">
+            <h1><a href="../index.html">Roots to Branches</a></h1>
+    </div>
+    <div class="buttons">
+        {% for item in menu %}
+        <form style="display: inline" action="../{{ menu[item] }}.html" method="get"><button>{{ item }}</button></form>
+        {% endfor %}        
+    </div>
+</div>
+{% endblock %}
+{% block content %}
+<div class="box tag-box">
+    {% for post_list in data %}
+        <ul>
+            <li><a href="../{{post_list[1]}}.html">{{post_list[0]}}</a> | {{post_list[2]}}</li>
+        </ul>
+    {% endfor %}
+</div>
+{% endblock %}
+{% block footer %}
+        <div class="box footer">
+            <p><a href="https://github.com/cdbaca">Github</a>
+                |
+                <a href="../feed.xml">RSS</a>
+            </p>
+        </div>
+{% endblock %}

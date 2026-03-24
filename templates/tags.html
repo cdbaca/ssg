@@ -3,8 +3,11 @@
 <div class="box tag-box">
     <h1>Tags</h1>
     <ul>
-        {% for k,v in data.items() %}
-            <li><a href="./tags/{{k}}.html">{{k}}</a>, {{v}} posts</li>
+        {% for k, v in data.items() %}
+        <li>
+            <a href="./tags/{{ k }}.html">{{ k }}</a>
+            <span class="post-date">{{ v }} post{% if v != 1 %}s{% endif %}</span>
+        </li>
         {% endfor %}
     </ul>
 </div>
