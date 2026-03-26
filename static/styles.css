@@ -604,33 +604,107 @@ ul {
 /* ─── Responsive ─── */
 
 @media (max-width: 768px) {
+
+    /* Container */
     .container {
         grid-template-columns: 1fr;
-        padding: 0 1.25rem;
+        padding: 0 1rem;
     }
 
+    /* Header — stack logo and nav vertically */
     .header {
         grid-column: 1 / -1;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
+        padding: 1.25rem 0 1rem;
         margin-bottom: 2rem;
     }
 
-    .about,
-    .posts,
-    .blogroll {
+    /* Nav — horizontal scrolling row instead of wrapping */
+    .buttons {
+        width: 100%;
+        overflow-x: auto;
+        white-space: nowrap;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 0.15rem;
+        /* Hide scrollbar visually but keep it functional */
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    .buttons::-webkit-scrollbar {
+        display: none;
+    }
+
+    .buttons a {
+        display: inline-block;
+        flex-shrink: 0;
+        font-size: 0.75rem;
+        padding: 0.3rem 0.5rem;
+    }
+
+    /* Homepage — reorder so posts come before photos on mobile */
+    .about {
         grid-column: 1 / -1;
         grid-row: auto;
+        order: 1;
+        padding-bottom: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .posts {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        order: 2;
     }
 
     .photos {
         grid-column: 1 / -1;
         grid-row: auto;
+        order: 3;
         margin-top: 2rem;
     }
 
+    .blogroll {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        order: 4;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    .footer {
+        grid-column: 1 / -1;
+        grid-row: auto;
+        order: 5;
+        margin-top: 1.5rem;
+        padding-top: 1.5rem;
+    }
+
+    /* Photos grid — 2 columns on tablet, stays manageable */
     .photos-box {
         grid-template-columns: repeat(2, 1fr);
     }
 
+    /* Post list items — drop date below title on narrow screens */
+    .post-list li,
+    .posts-box ul li,
+    .tag-box ul li {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.2rem;
+        padding: 0.75rem 0;
+    }
+
+    .post-list .post-date,
+    .posts-box ul li .post-date,
+    .tag-box ul li .post-date {
+        font-size: 0.75rem;
+    }
+
+    /* Content pages */
     .post,
     .about-box,
     .posts-box,
@@ -638,8 +712,11 @@ ul {
     .lift-box {
         grid-column: 1 / -1;
         grid-row: auto;
+        max-width: 100%;
+        padding-bottom: 2rem;
     }
 
+    /* Footer */
     .footer {
         grid-column: 1 / -1;
         flex-direction: column;
@@ -647,19 +724,62 @@ ul {
         gap: 0.75rem;
     }
 
+    /* Images in posts */
+    .post img,
     .post > p > img {
         max-width: 100%;
+        height: auto;
+    }
+
+    /* Year headings on posts list */
+    .year-heading {
+        margin-top: 1.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .buttons a {
-        font-size: 0.75rem;
-        padding: 0.25rem 0.4rem;
+
+    .container {
+        padding: 0 0.875rem;
     }
 
     .logo h1 {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
+    }
+
+    /* Single column photos on very small screens */
+    .photos-box {
+        grid-template-columns: 1fr;
+    }
+
+    .photos-box a img {
+        height: 200px;
+    }
+
+    /* Full page photos stay 2-col even on small screens
+       since 1-col would make them very large */
+    .photos-box.full-page {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photos-box.full-page a img {
+        height: 160px;
+    }
+
+    /* Slightly smaller base font on very small screens */
+    body {
+        font-size: 1rem;
+    }
+}
+
+/* Override tufte.css body padding on mobile —
+   tufte sets 12.5% padding which is too narrow on small screens */
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+        margin: 0;
     }
 }
 
