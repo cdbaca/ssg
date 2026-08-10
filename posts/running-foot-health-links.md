@@ -14,5 +14,7 @@ I started running again this week, but I have also added daily taping for my foo
 Anyway, I'm only writing this as reminder to my future self. Some of the resources I have been using are below:
 
 [Foot taping technique](https://www.youtube.com/watch?v=yzFZi62zWT4) - biggest win
+
 [Plantar Fasciitis Handout - NHS UK](https://www.newcastle-hospitals.nhs.uk/wp-content/uploads/2021/11/2024-Newcastle-OHS-Plantar-Fasciopathy-leaflet_PRINT_ONLY.pdf) - particular the heel raises on a raised step
+
 [Fixing Your Feet](https://www.fixingyourfeet.com/fixing-your-feet/) - Still haven't read this yet, but it's top of my "next athletic reads" list.
